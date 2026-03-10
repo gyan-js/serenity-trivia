@@ -171,9 +171,9 @@
     "isActive": true
   },
   {
-    "question": "What is the speed of light in vacuum (approx)?",
-    "answers": ["299792458 m/s", "3x10^8 m/s"],
-    "normalizedAnswers": ["299792458 m/s", "3x10^8 m/s"],
+    "question": "What is the speed of light in vacuum in m/s (approx)?",
+    "answers": ["299792458", "3x10^8", "300000000"],
+    "normalizedAnswers": ["299792458", "3x10^8", "300000000"],
     "points": 20,
     "category": "Physics",
     "difficulty": "Hard",
@@ -244,8 +244,8 @@
   },
   {
     "question": "Which war lasted from 1914 to 1918?",
-    "answers": ["World War I", "First World War", "WW1"],
-    "normalizedAnswers": ["world war i", "first world war", "ww1"],
+    "answers": ["World War I", "First World War", "WW1", "WWI"],
+    "normalizedAnswers": ["world war i", "first world war", "ww1", "ww 1"],
     "points": 15,
     "category": "History",
     "difficulty": "Medium",
@@ -269,4 +269,5 @@
     "difficulty": "Medium",
     "isActive": true
   }
+
 ]
