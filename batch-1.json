@@ -8,7 +8,6 @@
     "difficulty": "Medium",
     "isActive": true
   },
-  // helo
   {
     "question": "Which country is famous for the pyramids of Giza?",
     "answers": ["Egypt"],
