@@ -148,7 +148,7 @@
     "answers": ["High sir", "High"],
     "normalizedAnswers": ["high sir", "high"],
     "points": 10,
-    "category": "easy",
+    "category": "Easy",
     "difficulty": "Easter Egg",
     "isActive": true
   },
@@ -269,4 +269,5 @@
     "difficulty": "Easy",
     "isActive": true
   }
+
 ]
