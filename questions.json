@@ -1,0 +1,137 @@
+[
+    {
+      "question": "What is the capital of Japan?",
+      "answers": ["Tokyo"],
+      "normalizedAnswers": ["tokyo"],
+      "points": 10,
+      "category": "Geography",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Who wrote Romeo and Juliet?",
+      "answers": ["William Shakespeare", "Shakespeare"],
+      "normalizedAnswers": ["william shakespeare", "shakespeare"],
+      "points": 10,
+      "category": "Literature",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "What planet is known as the Red Planet?",
+      "answers": ["Mars"],
+      "normalizedAnswers": ["mars"],
+      "points": 10,
+      "category": "Science",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Which element has the chemical symbol Au?",
+      "answers": ["Gold"],
+      "normalizedAnswers": ["gold"],
+      "points": 15,
+      "category": "Chemistry",
+      "difficulty": "Medium",
+      "isActive": true
+    },
+    {
+      "question": "How many continents are there on Earth?",
+      "answers": ["7", "Seven"],
+      "normalizedAnswers": ["7", "seven"],
+      "points": 10,
+      "category": "Geography",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "answers": ["Leonardo da Vinci", "Da Vinci"],
+      "normalizedAnswers": ["leonardo da vinci", "da vinci"],
+      "points": 10,
+      "category": "Art",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "answers": ["Carbon Dioxide"],
+      "normalizedAnswers": ["carbon dioxide"],
+      "points": 10,
+      "category": "Science",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Which country hosted the 2016 Summer Olympics?",
+      "answers": ["Brazil"],
+      "normalizedAnswers": ["brazil"],
+      "points": 10,
+      "category": "Sports",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Who is known as the Father of Computers?",
+      "answers": ["Charles Babbage"],
+      "normalizedAnswers": ["charles babbage"],
+      "points": 15,
+      "category": "Technology",
+      "difficulty": "Medium",
+      "isActive": true
+    },
+    {
+      "question": "Which ocean is the largest on Earth?",
+      "answers": ["Pacific Ocean", "Pacific"],
+      "normalizedAnswers": ["pacific ocean", "pacific"],
+      "points": 10,
+      "category": "Geography",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "answers": ["Diamond"],
+      "normalizedAnswers": ["diamond"],
+      "points": 15,
+      "category": "Science",
+      "difficulty": "Medium",
+      "isActive": true
+    },
+    {
+      "question": "Which country is famous for the Great Wall?",
+      "answers": ["China"],
+      "normalizedAnswers": ["china"],
+      "points": 10,
+      "category": "History",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Who discovered gravity after seeing a falling apple?",
+      "answers": ["Isaac Newton", "Newton"],
+      "normalizedAnswers": ["isaac newton", "newton"],
+      "points": 10,
+      "category": "Science",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "What is the square root of 64?",
+      "answers": ["8", "Eight"],
+      "normalizedAnswers": ["8", "eight"],
+      "points": 10,
+      "category": "Math",
+      "difficulty": "Easy",
+      "isActive": true
+    },
+    {
+      "question": "Which language is primarily spoken in Brazil?",
+      "answers": ["Portuguese"],
+      "normalizedAnswers": ["portuguese"],
+      "points": 10,
+      "category": "Culture",
+      "difficulty": "Easy",
+      "isActive": true
+    }
+  ]
