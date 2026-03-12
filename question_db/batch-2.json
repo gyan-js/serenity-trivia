@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Which instrument is used to detect earthquakes?",
+    "answers": ["Seismograph", "Seismometer"],
+    "normalizedAnswers": ["seismograph", "seismometer"],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which country is known for inventing paper?",
+    "answers": ["China"],
+    "normalizedAnswers": ["china"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the hardest rock type on Earth?",
+    "answers": ["Diamond"],
+    "normalizedAnswers": ["diamond"],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which planet has the longest day compared to its year?",
+    "answers": ["Venus"],
+    "normalizedAnswers": ["venus"],
+    "points": 20,
+    "category": "Astronomy",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What does Wi-Fi stand for?",
+    "answers": ["Wireless Fidelity"],
+    "normalizedAnswers": ["wireless fidelity"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which river is the longest in South America?",
+    "answers": ["Amazon River", "Amazon"],
+    "normalizedAnswers": ["amazon river", "amazon"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which famous scientist had the famous quote 'Eureka!'?",
+    "answers": ["Archimedes"],
+    "normalizedAnswers": ["archimedes"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which programming language is primarily used for data analysis and machine learning?",
+    "answers": ["Python"],
+    "normalizedAnswers": ["python"],
+    "points": 10,
+    "category": "Technology",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Vietnam?",
+    "answers": ["Hanoi"],
+    "normalizedAnswers": ["hanoi"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist discovered the neutron?",
+    "answers": ["James Chadwick", "Chadwick"],
+    "normalizedAnswers": ["james chadwick", "chadwick"],
+    "points": 20,
+    "category": "Physics",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Antarctica located on?",
+    "answers": ["Antarctica"],
+    "normalizedAnswers": ["antarctica"],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which blood cells carry oxygen in the body?",
+    "answers": ["Red Blood Cells", "RBC"],
+    "normalizedAnswers": ["red blood cells", "rbc"],
+    "points": 15,
+    "category": "Biology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which empire was ruled by Julius Caesar?",
+    "answers": ["Roman Empire", "Rome"],
+    "normalizedAnswers": ["roman empire", "rome"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What does VPN stand for?",
+    "answers": ["Virtual Private Network"],
+    "normalizedAnswers": ["virtual private network"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which gas is essential for photosynthesis besides water?",
+    "answers": ["Carbon Dioxide", "CO2"],
+    "normalizedAnswers": ["carbon dioxide", "co2"],
+    "points": 10,
+    "category": "Biology",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which physicist introduced the concept of relativity of simultaneity?",
+    "answers": ["Albert Einstein", "Einstein"],
+    "normalizedAnswers": ["albert einstein", "einstein"],
+    "points": 20,
+    "category": "Physics",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Portugal?",
+    "answers": ["Lisbon"],
+    "normalizedAnswers": ["lisbon"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport uses the term 'slam dunk'?",
+    "answers": ["Basketball"],
+    "normalizedAnswers": ["basketball"],
+    "points": 10,
+    "category": "Sports",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ocean surrounds the Maldives?",
+    "answers": ["Indian Ocean"],
+    "normalizedAnswers": ["indian ocean"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who invented the World Wide Web?",
+    "answers": ["Tim Berners-Lee", "Berners-Lee"],
+    "normalizedAnswers": ["tim berners lee", "berners lee"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient wonder of the world was located in Babylon?",
+    "answers": ["Hanging Gardens of Babylon"],
+    "normalizedAnswers": ["hanging gardens of babylon"],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is the coldest in the solar system?",
+    "answers": ["Uranus"],
+    "normalizedAnswers": ["uranus"],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which organ controls the nervous system?",
+    "answers": ["Brain"],
+    "normalizedAnswers": ["brain"],
+    "points": 10,
+    "category": "Biology",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which currency is used in Japan?",
+    "answers": ["Yen"],
+    "normalizedAnswers": ["yen"],
+    "points": 10,
+    "category": "Economics",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which mountain range separates Europe and Asia?",
+    "answers": ["Ural Mountains", "Urals"],
+    "normalizedAnswers": ["ural mountains", "urals"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which element is the main component of steel?",
+    "answers": ["Iron"],
+    "normalizedAnswers": ["iron"],
+    "points": 15,
+    "category": "Chemistry",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote the play 'Hamlet'?",
+    "answers": ["William Shakespeare", "Shakespeare"],
+    "normalizedAnswers": ["william shakespeare", "shakespeare"],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which spacecraft first landed humans on the Moon?",
+    "answers": ["Apollo 11"],
+    "normalizedAnswers": ["apollo 11"],
+    "points": 20,
+    "category": "Space",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What does CPU cache primarily improve?",
+    "answers": ["Processing Speed", "Speed"],
+    "normalizedAnswers": ["processing speed", "speed"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent has the largest rainforest in the world?",
+    "answers": ["South America"],
+    "normalizedAnswers": ["south america"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  }
+]

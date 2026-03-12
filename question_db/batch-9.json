@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Which country is known for the city of Vienna?",
+    "answers": ["Austria"],
+    "normalizedAnswers": ["austria"],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which element has the chemical symbol Zn?",
+    "answers": ["Zinc"],
+    "normalizedAnswers": ["zinc"],
+    "points": 15,
+    "category": "Chemistry",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist proposed the three laws of thermodynamics?",
+    "answers": ["Rudolf Clausius", "Clausius"],
+    "normalizedAnswers": ["rudolf clausius", "clausius"],
+    "points": 20,
+    "category": "Physics",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Norway?",
+    "answers": ["Oslo"],
+    "normalizedAnswers": ["oslo"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which organ in the human body is responsible for filtering blood?",
+    "answers": ["Kidney", "Kidneys"],
+    "normalizedAnswers": ["kidney", "kidneys"],
+    "points": 10,
+    "category": "Biology",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which programming language is known for powering WordPress websites?",
+    "answers": ["PHP"],
+    "normalizedAnswers": ["php"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization built the city of Machu Picchu?",
+    "answers": ["Inca", "Inca Empire"],
+    "normalizedAnswers": ["inca", "inca empire"],
+    "points": 10,
+    "category": "History",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which desert is the largest hot desert on Earth?",
+    "answers": ["Sahara", "Sahara Desert"],
+    "normalizedAnswers": ["sahara", "sahara desert"],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which physicist discovered electromagnetic waves experimentally?",
+    "answers": ["Heinrich Hertz", "Hertz"],
+    "normalizedAnswers": ["heinrich hertz", "hertz"],
+    "points": 20,
+    "category": "Physics",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which number is known as the base of the natural logarithm?",
+    "answers": ["e", "Euler's number"],
+    "normalizedAnswers": ["e", "eulers number"],
+    "points": 20,
+    "category": "Math",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which animal is known for building dams in rivers?",
+    "answers": ["Beaver"],
+    "normalizedAnswers": ["beaver"],
+    "points": 10,
+    "category": "Animals",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What does HTTPS stand for?",
+    "answers": ["HyperText Transfer Protocol Secure"],
+    "normalizedAnswers": ["hypertext transfer protocol secure"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which country hosted the 2016 Summer Olympics?",
+    "answers": ["Brazil"],
+    "normalizedAnswers": ["brazil"],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist discovered the law of buoyancy?",
+    "answers": ["Archimedes"],
+    "normalizedAnswers": ["archimedes"],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which country has the most volcanoes in the world?",
+    "answers": ["Indonesia"],
+    "normalizedAnswers": ["indonesia"],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which instrument measures atmospheric pressure?",
+    "answers": ["Barometer"],
+    "normalizedAnswers": ["barometer"],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is the second largest by land area?",
+    "answers": ["Africa"],
+    "normalizedAnswers": ["africa"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which organ produces bile for digestion?",
+    "answers": ["Liver"],
+    "normalizedAnswers": ["liver"],
+    "points": 15,
+    "category": "Biology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which programming language was created by Guido van Rossum?",
+    "answers": ["Python"],
+    "normalizedAnswers": ["python"],
+    "points": 10,
+    "category": "Technology",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which philosopher taught Alexander the Great?",
+    "answers": ["Aristotle"],
+    "normalizedAnswers": ["aristotle"],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which animal is the largest land animal?",
+    "answers": ["Elephant", "African Elephant"],
+    "normalizedAnswers": ["elephant", "african elephant"],
+    "points": 10,
+    "category": "Animals",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which river flows through Rome?",
+    "answers": ["Tiber", "Tiber River"],
+    "normalizedAnswers": ["tiber", "tiber river"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist discovered the proton?",
+    "answers": ["Ernest Rutherford", "Rutherford"],
+    "normalizedAnswers": ["ernest rutherford", "rutherford"],
+    "points": 15,
+    "category": "Physics",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which country is famous for the ancient city of Troy?",
+    "answers": ["Turkey"],
+    "normalizedAnswers": ["turkey"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which gas is necessary for human respiration?",
+    "answers": ["Oxygen"],
+    "normalizedAnswers": ["oxygen"],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which mathematician invented the concept of coordinates used in analytic geometry?",
+    "answers": ["Rene Descartes", "Descartes"],
+    "normalizedAnswers": ["rene descartes", "descartes"],
+    "points": 20,
+    "category": "Math",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is closest to the Sun?",
+    "answers": ["Mercury"],
+    "normalizedAnswers": ["mercury"],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which metal is commonly used in aircraft manufacturing due to its light weight?",
+    "answers": ["Aluminum", "Aluminium"],
+    "normalizedAnswers": ["aluminum", "aluminium"],
+    "points": 15,
+    "category": "Engineering",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which country is the largest by land area in Africa?",
+    "answers": ["Algeria"],
+    "normalizedAnswers": ["algeria"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which telescope was launched in 1990 and greatly improved astronomical observations from space?",
+    "answers": ["Hubble Space Telescope", "Hubble"],
+    "normalizedAnswers": ["hubble space telescope", "hubble"],
+    "points": 20,
+    "category": "Space",
+    "difficulty": "Hard",
+    "isActive": true
+  }
+]
