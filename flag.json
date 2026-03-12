@@ -1,0 +1,52 @@
+[
+    {
+      "country": "Japan",
+      "normalizedAnswers": ["japan"],
+      "imageUrl": "https://flagcdn.com/w640/jp.png",
+      "points": 15,
+      "region": "Asia",
+      "isActive": true,
+      "used": false,
+      "usedAt": null
+    },
+    {
+      "country": "Brazil",
+      "normalizedAnswers": ["brazil"],
+      "imageUrl": "https://flagcdn.com/w640/br.png",
+      "points": 15,
+      "region": "South America",
+      "isActive": true,
+      "used": false,
+      "usedAt": null
+    },
+    {
+      "country": "Germany",
+      "normalizedAnswers": ["germany"],
+      "imageUrl": "https://flagcdn.com/w640/de.png",
+      "points": 15,
+      "region": "Europe",
+      "isActive": true,
+      "used": false,
+      "usedAt": null
+    },
+    {
+      "country": "India",
+      "normalizedAnswers": ["india"],
+      "imageUrl": "https://flagcdn.com/w640/in.png",
+      "points": 15,
+      "region": "Asia",
+      "isActive": true,
+      "used": false,
+      "usedAt": null
+    },
+    {
+      "country": "Canada",
+      "normalizedAnswers": ["canada"],
+      "imageUrl": "https://flagcdn.com/w640/ca.png",
+      "points": 15,
+      "region": "North America",
+      "isActive": true,
+      "used": false,
+      "usedAt": null
+    }
+  ]
