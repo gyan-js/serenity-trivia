@@ -5,7 +5,7 @@ import dns from "node:dns/promises";
 dns.setServers(["1.1.1.1"]);
 
 import { Client, GatewayIntentBits, Partials, EmbedBuilder, SlashCommandBuilder, PermissionsBitField, ChannelType, REST, Routes } from "discord.js";
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 import cron from "node-cron";
 // =====================================================
 // Discord Client
@@ -84,11 +84,50 @@ const activeRoundSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+const activeFlagRoundSchema = new mongoose.Schema(
+  {
+    guildId: { type: String, required: true, unique: true },
+    channelId: { type: String, required: true },
+    flagQuestionId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "FlagQuestion",
+      required: true,
+    },
+    country: { type: String, required: true },
+    normalizedAnswers: [{ type: String, required: true }],
+    imageUrl: { type: String, required: true },
+    points: { type: Number, default: 15 },
+    solved: { type: Boolean, default: false },
+    winnerUserId: { type: String, default: null },
+    winnerUsername: { type: String, default: null },
+    winningAnswer: { type: String, default: null },
+    solvedAt: { type: Date, default: null },
+    askedAt: { type: Date, default: Date.now },
+  },
+  { timestamps: true }
+);
+
+const flagQuestionSchema = new mongoose.Schema(
+  {
+    country: { type: String, required: true },
+    normalizedAnswers: [{ type: String, required: true, index: true }],
+    imageUrl: { type: String, required: true },
+    points: { type: Number, default: 15 },
+    region: { type: String, default: "Unknown" },
+    isActive: { type: Boolean, default: true },
+    used: { type: Boolean, default: false },
+    usedAt: { type: Date, default: null },
+  },
+  { timestamps: true }
+);
+
 const GuildConfig = mongoose.model("GuildConfig", guildConfigSchema);
 const UserScore = mongoose.model("UserScore", userScoreSchema);
 const TriviaQuestion = mongoose.model("TriviaQuestion", triviaQuestionSchema);
 //const questions = await import("./questions.json", { assert: { type: "json" } });
 const ActiveRound = mongoose.model("ActiveRound", activeRoundSchema);
+const FlagQuestion = mongoose.model("FlagQuestion", flagQuestionSchema)
+const ActiveFlagRound = mongoose.model("ActiveFlagRound", activeFlagRoundSchema);
 
 // =====================================================
 // Helpers
@@ -120,7 +159,7 @@ function buildQuestionEmbed(questionData) {
       name: "✨ Live Trivia Round",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
-    .setTitle("🧠 Trivia Time!")
+    .setTitle("<:brain:1480948942282952735> Trivia Time!")
     .setDescription(
       [
         "╭────────────────────╮",
@@ -135,18 +174,60 @@ function buildQuestionEmbed(questionData) {
         inline: true,
       },
       {
-        name: "🎯 Difficulty",
+        name: "<:target2:1480956785715187872> Difficulty",
         value: `\`${difficultyBadge(questionData.difficulty || "Medium")}\``,
         inline: true,
       },
       {
-        name: "💎 Reward",
+        name: "<:giftcard:1480952956445659218> Reward",
         value: `\`${questionData.points || 10} pts\``,
         inline: true,
       }
     )
     .setFooter({
       text: "Type your answer in chat • First correct answer wins",
+    })
+    .setTimestamp();
+}
+
+function buildFlagQuestionEmbed(flagData) {
+  return new EmbedBuilder()
+    .setColor(0x3498db)
+    .setAuthor({
+      name: "🌍 Guess the Flag",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
+    .setTitle("🚩Which country does this flag belong to?")
+    .setDescription(
+      [
+        "Look at the flag below and type your answer in chat.",
+        "",
+        "🏆 **First correct answer wins**",
+        `💰 **Reward:** \`${flagData.points || 15} pts\``,
+        `🌐 **Region:** \`${flagData.region || "Unknown"}\``,
+      ].join("\n")
+    )
+    .setImage(flagData.imageUrl)
+    .setFooter({
+      text: "Professional Flag Challenge • Same leaderboard • First answer wins",
+    })
+    .setTimestamp();
+}
+
+function buildFlagWinnerEmbed(user, points, answer, country) {
+  return new EmbedBuilder()
+    .setColor(0x2ecc71)
+    .setTitle("🎉 Correct Flag Guess!")
+    .setDescription(
+      [
+        `✅ ${user} guessed the flag correctly first!`,
+        `🏳️ **Country:** \`${country}\``,
+        `📝 **Answer Given:** \`${answer}\``,
+        `💰 **Reward:** \`${points} pts\``,
+      ].join("\n")
+    )
+    .setFooter({
+      text: "This flag round is now closed",
     })
     .setTimestamp();
 }
@@ -207,12 +288,12 @@ function buildNoQuestionsEmbed() {
 }
 
 function buildLeaderboardEmbed(guildName, topUsers) {
-  const rankIcons = ["👑", "🥈", "🥉", "✨", "✨", "✨", "⭐", "⭐", "⭐", "⭐"];
+  //const rankIcons = ["👑", "🥈", "🥉", "✨", "✨", "✨", "⭐", "⭐", "⭐", "⭐"];
 
   let description = "";
   if (!topUsers.length) {
     description =
-      "╭────────────────────────╮\n" +
+      "╭────────────────────────\n" +
       "✨ No champions yet.\n" +
       "Be the first to win a trivia round!\n" +
       "╰────────────────────────╯";
@@ -231,21 +312,22 @@ function buildLeaderboardEmbed(guildName, topUsers) {
     const rank = index + 1;
 
     const rankIcons = [
-      "🥇",
-      "🥈",
-      "🥉",
-      "4️⃣",
-      "5️⃣",
-      "6️⃣",
-      "7️⃣",
-      "8️⃣",
-      "9️⃣",
-      "🔟",
+      "<:firstprize:1480839203536240732>",
+      "<:secondplace:1480839974201856090>",
+      "<:3rdplace1:1480840249213976696>",
+      "<:commonrank:1480945343385571525",
+      "<:commonrank:1480945343385571525",
+      "<:commonrank:1480945343385571525",
+      "<:commonrank:1480945343385571525",
+      "<:commonrank:1480945343385571525",
+      "<:commonrank:1480945343385571525",
+      "<:commonrank:1480945343385571525",
+      
     ];
 
     const icon = rankIcons[index] || "•";
 
-    return `${icon} ${user.username} — **${user.points} points** 💎`;
+    return `${icon} ${user.username} — **${user.points} points** <:gems_5:1480828695466741831>`;
   })
   .join("\n");
   }
@@ -256,8 +338,9 @@ function buildLeaderboardEmbed(guildName, topUsers) {
       name: `${guildName} Trivia Rankings`,
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
-    .setTitle("🏆 Elite Top 10 Leaderboard")
-    .setDescription(description)
+    .setThumbnail(client.user?.displayAvatarURL() || undefined)
+    .setTitle("__Trivia Ranking__")
+    .setDescription(`\n${description}`)
     .addFields(
      
       {
@@ -314,6 +397,10 @@ async function registerSlashCommands() {
       .setName("send-trivia")
       .setDescription("Admin only: send a trivia question right now for testing.")
       .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+    new SlashCommandBuilder()
+      .setName("send-flag-trivia")
+      .setDescription("Admin only: send a Guess the Flag question immediately for testing.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
   ].map((cmd) => cmd.toJSON());
 
   const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
@@ -331,6 +418,44 @@ async function registerSlashCommands() {
 async function getRandomQuestion() {
   const result = await TriviaQuestion.aggregate([
     { $match: { isActive: true } },
+    { $sample: { size: 1 } },
+  ]);
+
+  return result[0] || null;
+}
+
+async function getRandomFlagQuestion() {
+  let result = await FlagQuestion.aggregate([
+    {
+      $match: {
+        isActive: true,
+        used: false,
+      },
+    },
+    { $sample: { size: 1 } },
+  ]);
+
+  if (result.length > 0) {
+    return result[0];
+  }
+
+  await FlagQuestion.updateMany(
+    { isActive: true },
+    {
+      $set: {
+        used: false,
+        usedAt: null,
+      },
+    }
+  );
+
+  result = await FlagQuestion.aggregate([
+    {
+      $match: {
+        isActive: true,
+        used: false,
+      },
+    },
     { $sample: { size: 1 } },
   ]);
 
@@ -453,6 +578,72 @@ async function askQuestionForGuild(guildId) {
   }
 }
 
+async function askFlagQuestionForGuild(guildId) {
+  try {
+    const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
+    if (!config) return;
+
+    const existingFlagRound = await ActiveFlagRound.findOne({
+      guildId,
+      solved: false,
+    }).lean();
+
+    if (existingFlagRound) return;
+
+    const flagQuestion = await getRandomFlagQuestion();
+    if (!flagQuestion) return;
+
+    const triviaChannel = await client.channels
+      .fetch(config.triviaChannelId)
+      .catch(() => null);
+
+    if (!triviaChannel) return;
+
+    const embed = buildFlagQuestionEmbed(flagQuestion);
+    await triviaChannel.send({ embeds: [embed] });
+
+    await ActiveFlagRound.findOneAndUpdate(
+      { guildId },
+      {
+        $set: {
+          guildId,
+          channelId: triviaChannel.id,
+          flagQuestionId: flagQuestion._id,
+          country: flagQuestion.country,
+          normalizedAnswers: flagQuestion.normalizedAnswers,
+          imageUrl: flagQuestion.imageUrl,
+          points: flagQuestion.points || 15,
+          solved: false,
+          winnerUserId: null,
+          winnerUsername: null,
+          winningAnswer: null,
+          solvedAt: null,
+          askedAt: new Date(),
+        },
+      },
+      {
+        upsert: true,
+        new: true,
+        setDefaultsOnInsert: true,
+      }
+    );
+
+    await FlagQuestion.updateOne(
+      { _id: flagQuestion._id },
+      {
+        $set: {
+          used: true,
+          usedAt: new Date(),
+        },
+      }
+    );
+  } catch (error) {
+    console.error(`❌ Failed to ask flag question for guild ${guildId}:`, error);
+  }
+}
+
+
+
 async function refreshAllLeaderboards() {
   const configs = await GuildConfig.find({ isStarted: true }).lean();
   for (const config of configs) {
@@ -464,6 +655,13 @@ async function askQuestionsForAllGuilds() {
   const configs = await GuildConfig.find({ isStarted: true }).lean();
   for (const config of configs) {
     await askQuestionForGuild(config.guildId);
+  }
+}
+
+async function askFlagQuestionsForAllGuilds() {
+  const configs = await GuildConfig.find({ isStarted: true }).lean();
+  for (const config of configs) {
+    await askFlagQuestionForGuild(config.guildId);
   }
 }
 
@@ -482,6 +680,10 @@ function startSchedulers() {
     await askQuestionsForAllGuilds();
   });
 
+  cron.schedule("0 */3 * * *", async () => {
+    console.log("🚩 Running guess-the-flag scheduler...");
+    await askFlagQuestionsForAllGuilds();
+  });
   // Every 5 minutes
   cron.schedule("*/5 * * * *", async () => {
     console.log("🔄 Running leaderboard refresh scheduler...");
@@ -563,6 +765,7 @@ client.on("interactionCreate", async (interaction) => {
       await ActiveRound.deleteOne({ guildId: interaction.guildId });
     
       await UserScore.deleteMany({ guildId: interaction.guildId });
+      await ActiveFlagRound.deleteOne({ guildId: interaction.guildId });
     
       const embed = new EmbedBuilder()
         .setColor(0xed4245)
@@ -608,6 +811,40 @@ client.on("interactionCreate", async (interaction) => {
         ephemeral: true,
       });
     }
+    if (interaction.commandName === "send-flag-trivia") {
+
+      const config = await GuildConfig.findOne({
+        guildId: interaction.guildId,
+        isStarted: true
+      });
+    
+      if (!config) {
+        return interaction.reply({
+          content: "Trivia is not set up yet. Run `/trivia-setup` first.",
+          ephemeral: true
+        });
+      }
+    
+      const existingRound = await ActiveFlagRound.findOne({
+        guildId: interaction.guildId,
+        solved: false
+      });
+    
+      if (existingRound) {
+        return interaction.reply({
+          content: "There is already an active Guess the Flag round.",
+          ephemeral: true
+        });
+      }
+    
+      await askFlagQuestionForGuild(interaction.guildId);
+    
+      return interaction.reply({
+        content: "🚩 Guess the Flag question sent.",
+        ephemeral: true
+      });
+    
+    }
   } catch (error) {
     console.error("❌ Interaction error:", error);
 
@@ -632,11 +869,9 @@ client.on("messageCreate", async (message) => {
     const normalized = normalizeAnswer(message.content);
     if (!normalized) return;
 
-    // Atomically claim the round only if:
-    // - same guild
-    // - still unsolved
-    // - answer matches
-    // This guarantees only the FIRST correct answer wins.
+    // =========================
+    // Normal Trivia Check
+    // =========================
     const claimedRound = await ActiveRound.findOneAndUpdate(
       {
         guildId: message.guild.id,
@@ -658,28 +893,78 @@ client.on("messageCreate", async (message) => {
       }
     );
 
-    if (!claimedRound) return;
+    if (claimedRound) {
+      await message.react("✅").catch(() => null);
 
-    await message.react("✅").catch(() => null);
+      await upsertUserScore({
+        guildId: message.guild.id,
+        userId: message.author.id,
+        username: message.author.username,
+        points: claimedRound.points,
+      });
 
-    await upsertUserScore({
-      guildId: message.guild.id,
-      userId: message.author.id,
-      username: message.author.username,
-      points: claimedRound.points,
-    });
+      await message.channel.send({
+        embeds: [
+          buildCorrectAnswerEmbed(
+            `<@${message.author.id}>`,
+            claimedRound.points,
+            message.content
+          ),
+        ],
+      });
 
-    await message.channel.send({
-      embeds: [
-        buildCorrectAnswerEmbed(
-          `<@${message.author.id}>`,
-          claimedRound.points,
-          message.content
-        ),
-      ],
-    });
+      await refreshLeaderboard(message.guild.id);
+      return;
+    }
 
-    await refreshLeaderboard(message.guild.id);
+    // =========================
+    // Guess The Flag Check
+    // =========================
+    const claimedFlagRound = await ActiveFlagRound.findOneAndUpdate(
+      {
+        guildId: message.guild.id,
+        channelId: message.channel.id,
+        solved: false,
+        normalizedAnswers: normalized,
+      },
+      {
+        $set: {
+          solved: true,
+          winnerUserId: message.author.id,
+          winnerUsername: message.author.username,
+          winningAnswer: message.content,
+          solvedAt: new Date(),
+        },
+      },
+      {
+        new: true,
+      }
+    );
+
+    if (claimedFlagRound) {
+      await message.react("✅").catch(() => null);
+
+      await upsertUserScore({
+        guildId: message.guild.id,
+        userId: message.author.id,
+        username: message.author.username,
+        points: claimedFlagRound.points || 15,
+      });
+
+      await message.channel.send({
+        embeds: [
+          buildFlagWinnerEmbed(
+            `<@${message.author.id}>`,
+            claimedFlagRound.points || 15,
+            message.content,
+            claimedFlagRound.country
+          ),
+        ],
+      });
+
+      await refreshLeaderboard(message.guild.id);
+      return;
+    }
   } catch (error) {
     console.error("❌ Message handling error:", error);
   }
@@ -714,4 +999,4 @@ client.on("messageCreate", async (message) => {
   }
 })();
 
-console.log("fhff")
+console.log("Sattu is a latkhor piggy")
