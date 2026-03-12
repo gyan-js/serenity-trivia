@@ -1,0 +1,272 @@
+[
+  {
+    "question": "Which metal has the highest electrical conductivity?",
+    "answers": ["Silver"],
+    "normalizedAnswers": ["silver"],
+    "points": 20,
+    "category": "Chemistry",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Hungary?",
+    "answers": ["Budapest"],
+    "normalizedAnswers": ["budapest"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animal is known as the tallest land animal?",
+    "answers": ["Giraffe"],
+    "normalizedAnswers": ["giraffe"],
+    "points": 10,
+    "category": "Animals",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist proposed the three laws of motion?",
+    "answers": ["Isaac Newton", "Newton"],
+    "normalizedAnswers": ["isaac newton", "newton"],
+    "points": 15,
+    "category": "Physics",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What does API stand for in software development?",
+    "answers": ["Application Programming Interface"],
+    "normalizedAnswers": ["application programming interface"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is known for having the largest volcano in the solar system?",
+    "answers": ["Mars"],
+    "normalizedAnswers": ["mars"],
+    "points": 20,
+    "category": "Astronomy",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Madagascar located near?",
+    "answers": ["Africa"],
+    "normalizedAnswers": ["africa"],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization built the pyramids at Teotihuacan?",
+    "answers": ["Aztecs"],
+    "normalizedAnswers": ["aztecs"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist invented the first practical telephone?",
+    "answers": ["Alexander Graham Bell", "Bell"],
+    "normalizedAnswers": ["alexander graham bell", "bell"],
+    "points": 10,
+    "category": "Technology",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which bone is the longest in the human body?",
+    "answers": ["Femur"],
+    "normalizedAnswers": ["femur"],
+    "points": 15,
+    "category": "Biology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which mathematician developed the concept of logarithms?",
+    "answers": ["John Napier", "Napier"],
+    "normalizedAnswers": ["john napier", "napier"],
+    "points": 20,
+    "category": "Math",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which ocean lies east of Africa?",
+    "answers": ["Indian Ocean"],
+    "normalizedAnswers": ["indian ocean"],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What does DNS stand for in networking?",
+    "answers": ["Domain Name System"],
+    "normalizedAnswers": ["domain name system"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which country hosted the 2008 Summer Olympics?",
+    "answers": ["China"],
+    "normalizedAnswers": ["china"],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which gas is most abundant in the Sun?",
+    "answers": ["Hydrogen"],
+    "normalizedAnswers": ["hydrogen"],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which famous ship sank in 1912 after hitting an iceberg?",
+    "answers": ["Titanic", "RMS Titanic"],
+    "normalizedAnswers": ["titanic", "rms titanic"],
+    "points": 10,
+    "category": "History",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which programming language was created by Bjarne Stroustrup?",
+    "answers": ["C++", "Cpp"],
+    "normalizedAnswers": ["c++", "cpp"],
+    "points": 20,
+    "category": "Technology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Peru?",
+    "answers": ["Lima"],
+    "normalizedAnswers": ["lima"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which organ helps humans maintain balance and coordination?",
+    "answers": ["Cerebellum"],
+    "normalizedAnswers": ["cerebellum"],
+    "points": 20,
+    "category": "Biology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is known as 'the beautiful game'?",
+    "answers": ["Football", "Soccer"],
+    "normalizedAnswers": ["football", "soccer"],
+    "points": 10,
+    "category": "Sports",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which desert is the largest cold desert in the world?",
+    "answers": ["Antarctic Desert"],
+    "normalizedAnswers": ["antarctic desert"],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which device converts electrical energy into mechanical energy?",
+    "answers": ["Electric Motor", "Motor"],
+    "normalizedAnswers": ["electric motor", "motor"],
+    "points": 15,
+    "category": "Engineering",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent has the most volcanoes?",
+    "answers": ["Asia"],
+    "normalizedAnswers": ["asia"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the main ingredient in traditional Japanese miso soup?",
+    "answers": ["Miso Paste", "Miso"],
+    "normalizedAnswers": ["miso paste", "miso"],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which element is used in pencil 'lead'?",
+    "answers": ["Graphite"],
+    "normalizedAnswers": ["graphite"],
+    "points": 10,
+    "category": "Chemistry",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist discovered the laws of planetary motion?",
+    "answers": ["Johannes Kepler", "Kepler"],
+    "normalizedAnswers": ["johannes kepler", "kepler"],
+    "points": 15,
+    "category": "Astronomy",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which video game company developed Minecraft?",
+    "answers": ["Mojang"],
+    "normalizedAnswers": ["mojang"],
+    "points": 10,
+    "category": "Gaming",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which philosopher wrote 'Meditations'?",
+    "answers": ["Marcus Aurelius"],
+    "normalizedAnswers": ["marcus aurelius"],
+    "points": 20,
+    "category": "Philosophy",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which country is the largest by land area?",
+    "answers": ["Russia"],
+    "normalizedAnswers": ["russia"],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which layer of Earth's atmosphere contains the ozone layer?",
+    "answers": ["Stratosphere"],
+    "normalizedAnswers": ["stratosphere"],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  }
+]

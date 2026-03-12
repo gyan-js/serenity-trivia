@@ -1,0 +1,273 @@
+[
+  {
+    "question": "Which instrument is used to measure atmospheric pressure?",
+    "answers": ["Barometer"],
+    "normalizedAnswers": ["barometer"],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which country is famous for the pyramids of Giza?",
+    "answers": ["Egypt"],
+    "normalizedAnswers": ["egypt"],
+    "points": 10,
+    "category": "History",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the longest river in the world?",
+    "answers": ["Nile", "River Nile"],
+    "normalizedAnswers": ["nile", "river nile"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist discovered the electron?",
+    "answers": ["J. J. Thomson", "JJ Thomson", "Joseph John Thomson"],
+    "normalizedAnswers": ["j j thomson", "jj thomson", "joseph john thomson"],
+    "points": 20,
+    "category": "Physics",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which sport uses a shuttlecock?",
+    "answers": ["Badminton"],
+    "normalizedAnswers": ["badminton"],
+    "points": 10,
+    "category": "Sports",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What does SSD stand for in computing?",
+    "answers": ["Solid State Drive"],
+    "normalizedAnswers": ["solid state drive"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which empire was ruled by Genghis Khan?",
+    "answers": ["Mongol Empire"],
+    "normalizedAnswers": ["mongol empire"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which planet rotates on its side?",
+    "answers": ["Uranus"],
+    "normalizedAnswers": ["uranus"],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which gas do humans breathe in to survive?",
+    "answers": ["Oxygen"],
+    "normalizedAnswers": ["oxygen"],
+    "points": 10,
+    "category": "Biology",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Argentina?",
+    "answers": ["Buenos Aires"],
+    "normalizedAnswers": ["buenos aires"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who developed the polio vaccine?",
+    "answers": ["Jonas Salk", "Salk"],
+    "normalizedAnswers": ["jonas salk", "salk"],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the main language spoken in Spain?",
+    "answers": ["Spanish"],
+    "normalizedAnswers": ["spanish"],
+    "points": 10,
+    "category": "Culture",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which element is represented by the symbol Fe?",
+    "answers": ["Iron"],
+    "normalizedAnswers": ["iron"],
+    "points": 15,
+    "category": "Chemistry",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which mathematician proved Fermat's Last Theorem in 1994?",
+    "answers": ["Andrew Wiles", "Wiles"],
+    "normalizedAnswers": ["andrew wiles", "wiles"],
+    "points": 20,
+    "category": "Math",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "How many players are on a standard soccer team on the field?",
+    "answers": ["11", "Eleven"],
+    "normalizedAnswers": ["11", "eleven"],
+    "points": 10,
+    "category": "Sports",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Thailand?",
+    "answers": ["Bangkok"],
+    "normalizedAnswers": ["bangkok"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which organ filters blood in the human body?",
+    "answers": ["Kidney", "Kidneys"],
+    "normalizedAnswers": ["kidney", "kidneys"],
+    "points": 15,
+    "category": "Biology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which company created the PlayStation console?",
+    "answers": ["Sony"],
+    "normalizedAnswers": ["sony"],
+    "points": 10,
+    "category": "Gaming",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient city was buried by the eruption of Mount Vesuvius in 79 AD?",
+    "answers": ["Pompeii"],
+    "normalizedAnswers": ["pompeii"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the speed of light in vacuum in m/s (approx)?",
+    "answers": ["299792458", "3x10^8", "300000000"],
+    "normalizedAnswers": ["299792458", "3x10^8", "300000000"],
+    "points": 20,
+    "category": "Physics",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent has the most countries?",
+    "answers": ["Africa"],
+    "normalizedAnswers": ["africa"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animal is known for its black and white stripes?",
+    "answers": ["Zebra"],
+    "normalizedAnswers": ["zebra"],
+    "points": 10,
+    "category": "Animals",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What does URL stand for?",
+    "answers": ["Uniform Resource Locator"],
+    "normalizedAnswers": ["uniform resource locator"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which philosopher wrote 'The Republic'?",
+    "answers": ["Plato"],
+    "normalizedAnswers": ["plato"],
+    "points": 20,
+    "category": "Philosophy",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which desert is the largest hot desert in the world?",
+    "answers": ["Sahara", "Sahara Desert"],
+    "normalizedAnswers": ["sahara", "sahara desert"],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which vitamin is mainly obtained from sunlight?",
+    "answers": ["Vitamin D"],
+    "normalizedAnswers": ["vitamin d"],
+    "points": 10,
+    "category": "Health",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which programming language is primarily used for iOS app development?",
+    "answers": ["Swift"],
+    "normalizedAnswers": ["swift"],
+    "points": 15,
+    "category": "Technology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which war lasted from 1914 to 1918?",
+    "answers": ["World War I", "First World War", "WW1", "WWI"],
+    "normalizedAnswers": ["world war i", "first world war", "ww1", "ww 1"],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the rarest naturally occurring element on Earth?",
+    "answers": ["Astatine"],
+    "normalizedAnswers": ["astatine"],
+    "points": 20,
+    "category": "Chemistry",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is known as Earth's twin due to similar size?",
+    "answers": ["Venus"],
+    "normalizedAnswers": ["venus"],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  }
+
+]
