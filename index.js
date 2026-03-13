@@ -593,6 +593,7 @@ async function askQuestionForGuild(guildId) {
           channelId: triviaChannel.id,
           questionId: question._id,
           questionText: question.question,
+          answers: question.answers, 
           normalizedAnswers: question.normalizedAnswers,
           points: question.points || 10,
           messageId: sent.id,
@@ -602,6 +603,7 @@ async function askQuestionForGuild(guildId) {
           winningAnswer: null,
           solvedAt: null,
           askedAt: new Date(),
+          expiresAt: new Date(Date.now() + 60 * 1000)
         },
       },
       {
@@ -659,6 +661,7 @@ async function askFlagQuestionForGuild(guildId) {
           winningAnswer: null,
           solvedAt: null,
           askedAt: new Date(),
+          expiresAt: new Date(Date.now() + 60 * 1000),
         },
       },
       {
@@ -746,6 +749,82 @@ async function runDynaicGameScheduler() {
     }
   }
 }
+
+async function closeExpiredTriviaRounds(){
+  const expiredRounds = await ActiveRound.find({
+    solved: false, 
+    expiresAt: {$lte: new Date()}
+  });
+
+  for (const round of expiredRounds) {
+    const updated = await ActiveRound.findOneAndUpdate(
+      {
+        _id: round._id,
+        solved: false
+      },
+      {
+        $set: {
+          solved: true, 
+          solvedAt: new Date(),
+        }
+      },
+      {
+        new: true,
+      }
+    );
+
+    if (!updated) continue;
+
+    const channel = await client.channels.fetch(updated.channelId).catch(() => null);
+    if (!channel) continue;
+    const correctAnswer = Array.isArray(updated.answers) && updated.answers.length > 0 ? updated.answers[0] : "Unknown";
+
+    await channel.send({
+      embeds: [buildTriviaTimeoutEmbed(correctAnswer)],
+    }).catch(() => null)
+  }
+}
+
+async function closeExpiredFlagRounds() {
+  const expiredRounds = await ActiveFlagRound.find({
+    solved: false,
+    expiresAt: { $lte: new Date() },
+  });
+
+  for (const round of expiredRounds) {
+    const updated = await ActiveFlagRound.findOneAndUpdate(
+      {
+        _id: round._id,
+        solved: false,
+      },
+      {
+        $set: {
+          solved: true,
+          solvedAt: new Date(),
+        },
+      },
+      {
+        new: true,
+      }
+    );
+
+    if (!updated) continue;
+
+    const channel = await client.channels.fetch(updated.channelId).catch(() => null);
+    if (!channel) continue;
+
+    const correctAnswer = updated.country || "Unknown";
+
+    await channel.send({
+      embeds: [buildFlagTimeoutEmbed(correctAnswer)],
+    }).catch(() => null);
+  }
+}
+
+async function processExpiredRounds() {
+  await closeExpiredTriviaRounds()
+  await closeExpiredFlagRounds()
+}
 // =====================================================
 // Cron Jobs
 // =====================================================
@@ -764,6 +843,10 @@ function startSchedulers() {
   cron.schedule("*/5 * * * *", async () => {
     console.log("Running Leaderboard Refersh Scheduler")
     await refreshAllLeaderboards()
+  })
+  cron.schedule("*/35 * * * * *", async () => {
+    await processExpiredRounds()
+    console.log("Running ExpiredRound Timeout Scheduler")
   })
   console.log("✅ Schedulers started");
 }
