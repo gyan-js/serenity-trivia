@@ -29,6 +29,12 @@ const guildConfigSchema = new mongoose.Schema(
     leaderboardChannelId: { type: String, required: true },
     leaderboardMessageId: { type: String, default: null },
     isStarted: { type: Boolean, default: true },
+
+    triviaInterval: {type: Number, default: 10}, 
+    gtfInterval: {type: Number, default: 10},
+
+    lastTriviaAt: { type: Date, default: null },
+    lastFlagAt: { type: Date, default: null }
   },
   { timestamps: true }
 );
@@ -80,6 +86,8 @@ const activeRoundSchema = new mongoose.Schema(
     winningAnswer: { type: String, default: null },
     solvedAt: { type: Date, default: null },
     askedAt: { type: Date, default: Date.now },
+    answers: [{ type: String, required: true }],
+    expiresAt: { type: Date, required: true },
   },
   { timestamps: true }
 );
@@ -103,6 +111,7 @@ const activeFlagRoundSchema = new mongoose.Schema(
     winningAnswer: { type: String, default: null },
     solvedAt: { type: Date, default: null },
     askedAt: { type: Date, default: Date.now },
+    expiresAt: { type: Date, required: true },
   },
   { timestamps: true }
 );
@@ -197,42 +206,41 @@ function buildFlagQuestionEmbed(flagData) {
       name: "🌍 Guess the Flag",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
-    .setTitle("🚩Which country does this flag belong to?")
+    .setTitle("🚩Guess the flag ?")
     .setDescription(
       [
-        "Look at the flag below and type your answer in chat.",
+        "**First to guess the flag wins**",
         "",
-        "🏆 **First correct answer wins**",
-        `💰 **Reward:** \`${flagData.points || 15} pts\``,
-        `🌐 **Region:** \`${flagData.region || "Unknown"}\``,
+        
       ].join("\n")
     )
     .setImage(flagData.imageUrl)
     .setFooter({
-      text: "Professional Flag Challenge • Same leaderboard • First answer wins",
+      text: "Professional Flag Challenge • Earn points for correct guess •",
     })
     .setTimestamp();
 }
 
 function buildFlagWinnerEmbed(user, points, answer, country) {
+  
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setTitle("🎉 Correct Flag Guess!")
     .setDescription(
       [
-        `✅ ${user} guessed the flag correctly first!`,
-        `🏳️ **Country:** \`${country}\``,
-        `📝 **Answer Given:** \`${answer}\``,
-        `💰 **Reward:** \`${points} pts\``,
+        
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
+        //`<:lb_check:1481611597423186012> **Check the Rankings** \`<#${leaderboardChannelId}>\``,
+        `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``
       ].join("\n")
     )
     .setFooter({
-      text: "This flag round is now closed",
+      text: "Win games to climb higher in the weekly lb",
     })
     .setTimestamp();
 }
 
-function buildSetupEmbed(triviaChannel, leaderboardChannel) {
+function buildSetupEmbed(triviaChannel, leaderboardChannel, triviaInterval, gtfInterval) {
   return new EmbedBuilder()
     .setColor(0x57f287)
     .setTitle("✅ Trivia System Activated")
@@ -242,8 +250,8 @@ function buildSetupEmbed(triviaChannel, leaderboardChannel) {
         "",
         `**🧠 Trivia Channel:** ${triviaChannel}`,
         `**🏆 Leaderboard Channel:** ${leaderboardChannel}`,
-        `**⏰ Question Interval:** Every 2 hours`,
-        `**🔄 Leaderboard Refresh:** Every 5 minutes`,
+        `**⏱️ Trivia Interval:** Every \`${triviaInterval}\` minutes`,
+        `**🚩 Guess the Flag Interval:** Every \`${gtfInterval}\` minutes`,
       ].join("\n")
     )
     .setFooter({
@@ -263,12 +271,12 @@ function buildResetEmbed() {
 function buildCorrectAnswerEmbed(user, points, answer) {
   return new EmbedBuilder()
     .setColor(0x57f287)
-    .setTitle("🎉 We Have a Winner!")
+    .setTitle("🎉 Correct Trivia Answer!")
     .setDescription(
       [
-        `✅ ${user} answered correctly first!`,
-        `💰 **Reward:** \`${points} pts\``,
-        `📝 **Answer:** \`${answer}\``,
+        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>!`,
+        //`<:lb_check:1481611597423186012> **Check the Rankings** \`<#${leaderboardChannelId}>\``,
+        `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``
       ].join("\n")
     )
     .setFooter({
@@ -315,13 +323,13 @@ function buildLeaderboardEmbed(guildName, topUsers) {
       "<:firstprize:1480839203536240732>",
       "<:secondplace:1480839974201856090>",
       "<:3rdplace1:1480840249213976696>",
-      "<:commonrank:1480945343385571525",
-      "<:commonrank:1480945343385571525",
-      "<:commonrank:1480945343385571525",
-      "<:commonrank:1480945343385571525",
-      "<:commonrank:1480945343385571525",
-      "<:commonrank:1480945343385571525",
-      "<:commonrank:1480945343385571525",
+      "<:commonrank:1481620673087410230>",
+      "<:commonrank:1481620673087410230>",
+      "<:commonrank:1481620673087410230>",
+      "<:commonrank:1481620673087410230>",
+      "<:commonrank:1481620673087410230>",
+      "<:commonrank:1481620673087410230>",
+      "<:commonrank:1481620673087410230>",
       
     ];
 
@@ -380,6 +388,20 @@ async function registerSlashCommands() {
           .setName("leaderboard_channel")
           .setDescription("Channel where the leaderboard will be posted")
           .addChannelTypes(ChannelType.GuildText)
+          .setRequired(true)
+      )
+      .addIntegerOption((option) => 
+        option
+          .setName("trivia_interval")
+          .setDescription("Time interval of your Trivia Questions")
+          .setMinValue(1)
+          .setRequired(true)
+      )
+      .addIntegerOption((option) => 
+        option
+          .setName("gtf_interval")
+          .setDescription("Time interval of your GTF Questions")
+          .setMinValue(1)
           .setRequired(true)
       )
       .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
@@ -527,23 +549,16 @@ async function refreshLeaderboard(guildId) {
 async function askQuestionForGuild(guildId) {
   try {
     const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
-    if (!config) return;
+    if (!config) return false;
 
-    // Do not post a new question if one is already active and unsolved
     const existingRound = await ActiveRound.findOne({ guildId, solved: false }).lean();
-    if (existingRound) return;
+    if (existingRound) return false;
 
     const question = await getRandomQuestion();
-    if (!question) {
-      const triviaChannel = await client.channels.fetch(config.triviaChannelId).catch(() => null);
-      if (triviaChannel) {
-        await triviaChannel.send({ embeds: [buildNoQuestionsEmbed()] }).catch(() => null);
-      }
-      return;
-    }
+    if (!question) return false;
 
     const triviaChannel = await client.channels.fetch(config.triviaChannelId).catch(() => null);
-    if (!triviaChannel) return;
+    if (!triviaChannel) return false;
 
     const embed = buildQuestionEmbed(question);
     const sent = await triviaChannel.send({ embeds: [embed] });
@@ -573,31 +588,34 @@ async function askQuestionForGuild(guildId) {
         setDefaultsOnInsert: true,
       }
     );
+
+    return true;
   } catch (error) {
     console.error(`❌ Failed to ask question for guild ${guildId}:`, error);
+    return false;
   }
 }
 
 async function askFlagQuestionForGuild(guildId) {
   try {
     const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
-    if (!config) return;
+    if (!config) return false;
 
     const existingFlagRound = await ActiveFlagRound.findOne({
       guildId,
       solved: false,
     }).lean();
 
-    if (existingFlagRound) return;
+    if (existingFlagRound) return false;
 
     const flagQuestion = await getRandomFlagQuestion();
-    if (!flagQuestion) return;
+    if (!flagQuestion) return false;
 
     const triviaChannel = await client.channels
       .fetch(config.triviaChannelId)
       .catch(() => null);
 
-    if (!triviaChannel) return;
+    if (!triviaChannel) return false;
 
     const embed = buildFlagQuestionEmbed(flagQuestion);
     await triviaChannel.send({ embeds: [embed] });
@@ -637,8 +655,11 @@ async function askFlagQuestionForGuild(guildId) {
         },
       }
     );
+
+    return true;
   } catch (error) {
     console.error(`❌ Failed to ask flag question for guild ${guildId}:`, error);
+    return false;
   }
 }
 
@@ -665,31 +686,63 @@ async function askFlagQuestionsForAllGuilds() {
   }
 }
 
+
+function hasIntervalPassed(lastTime, intervalMinutes) {
+  if (!lastTime) return true;
+
+  const now = Date.now();
+  const diffMs = now - new Date(lastTime).getTime();
+  const requiredMs = intervalMinutes * 60 * 1000;
+
+  return diffMs >= requiredMs;
+}
+
+async function runDynaicGameScheduler() {
+  const configs = await GuildConfig.find({ isStarted: true }).lean();
+
+  for (const config of configs) {
+    if (hasIntervalPassed(config.lastTriviaAt, config.triviaInterval || 60)) {
+      const sentTrivia = await askQuestionForGuild(config.guildId);
+
+      if (sentTrivia) {
+        await GuildConfig.updateOne(
+          { guildId: config.guildId },
+          { $set: { lastTriviaAt: new Date() } }
+        );
+      }
+    }
+
+    if (hasIntervalPassed(config.lastFlagAt, config.gtfInterval || 120)) {
+      const sentFlag = await askFlagQuestionForGuild(config.guildId);
+
+      if (sentFlag) {
+        await GuildConfig.updateOne(
+          { guildId: config.guildId },
+          { $set: { lastFlagAt: new Date() } }
+        );
+      }
+    }
+  }
+}
 // =====================================================
 // Cron Jobs
 // =====================================================
 let schedulersStarted = false;
 
 function startSchedulers() {
+
   if (schedulersStarted) return;
-  schedulersStarted = true;
+  schedulersStarted = true
 
-  // Every 2 hours
-  cron.schedule("0 */2 * * *", async () => {
-    console.log("⏰ Running trivia question scheduler...");
-    await askQuestionsForAllGuilds();
-  });
+  cron.schedule("* * * * *", async () =>{
+    console.log("Rrunning Dynamic Interval Scheduler...")
+    await runDynaicGameScheduler()
+  })
 
-  cron.schedule("0 */3 * * *", async () => {
-    console.log("🚩 Running guess-the-flag scheduler...");
-    await askFlagQuestionsForAllGuilds();
-  });
-  // Every 5 minutes
   cron.schedule("*/5 * * * *", async () => {
-    console.log("🔄 Running leaderboard refresh scheduler...");
-    await refreshAllLeaderboards();
-  });
-
+    console.log("Running Leaderboard Refersh Scheduler")
+    await refreshAllLeaderboards()
+  })
   console.log("✅ Schedulers started");
 }
 
@@ -723,7 +776,9 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.commandName === "trivia-setup") {
       const triviaChannel = interaction.options.getChannel("trivia_channel");
       const leaderboardChannel = interaction.options.getChannel("leaderboard_channel");
-
+      const triviaInterval = interaction.options.getInteger("trivia_interval");
+      const gtfInterval = interaction.options.getInteger("gtf_interval");
+    
       await GuildConfig.findOneAndUpdate(
         { guildId: interaction.guildId },
         {
@@ -732,6 +787,10 @@ client.on("interactionCreate", async (interaction) => {
             triviaChannelId: triviaChannel.id,
             leaderboardChannelId: leaderboardChannel.id,
             isStarted: true,
+            triviaInterval,
+            gtfInterval,
+            lastTriviaAt: null,
+            lastFlagAt: null,
           },
         },
         {
@@ -740,11 +799,18 @@ client.on("interactionCreate", async (interaction) => {
           setDefaultsOnInsert: true,
         }
       );
-
+    
       await refreshLeaderboard(interaction.guildId);
-
+    
       return interaction.reply({
-        embeds: [buildSetupEmbed(triviaChannel, leaderboardChannel)],
+        embeds: [
+          buildSetupEmbed(
+            triviaChannel,
+            leaderboardChannel,
+            triviaInterval,
+            gtfInterval
+          ),
+        ],
         ephemeral: true,
       });
     }
