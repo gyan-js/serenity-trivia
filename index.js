@@ -285,13 +285,35 @@ function buildCorrectAnswerEmbed(user, points, answer) {
     .setTimestamp();
 }
 
-function buildNoQuestionsEmbed() {
+function buildTriviaTimeoutEmbed(correctAnswer) {
   return new EmbedBuilder()
-    .setColor(0xfee75c)
-    .setTitle("⚠️ No Trivia Questions Found")
+    .setColor(0xed4245)
+    .setTitle("⏰ Trivia - Time's Up!")
     .setDescription(
-      "There are no active questions in MongoDB yet. Add questions to the database first."
+      [
+        "No one guessed correctly!",
+        `The answer was : \`${correctAnswer}\``,
+      ].join("\n")
     )
+    .setFooter({
+      text: "This trivia round has ended",
+    })
+    .setTimestamp();
+}
+
+function buildFlagTimeoutEmbed(correctAnswer) {
+  return new EmbedBuilder()
+    .setColor(0xed4245)
+    .setTitle("🚩 Flag Guessing - Time's Up!")
+    .setDescription(
+      [
+        "No one guessed correctly!",
+        `The answer was : \`${correctAnswer}\``,
+      ].join("\n")
+    )
+    .setFooter({
+      text: "This flag round has ended",
+    })
     .setTimestamp();
 }
 
