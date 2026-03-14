@@ -5,6 +5,7 @@ import {
   REST,
   Routes,
   EmbedBuilder,
+  PermissionsBitField,
 } from "discord.js";
 
 import { client } from "../config/client.js";
@@ -49,34 +50,32 @@ export async function registerSlashCommands() {
       )
       .addIntegerOption((option) =>
         option
-          .setName("trivia_interval")
-          .setDescription("Time interval of your Trivia Questions")
+          .setName("game_interval")
+          .setDescription("Time interval between each game rotation")
           .setMinValue(1)
           .setRequired(true)
       )
-      .addIntegerOption((option) =>
-        option
-          .setName("gtf_interval")
-          .setDescription("Time interval of your GTF Questions")
-          .setMinValue(1)
-          .setRequired(true)
-      ),
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
 
     new SlashCommandBuilder()
       .setName("trivia-reset")
-      .setDescription("Admin only: reset this server's leaderboard."),
+      .setDescription("Admin only: reset this server's leaderboard.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
 
     new SlashCommandBuilder()
       .setName("trivia-reset-setup")
-      .setDescription("Admin only: completely reset the trivia setup for this server."),
+      .setDescription("Admin only: completely reset the trivia setup for this server.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
 
     new SlashCommandBuilder()
       .setName("send-trivia")
-      .setDescription("Admin only: send a trivia question right now for testing."),
+      .setDescription("Admin only: send a trivia question right now for testing.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
 
     new SlashCommandBuilder()
       .setName("send-flag-trivia")
-      .setDescription("Admin only: send a Guess the Flag question immediately for testing."),
+      .setDescription("Admin only: send a Guess the Flag question immediately for testing.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
   ].map((cmd) => cmd.toJSON());
 
   const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
@@ -314,20 +313,6 @@ export async function refreshAllLeaderboards() {
   }
 }
 
-export async function askQuestionsForAllGuilds() {
-  const configs = await GuildConfig.find({ isStarted: true }).lean();
-  for (const config of configs) {
-    await askQuestionForGuild(config.guildId);
-  }
-}
-
-export async function askFlagQuestionsForAllGuilds() {
-  const configs = await GuildConfig.find({ isStarted: true }).lean();
-  for (const config of configs) {
-    await askFlagQuestionForGuild(config.guildId);
-  }
-}
-
 export function hasIntervalPassed(lastTime, intervalMinutes) {
   if (!lastTime) return true;
 
@@ -342,24 +327,41 @@ export async function runDynaicGameScheduler() {
   const configs = await GuildConfig.find({ isStarted: true }).lean();
 
   for (const config of configs) {
-    if (hasIntervalPassed(config.lastTriviaAt, config.triviaInterval || 60)) {
-      const sentTrivia = await askQuestionForGuild(config.guildId);
+    const interval = config.gameInterval || config.triviaInterval || 10;
+    const nextGameType = config.nextGameType || "trivia";
 
-      if (sentTrivia) {
-        await GuildConfig.updateOne(
-          { guildId: config.guildId },
-          { $set: { lastTriviaAt: new Date() } }
-        );
-      }
+    if (!hasIntervalPassed(config.lastGameAt, interval)) {
+      continue;
     }
 
-    if (hasIntervalPassed(config.lastFlagAt, config.gtfInterval || 120)) {
-      const sentFlag = await askFlagQuestionForGuild(config.guildId);
+    let sent = false;
 
-      if (sentFlag) {
+    if (nextGameType === "trivia") {
+      sent = await askQuestionForGuild(config.guildId);
+
+      if (sent) {
         await GuildConfig.updateOne(
           { guildId: config.guildId },
-          { $set: { lastFlagAt: new Date() } }
+          {
+            $set: {
+              lastGameAt: new Date(),
+              nextGameType: "flag",
+            },
+          }
+        );
+      }
+    } else {
+      sent = await askFlagQuestionForGuild(config.guildId);
+
+      if (sent) {
+        await GuildConfig.updateOne(
+          { guildId: config.guildId },
+          {
+            $set: {
+              lastGameAt: new Date(),
+              nextGameType: "trivia",
+            },
+          }
         );
       }
     }
@@ -477,8 +479,7 @@ export function startSchedulers() {
 export async function handleTriviaSetup(interaction) {
   const triviaChannel = interaction.options.getChannel("trivia_channel");
   const leaderboardChannel = interaction.options.getChannel("leaderboard_channel");
-  const triviaInterval = interaction.options.getInteger("trivia_interval");
-  const gtfInterval = interaction.options.getInteger("gtf_interval");
+  const gameInterval = interaction.options.getInteger("game_interval");
 
   await GuildConfig.findOneAndUpdate(
     { guildId: interaction.guildId },
@@ -488,8 +489,13 @@ export async function handleTriviaSetup(interaction) {
         triviaChannelId: triviaChannel.id,
         leaderboardChannelId: leaderboardChannel.id,
         isStarted: true,
-        triviaInterval,
-        gtfInterval,
+        gameInterval,
+        lastGameAt: null,
+        nextGameType: "trivia",
+
+        // old fields reset for backward safety
+        triviaInterval: gameInterval,
+        gtfInterval: gameInterval,
         lastTriviaAt: null,
         lastFlagAt: null,
       },
@@ -504,14 +510,7 @@ export async function handleTriviaSetup(interaction) {
   await refreshLeaderboard(interaction.guildId);
 
   return interaction.reply({
-    embeds: [
-      buildSetupEmbed(
-        triviaChannel,
-        leaderboardChannel,
-        triviaInterval,
-        gtfInterval
-      ),
-    ],
+    embeds: [buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval)],
     ephemeral: true,
   });
 }
@@ -527,48 +526,48 @@ export async function handleTriviaReset(interaction) {
 }
 
 export async function handleTriviaResetSetup(interaction) {
-    const guildId = interaction.guildId;
-  
-    const config = await GuildConfig.findOne({ guildId });
-  
-    if (config?.leaderboardChannelId && config?.leaderboardMessageId) {
-      try {
-        const channel = await client.channels
-          .fetch(config.leaderboardChannelId)
+  const guildId = interaction.guildId;
+
+  const config = await GuildConfig.findOne({ guildId });
+
+  if (config?.leaderboardChannelId && config?.leaderboardMessageId) {
+    try {
+      const channel = await client.channels
+        .fetch(config.leaderboardChannelId)
+        .catch(() => null);
+
+      if (channel) {
+        const msg = await channel.messages
+          .fetch(config.leaderboardMessageId)
           .catch(() => null);
-  
-        if (channel) {
-          const msg = await channel.messages
-            .fetch(config.leaderboardMessageId)
-            .catch(() => null);
-  
-          if (msg) {
-            await msg.delete().catch(() => null);
-          }
+
+        if (msg) {
+          await msg.delete().catch(() => null);
         }
-      } catch (err) {
-        console.error("Failed to delete leaderboard message:", err);
       }
+    } catch (err) {
+      console.error("Failed to delete leaderboard message:", err);
     }
-  
-    await GuildConfig.deleteOne({ guildId });
-    await ActiveRound.deleteOne({ guildId });
-    await ActiveFlagRound.deleteOne({ guildId });
-    await UserScore.deleteMany({ guildId });
-  
-    const embed = new EmbedBuilder()
-      .setColor(0xed4245)
-      .setTitle("⚠️ Trivia Setup Reset")
-      .setDescription(
-        "The trivia bot setup has been completely removed from this server.\n\nRun `/trivia-setup` again to start it."
-      )
-      .setTimestamp();
-  
-    return interaction.reply({
-      embeds: [embed],
-      ephemeral: true,
-    });
   }
+
+  await GuildConfig.deleteOne({ guildId });
+  await ActiveRound.deleteOne({ guildId });
+  await UserScore.deleteMany({ guildId });
+  await ActiveFlagRound.deleteOne({ guildId });
+
+  const embed = new EmbedBuilder()
+    .setColor(0xed4245)
+    .setTitle("⚠️ Trivia Setup Reset")
+    .setDescription(
+      "The trivia bot setup has been completely removed from this server.\n\nRun `/trivia-setup` again to start it."
+    )
+    .setTimestamp();
+
+  return interaction.reply({
+    embeds: [embed],
+    ephemeral: true,
+  });
+}
 
 export async function handleSendTrivia(interaction) {
   const config = await GuildConfig.findOne({
