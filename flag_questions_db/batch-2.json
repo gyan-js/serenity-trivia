@@ -1,0 +1,541 @@
+[{
+        "country": "Morocco",
+        "normalizedAnswers": ["morocco"],
+        "imageUrl": "https://flagcdn.com/w640/ma.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Algeria",
+        "normalizedAnswers": ["algeria"],
+        "imageUrl": "https://flagcdn.com/w640/dz.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Tunisia",
+        "normalizedAnswers": ["tunisia"],
+        "imageUrl": "https://flagcdn.com/w640/tn.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Libya",
+        "normalizedAnswers": ["libya"],
+        "imageUrl": "https://flagcdn.com/w640/ly.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Sudan",
+        "normalizedAnswers": ["sudan"],
+        "imageUrl": "https://flagcdn.com/w640/sd.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "South Sudan",
+        "normalizedAnswers": ["south sudan"],
+        "imageUrl": "https://flagcdn.com/w640/ss.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Ethiopia",
+        "normalizedAnswers": ["ethiopia"],
+        "imageUrl": "https://flagcdn.com/w640/et.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Eritrea",
+        "normalizedAnswers": ["eritrea"],
+        "imageUrl": "https://flagcdn.com/w640/er.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Djibouti",
+        "normalizedAnswers": ["djibouti"],
+        "imageUrl": "https://flagcdn.com/w640/dj.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Somalia",
+        "normalizedAnswers": ["somalia"],
+        "imageUrl": "https://flagcdn.com/w640/so.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Kenya",
+        "normalizedAnswers": ["kenya"],
+        "imageUrl": "https://flagcdn.com/w640/ke.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Uganda",
+        "normalizedAnswers": ["uganda"],
+        "imageUrl": "https://flagcdn.com/w640/ug.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Tanzania",
+        "normalizedAnswers": ["tanzania"],
+        "imageUrl": "https://flagcdn.com/w640/tz.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Rwanda",
+        "normalizedAnswers": ["rwanda"],
+        "imageUrl": "https://flagcdn.com/w640/rw.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Burundi",
+        "normalizedAnswers": ["burundi"],
+        "imageUrl": "https://flagcdn.com/w640/bi.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Malawi",
+        "normalizedAnswers": ["malawi"],
+        "imageUrl": "https://flagcdn.com/w640/mw.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Mozambique",
+        "normalizedAnswers": ["mozambique"],
+        "imageUrl": "https://flagcdn.com/w640/mz.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Zambia",
+        "normalizedAnswers": ["zambia"],
+        "imageUrl": "https://flagcdn.com/w640/zm.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Zimbabwe",
+        "normalizedAnswers": ["zimbabwe"],
+        "imageUrl": "https://flagcdn.com/w640/zw.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Botswana",
+        "normalizedAnswers": ["botswana"],
+        "imageUrl": "https://flagcdn.com/w640/bw.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Namibia",
+        "normalizedAnswers": ["namibia"],
+        "imageUrl": "https://flagcdn.com/w640/na.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Lesotho",
+        "normalizedAnswers": ["lesotho"],
+        "imageUrl": "https://flagcdn.com/w640/ls.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Eswatini",
+        "normalizedAnswers": ["eswatini", "swaziland"],
+        "imageUrl": "https://flagcdn.com/w640/sz.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Gabon",
+        "normalizedAnswers": ["gabon"],
+        "imageUrl": "https://flagcdn.com/w640/ga.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Republic of the Congo",
+        "normalizedAnswers": ["congo", "republic of the congo"],
+        "imageUrl": "https://flagcdn.com/w640/cg.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Democratic Republic of the Congo",
+        "normalizedAnswers": ["democratic republic of the congo", "drc"],
+        "imageUrl": "https://flagcdn.com/w640/cd.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Sao Tome and Principe",
+        "normalizedAnswers": ["sao tome and principe"],
+        "imageUrl": "https://flagcdn.com/w640/st.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Equatorial Guinea",
+        "normalizedAnswers": ["equatorial guinea"],
+        "imageUrl": "https://flagcdn.com/w640/gq.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Central African Republic",
+        "normalizedAnswers": ["central african republic"],
+        "imageUrl": "https://flagcdn.com/w640/cf.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Chad",
+        "normalizedAnswers": ["chad"],
+        "imageUrl": "https://flagcdn.com/w640/td.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Niger",
+        "normalizedAnswers": ["niger"],
+        "imageUrl": "https://flagcdn.com/w640/ne.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Mali",
+        "normalizedAnswers": ["mali"],
+        "imageUrl": "https://flagcdn.com/w640/ml.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Mauritania",
+        "normalizedAnswers": ["mauritania"],
+        "imageUrl": "https://flagcdn.com/w640/mr.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Senegal",
+        "normalizedAnswers": ["senegal"],
+        "imageUrl": "https://flagcdn.com/w640/sn.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Gambia",
+        "normalizedAnswers": ["gambia"],
+        "imageUrl": "https://flagcdn.com/w640/gm.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Guinea-Bissau",
+        "normalizedAnswers": ["guinea-bissau"],
+        "imageUrl": "https://flagcdn.com/w640/gw.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Guinea",
+        "normalizedAnswers": ["guinea"],
+        "imageUrl": "https://flagcdn.com/w640/gn.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Sierra Leone",
+        "normalizedAnswers": ["sierra leone"],
+        "imageUrl": "https://flagcdn.com/w640/sl.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Liberia",
+        "normalizedAnswers": ["liberia"],
+        "imageUrl": "https://flagcdn.com/w640/lr.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Ivory Coast",
+        "normalizedAnswers": ["ivory coast", "côte d'ivoire"],
+        "imageUrl": "https://flagcdn.com/w640/ci.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Ghana",
+        "normalizedAnswers": ["ghana"],
+        "imageUrl": "https://flagcdn.com/w640/gh.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Togo",
+        "normalizedAnswers": ["togo"],
+        "imageUrl": "https://flagcdn.com/w640/tg.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Benin",
+        "normalizedAnswers": ["benin"],
+        "imageUrl": "https://flagcdn.com/w640/bj.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Burkina Faso",
+        "normalizedAnswers": ["burkina faso"],
+        "imageUrl": "https://flagcdn.com/w640/bf.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Cape Verde",
+        "normalizedAnswers": ["cape verde"],
+        "imageUrl": "https://flagcdn.com/w640/cv.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Sao Tome and Principe",
+        "normalizedAnswers": ["sao tome and principe"],
+        "imageUrl": "https://flagcdn.com/w640/st.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Comoros",
+        "normalizedAnswers": ["comoros"],
+        "imageUrl": "https://flagcdn.com/w640/km.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Seychelles",
+        "normalizedAnswers": ["seychelles"],
+        "imageUrl": "https://flagcdn.com/w640/sc.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Mauritius",
+        "normalizedAnswers": ["mauritius"],
+        "imageUrl": "https://flagcdn.com/w640/mu.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Madagascar",
+        "normalizedAnswers": ["madagascar"],
+        "imageUrl": "https://flagcdn.com/w640/mg.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Malawi",
+        "normalizedAnswers": ["malawi"],
+        "imageUrl": "https://flagcdn.com/w640/mw.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Mozambique",
+        "normalizedAnswers": ["mozambique"],
+        "imageUrl": "https://flagcdn.com/w640/mz.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Zimbabwe",
+        "normalizedAnswers": ["zimbabwe"],
+        "imageUrl": "https://flagcdn.com/w640/zw.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Zambia",
+        "normalizedAnswers": ["zambia"],
+        "imageUrl": "https://flagcdn.com/w640/zm.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    }
+]

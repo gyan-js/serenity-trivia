@@ -1,0 +1,151 @@
+[{
+        "country": "Fiji",
+        "normalizedAnswers": ["fiji"],
+        "imageUrl": "https://flagcdn.com/w640/fj.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Papua New Guinea",
+        "normalizedAnswers": ["papua new guinea"],
+        "imageUrl": "https://flagcdn.com/w640/pg.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Samoa",
+        "normalizedAnswers": ["samoa"],
+        "imageUrl": "https://flagcdn.com/w640/ws.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Tonga",
+        "normalizedAnswers": ["tonga"],
+        "imageUrl": "https://flagcdn.com/w640/to.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Vanuatu",
+        "normalizedAnswers": ["vanuatu"],
+        "imageUrl": "https://flagcdn.com/w640/vu.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Solomon Islands",
+        "normalizedAnswers": ["solomon islands"],
+        "imageUrl": "https://flagcdn.com/w640/sb.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Kiribati",
+        "normalizedAnswers": ["kiribati"],
+        "imageUrl": "https://flagcdn.com/w640/ki.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Marshall Islands",
+        "normalizedAnswers": ["marshall islands"],
+        "imageUrl": "https://flagcdn.com/w640/mh.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Micronesia",
+        "normalizedAnswers": ["micronesia"],
+        "imageUrl": "https://flagcdn.com/w640/fm.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Palau",
+        "normalizedAnswers": ["palau"],
+        "imageUrl": "https://flagcdn.com/w640/pw.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Nauru",
+        "normalizedAnswers": ["nauru"],
+        "imageUrl": "https://flagcdn.com/w640/nr.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Tuvalu",
+        "normalizedAnswers": ["tuvalu"],
+        "imageUrl": "https://flagcdn.com/w640/tv.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Japan",
+        "normalizedAnswers": ["japan"],
+        "imageUrl": "https://flagcdn.com/w640/jp.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "India",
+        "normalizedAnswers": ["india"],
+        "imageUrl": "https://flagcdn.com/w640/in.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Canada",
+        "normalizedAnswers": ["canada"],
+        "imageUrl": "https://flagcdn.com/w640/ca.png",
+        "points": 15,
+        "region": "North America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    }
+]

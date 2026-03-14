@@ -1,0 +1,571 @@
+[{
+        "country": "India",
+        "normalizedAnswers": ["india"],
+        "imageUrl": "https://flagcdn.com/w640/in.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Japan",
+        "normalizedAnswers": ["japan"],
+        "imageUrl": "https://flagcdn.com/w640/jp.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Germany",
+        "normalizedAnswers": ["germany"],
+        "imageUrl": "https://flagcdn.com/w640/de.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Brazil",
+        "normalizedAnswers": ["brazil"],
+        "imageUrl": "https://flagcdn.com/w640/br.png",
+        "points": 15,
+        "region": "South America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Canada",
+        "normalizedAnswers": ["canada"],
+        "imageUrl": "https://flagcdn.com/w640/ca.png",
+        "points": 15,
+        "region": "North America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "United States",
+        "normalizedAnswers": ["united states", "usa", "america", "us"],
+        "imageUrl": "https://flagcdn.com/w640/us.png",
+        "points": 15,
+        "region": "North America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "China",
+        "normalizedAnswers": ["china"],
+        "imageUrl": "https://flagcdn.com/w640/cn.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Indonesia",
+        "normalizedAnswers": ["indonesia"],
+        "imageUrl": "https://flagcdn.com/w640/id.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Pakistan",
+        "normalizedAnswers": ["pakistan"],
+        "imageUrl": "https://flagcdn.com/w640/pk.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Bangladesh",
+        "normalizedAnswers": ["bangladesh"],
+        "imageUrl": "https://flagcdn.com/w640/bd.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Russia",
+        "normalizedAnswers": ["russia"],
+        "imageUrl": "https://flagcdn.com/w640/ru.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "United Kingdom",
+        "normalizedAnswers": ["united kingdom", "uk", "britain", "great britain"],
+        "imageUrl": "https://flagcdn.com/w640/gb.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "France",
+        "normalizedAnswers": ["france"],
+        "imageUrl": "https://flagcdn.com/w640/fr.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Italy",
+        "normalizedAnswers": ["italy"],
+        "imageUrl": "https://flagcdn.com/w640/it.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Spain",
+        "normalizedAnswers": ["spain"],
+        "imageUrl": "https://flagcdn.com/w640/es.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Mexico",
+        "normalizedAnswers": ["mexico"],
+        "imageUrl": "https://flagcdn.com/w640/mx.png",
+        "points": 15,
+        "region": "North America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Argentina",
+        "normalizedAnswers": ["argentina"],
+        "imageUrl": "https://flagcdn.com/w640/ar.png",
+        "points": 15,
+        "region": "South America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Colombia",
+        "normalizedAnswers": ["colombia"],
+        "imageUrl": "https://flagcdn.com/w640/co.png",
+        "points": 15,
+        "region": "South America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Peru",
+        "normalizedAnswers": ["peru"],
+        "imageUrl": "https://flagcdn.com/w640/pe.png",
+        "points": 15,
+        "region": "South America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Chile",
+        "normalizedAnswers": ["chile"],
+        "imageUrl": "https://flagcdn.com/w640/cl.png",
+        "points": 15,
+        "region": "South America",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Australia",
+        "normalizedAnswers": ["australia"],
+        "imageUrl": "https://flagcdn.com/w640/au.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "New Zealand",
+        "normalizedAnswers": ["new zealand"],
+        "imageUrl": "https://flagcdn.com/w640/nz.png",
+        "points": 15,
+        "region": "Oceania",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "South Africa",
+        "normalizedAnswers": ["south africa"],
+        "imageUrl": "https://flagcdn.com/w640/za.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Egypt",
+        "normalizedAnswers": ["egypt"],
+        "imageUrl": "https://flagcdn.com/w640/eg.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Nigeria",
+        "normalizedAnswers": ["nigeria"],
+        "imageUrl": "https://flagcdn.com/w640/ng.png",
+        "points": 15,
+        "region": "Africa",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Saudi Arabia",
+        "normalizedAnswers": ["saudi arabia"],
+        "imageUrl": "https://flagcdn.com/w640/sa.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Iran",
+        "normalizedAnswers": ["iran"],
+        "imageUrl": "https://flagcdn.com/w640/ir.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Turkey",
+        "normalizedAnswers": ["turkey"],
+        "imageUrl": "https://flagcdn.com/w640/tr.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Iraq",
+        "normalizedAnswers": ["iraq"],
+        "imageUrl": "https://flagcdn.com/w640/iq.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Thailand",
+        "normalizedAnswers": ["thailand"],
+        "imageUrl": "https://flagcdn.com/w640/th.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Vietnam",
+        "normalizedAnswers": ["vietnam"],
+        "imageUrl": "https://flagcdn.com/w640/vn.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Philippines",
+        "normalizedAnswers": ["philippines"],
+        "imageUrl": "https://flagcdn.com/w640/ph.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Malaysia",
+        "normalizedAnswers": ["malaysia"],
+        "imageUrl": "https://flagcdn.com/w640/my.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Singapore",
+        "normalizedAnswers": ["singapore"],
+        "imageUrl": "https://flagcdn.com/w640/sg.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "South Korea",
+        "normalizedAnswers": ["south korea", "republic of korea"],
+        "imageUrl": "https://flagcdn.com/w640/kr.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "North Korea",
+        "normalizedAnswers": ["north korea", "dprk"],
+        "imageUrl": "https://flagcdn.com/w640/kp.png",
+        "points": 15,
+        "region": "Asia",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Ukraine",
+        "normalizedAnswers": ["ukraine"],
+        "imageUrl": "https://flagcdn.com/w640/ua.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Poland",
+        "normalizedAnswers": ["poland"],
+        "imageUrl": "https://flagcdn.com/w640/pl.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Netherlands",
+        "normalizedAnswers": ["netherlands", "holland"],
+        "imageUrl": "https://flagcdn.com/w640/nl.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Belgium",
+        "normalizedAnswers": ["belgium"],
+        "imageUrl": "https://flagcdn.com/w640/be.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Switzerland",
+        "normalizedAnswers": ["switzerland"],
+        "imageUrl": "https://flagcdn.com/w640/ch.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Austria",
+        "normalizedAnswers": ["austria"],
+        "imageUrl": "https://flagcdn.com/w640/at.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Greece",
+        "normalizedAnswers": ["greece"],
+        "imageUrl": "https://flagcdn.com/w640/gr.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Czech Republic",
+        "normalizedAnswers": ["czech republic", "czechia"],
+        "imageUrl": "https://flagcdn.com/w640/cz.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Hungary",
+        "normalizedAnswers": ["hungary"],
+        "imageUrl": "https://flagcdn.com/w640/hu.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Sweden",
+        "normalizedAnswers": ["sweden"],
+        "imageUrl": "https://flagcdn.com/w640/se.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Norway",
+        "normalizedAnswers": ["norway"],
+        "imageUrl": "https://flagcdn.com/w640/no.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Denmark",
+        "normalizedAnswers": ["denmark"],
+        "imageUrl": "https://flagcdn.com/w640/dk.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Finland",
+        "normalizedAnswers": ["finland"],
+        "imageUrl": "https://flagcdn.com/w640/fi.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Ireland",
+        "normalizedAnswers": ["ireland"],
+        "imageUrl": "https://flagcdn.com/w640/ie.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Portugal",
+        "normalizedAnswers": ["portugal"],
+        "imageUrl": "https://flagcdn.com/w640/pt.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Romania",
+        "normalizedAnswers": ["romania"],
+        "imageUrl": "https://flagcdn.com/w640/ro.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Bulgaria",
+        "normalizedAnswers": ["bulgaria"],
+        "imageUrl": "https://flagcdn.com/w640/bg.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Serbia",
+        "normalizedAnswers": ["serbia"],
+        "imageUrl": "https://flagcdn.com/w640/rs.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Croatia",
+        "normalizedAnswers": ["croatia"],
+        "imageUrl": "https://flagcdn.com/w640/hr.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Slovenia",
+        "normalizedAnswers": ["slovenia"],
+        "imageUrl": "https://flagcdn.com/w640/si.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "country": "Slovakia",
+        "normalizedAnswers": ["slovakia"],
+        "imageUrl": "https://flagcdn.com/w640/sk.png",
+        "points": 15,
+        "region": "Europe",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    }
+]
