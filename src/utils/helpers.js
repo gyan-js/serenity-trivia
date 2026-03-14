@@ -67,12 +67,7 @@ export function buildFlagQuestionEmbed(flagData) {
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setTitle("🚩Guess the flag ?")
-    .setDescription(
-      [
-        "**First to guess the flag wins**",
-        "",
-      ].join("\n")
-    )
+    .setDescription(["**First to guess the flag wins**", ""].join("\n"))
     .setImage(flagData.imageUrl)
     .setFooter({
       text: "Professional Flag Challenge • Earn points for correct guess •",
@@ -96,12 +91,7 @@ export function buildFlagWinnerEmbed(user, points, answer, country) {
     .setTimestamp();
 }
 
-export function buildSetupEmbed(
-  triviaChannel,
-  leaderboardChannel,
-  triviaInterval,
-  gtfInterval
-) {
+export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval) {
   return new EmbedBuilder()
     .setColor(0x57f287)
     .setTitle("✅ Trivia System Activated")
@@ -111,8 +101,8 @@ export function buildSetupEmbed(
         "",
         `**🧠 Trivia Channel:** ${triviaChannel}`,
         `**🏆 Leaderboard Channel:** ${leaderboardChannel}`,
-        `**⏱️ Trivia Interval:** Every \`${triviaInterval}\` minutes`,
-        `**🚩 Guess the Flag Interval:** Every \`${gtfInterval}\` minutes`,
+        `**⏱️ Game Interval:** Every \`${gameInterval}\` minutes`,
+        `**🔁 Rotation:** \`Trivia → Flag → Trivia → Flag\``,
       ].join("\n")
     )
     .setFooter({
