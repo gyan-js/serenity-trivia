@@ -468,7 +468,7 @@ export function startSchedulers() {
     await refreshAllLeaderboards();
   });
 
-  cron.schedule("*/35 * * * * *", async () => {
+  cron.schedule("*/10 * * * * *", async () => {
     await processExpiredRounds();
     console.log("Running ExpiredRound Timeout Scheduler");
   });
