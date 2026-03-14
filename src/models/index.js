@@ -8,9 +8,17 @@ const guildConfigSchema = new mongoose.Schema(
     leaderboardMessageId: { type: String, default: null },
     isStarted: { type: Boolean, default: true },
 
+    gameInterval: { type: Number, default: 10 },
+    lastGameAt: { type: Date, default: null },
+    nextGameType: {
+      type: String, 
+      enum: ["trivia", "flag"],
+      default: "trivia"
+    },
+
+    // kept only for backward safety with old DB docs
     triviaInterval: { type: Number, default: 10 },
     gtfInterval: { type: Number, default: 10 },
-
     lastTriviaAt: { type: Date, default: null },
     lastFlagAt: { type: Date, default: null },
   },
