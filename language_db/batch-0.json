@@ -1,0 +1,548 @@
+[{
+        "language": "English",
+        "normalizedAnswers": ["english"],
+        "sampleText": "Hello friend",
+        "points": 10,
+        "region": "Global",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Spanish",
+        "normalizedAnswers": ["spanish", "espanol", "español"],
+        "sampleText": "Hola amigo",
+        "points": 10,
+        "region": "Europe / Latin America",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "French",
+        "normalizedAnswers": ["french", "français", "francais"],
+        "sampleText": "Bonjour ami",
+        "points": 10,
+        "region": "Europe",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "German",
+        "normalizedAnswers": ["german", "deutsch"],
+        "sampleText": "Guten Tag",
+        "points": 10,
+        "region": "Europe",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Italian",
+        "normalizedAnswers": ["italian", "italiano"],
+        "sampleText": "Ciao amico",
+        "points": 10,
+        "region": "Europe",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Portuguese",
+        "normalizedAnswers": ["portuguese", "português"],
+        "sampleText": "Olá amigo",
+        "points": 10,
+        "region": "Europe / South America",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Russian",
+        "normalizedAnswers": ["russian", "русский"],
+        "sampleText": "Привет друг",
+        "points": 10,
+        "region": "Europe / Asia",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Chinese",
+        "normalizedAnswers": ["chinese", "mandarin"],
+        "sampleText": "你好",
+        "points": 10,
+        "region": "Asia",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Japanese",
+        "normalizedAnswers": ["japanese", "nihongo"],
+        "sampleText": "こんにちは",
+        "points": 10,
+        "region": "Asia",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Korean",
+        "normalizedAnswers": ["korean"],
+        "sampleText": "안녕하세요",
+        "points": 10,
+        "region": "Asia",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Arabic",
+        "normalizedAnswers": ["arabic", "العربية"],
+        "sampleText": "مرحبا",
+        "points": 12,
+        "region": "Middle East",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Hindi",
+        "normalizedAnswers": ["hindi"],
+        "sampleText": "नमस्ते",
+        "points": 10,
+        "region": "South Asia",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Bengali",
+        "normalizedAnswers": ["bengali", "bangla"],
+        "sampleText": "হ্যালো",
+        "points": 10,
+        "region": "South Asia",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Punjabi",
+        "normalizedAnswers": ["punjabi"],
+        "sampleText": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",
+        "points": 12,
+        "region": "South Asia",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Urdu",
+        "normalizedAnswers": ["urdu"],
+        "sampleText": "سلام",
+        "points": 12,
+        "region": "South Asia",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Turkish",
+        "normalizedAnswers": ["turkish", "türkçe"],
+        "sampleText": "Merhaba",
+        "points": 12,
+        "region": "Europe / Asia",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Thai",
+        "normalizedAnswers": ["thai"],
+        "sampleText": "สวัสดี",
+        "points": 12,
+        "region": "Asia",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Vietnamese",
+        "normalizedAnswers": ["vietnamese"],
+        "sampleText": "Xin chào",
+        "points": 12,
+        "region": "Asia",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Indonesian",
+        "normalizedAnswers": ["indonesian"],
+        "sampleText": "Halo teman",
+        "points": 10,
+        "region": "Asia",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Malay",
+        "normalizedAnswers": ["malay"],
+        "sampleText": "Apa khabar",
+        "points": 12,
+        "region": "Asia",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Swahili",
+        "normalizedAnswers": ["swahili"],
+        "sampleText": "Habari",
+        "points": 12,
+        "region": "Africa",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Zulu",
+        "normalizedAnswers": ["zulu"],
+        "sampleText": "Sawubona",
+        "points": 14,
+        "region": "Africa",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Xhosa",
+        "normalizedAnswers": ["xhosa"],
+        "sampleText": "Molo",
+        "points": 14,
+        "region": "Africa",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Amharic",
+        "normalizedAnswers": ["amharic"],
+        "sampleText": "ሰላም",
+        "points": 14,
+        "region": "Africa",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Somali",
+        "normalizedAnswers": ["somali"],
+        "sampleText": "Salaan",
+        "points": 14,
+        "region": "Africa",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Dutch",
+        "normalizedAnswers": ["dutch", "nederlands"],
+        "sampleText": "Hallo",
+        "points": 10,
+        "region": "Europe",
+        "difficulty": "Easy",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Swedish",
+        "normalizedAnswers": ["swedish"],
+        "sampleText": "Hej",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Norwegian",
+        "normalizedAnswers": ["norwegian"],
+        "sampleText": "Hei",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Danish",
+        "normalizedAnswers": ["danish"],
+        "sampleText": "Hej ven",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Finnish",
+        "normalizedAnswers": ["finnish"],
+        "sampleText": "Hei ystävä",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Polish",
+        "normalizedAnswers": ["polish"],
+        "sampleText": "Cześć",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Czech",
+        "normalizedAnswers": ["czech"],
+        "sampleText": "Ahoj",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Slovak",
+        "normalizedAnswers": ["slovak"],
+        "sampleText": "Ahoj",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Hungarian",
+        "normalizedAnswers": ["hungarian"],
+        "sampleText": "Szia",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Romanian",
+        "normalizedAnswers": ["romanian"],
+        "sampleText": "Salut",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Greek",
+        "normalizedAnswers": ["greek"],
+        "sampleText": "Γειά σου",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Bulgarian",
+        "normalizedAnswers": ["bulgarian"],
+        "sampleText": "Здравей",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Serbian",
+        "normalizedAnswers": ["serbian"],
+        "sampleText": "Здраво",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Croatian",
+        "normalizedAnswers": ["croatian"],
+        "sampleText": "Bok",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Slovenian",
+        "normalizedAnswers": ["slovenian"],
+        "sampleText": "Živjo",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Latvian",
+        "normalizedAnswers": ["latvian"],
+        "sampleText": "Sveiki",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Lithuanian",
+        "normalizedAnswers": ["lithuanian"],
+        "sampleText": "Labas",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Estonian",
+        "normalizedAnswers": ["estonian"],
+        "sampleText": "Tere",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Icelandic",
+        "normalizedAnswers": ["icelandic"],
+        "sampleText": "Halló",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Irish",
+        "normalizedAnswers": ["irish", "gaelic"],
+        "sampleText": "Dia dhuit",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Welsh",
+        "normalizedAnswers": ["welsh"],
+        "sampleText": "Helo",
+        "points": 14,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+
+    {
+        "language": "Basque",
+        "normalizedAnswers": ["basque"],
+        "sampleText": "Kaixo",
+        "points": 15,
+        "region": "Europe",
+        "difficulty": "Hard",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Catalan",
+        "normalizedAnswers": ["catalan"],
+        "sampleText": "Hola amic",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    },
+    {
+        "language": "Galician",
+        "normalizedAnswers": ["galician"],
+        "sampleText": "Ola",
+        "points": 12,
+        "region": "Europe",
+        "difficulty": "Medium",
+        "isActive": true,
+        "used": false,
+        "usedAt": null
+    }
+]
