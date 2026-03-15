@@ -16,8 +16,9 @@ export function ordinal(num) {
 }
 
 export function difficultyBadge(level) {
-  if (level === "Easy") return "🟢 Easy";
-  if (level === "Hard") return "🔴 Hard";
+  const normalized = String(level || "medium").toLowerCase();
+  if (normalized === "easy") return "🟢 Easy";
+  if (normalized === "hard") return "🔴 Hard";
   return "🟠 Medium";
 }
 
@@ -75,10 +76,64 @@ export function buildFlagQuestionEmbed(flagData) {
     .setTimestamp();
 }
 
+export function buildLanguageQuestionEmbed(languageData) {
+  return new EmbedBuilder()
+    .setColor(0x9b59b6)
+    .setAuthor({
+      name: "🗣️ Guess the Language",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
+    .setTitle("🧠 Guess the language!")
+    .setDescription(
+      [
+        "**Identify the language from this sample text:**",
+        "",
+        `>>> ${languageData.sampleText}`,
+      ].join("\n")
+    )
+    .addFields(
+      {
+        name: "🌍 Region",
+        value: `\`${languageData.region || "Unknown"}\``,
+        inline: true,
+      },
+      {
+        name: "<:target2:1480956785715187872> Difficulty",
+        value: `\`${difficultyBadge(languageData.difficulty || "medium")}\``,
+        inline: true,
+      },
+      {
+        name: "<:giftcard:1480952956445659218> Reward",
+        value: `\`${languageData.points || 12} pts\``,
+        inline: true,
+      }
+    )
+    .setFooter({
+      text: "Guess the language • First correct answer wins",
+    })
+    .setTimestamp();
+}
+
 export function buildFlagWinnerEmbed(user, points, answer, country) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setTitle("🎉 Correct Flag Guess!")
+    .setDescription(
+      [
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
+        `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``,
+      ].join("\n")
+    )
+    .setFooter({
+      text: "Win games to climb higher in the weekly lb",
+    })
+    .setTimestamp();
+}
+
+export function buildLanguageWinnerEmbed(user, points, answer) {
+  return new EmbedBuilder()
+    .setColor(0x2ecc71)
+    .setTitle("🎉 Correct Language Guess!")
     .setDescription(
       [
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
@@ -102,7 +157,7 @@ export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval)
         `**🧠 Trivia Channel:** ${triviaChannel}`,
         `**🏆 Leaderboard Channel:** ${leaderboardChannel}`,
         `**⏱️ Game Interval:** Every \`${gameInterval}\` minutes`,
-        `**🔁 Rotation:** \`Trivia → Flag → Trivia → Flag\``,
+        `**🔁 Rotation:** \`Trivia → Flag → Language\``,
       ].join("\n")
     )
     .setFooter({
@@ -163,6 +218,22 @@ export function buildFlagTimeoutEmbed(correctAnswer) {
     )
     .setFooter({
       text: "This flag round has ended",
+    })
+    .setTimestamp();
+}
+
+export function buildLanguageTimeoutEmbed(correctAnswer) {
+  return new EmbedBuilder()
+    .setColor(0xed4245)
+    .setTitle("🗣️ Language Guessing - Time's Up!")
+    .setDescription(
+      [
+        "No one guessed correctly!",
+        `The answer was : \`${correctAnswer}\``,
+      ].join("\n")
+    )
+    .setFooter({
+      text: "This language round has ended",
     })
     .setTimestamp();
 }

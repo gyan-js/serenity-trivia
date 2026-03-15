@@ -3,6 +3,7 @@ import { client } from "../config/client.js";
 import {
   ActiveRound,
   ActiveFlagRound,
+  ActiveLanguageRound,
 } from "../models/index.js";
 import { normalizeAnswer } from "../utils/helpers.js";
 import {
@@ -14,8 +15,10 @@ import {
   handleTriviaResetSetup,
   handleSendTrivia,
   handleSendFlagTrivia,
+  handleSendLanguageTrivia,
   handleCorrectTriviaAnswer,
   handleCorrectFlagAnswer,
+  handleCorrectLanguageAnswer,
 } from "../services/triviaService.js";
 
 export function registerDiscordEvents() {
@@ -27,7 +30,7 @@ export function registerDiscordEvents() {
       activities: [
         {
           name: "discord.gg/serenityontop",
-          type: 4,
+          type: 0,
         },
       ],
     });
@@ -71,6 +74,10 @@ export function registerDiscordEvents() {
 
       if (interaction.commandName === "send-flag-trivia") {
         return await handleSendFlagTrivia(interaction);
+      }
+
+      if (interaction.commandName === "send-language-trivia") {
+        return await handleSendLanguageTrivia(interaction);
       }
     } catch (error) {
       console.error("❌ Interaction error:", error);
@@ -145,6 +152,32 @@ export function registerDiscordEvents() {
 
       if (claimedFlagRound) {
         await handleCorrectFlagAnswer(message, claimedFlagRound);
+        return;
+      }
+
+      const claimedLanguageRound = await ActiveLanguageRound.findOneAndUpdate(
+        {
+          guildId: message.guild.id,
+          channelId: message.channel.id,
+          solved: false,
+          normalizedAnswers: normalized,
+        },
+        {
+          $set: {
+            solved: true,
+            winnerUserId: message.author.id,
+            winnerUsername: message.author.username,
+            winningAnswer: message.content,
+            solvedAt: new Date(),
+          },
+        },
+        {
+          new: true,
+        }
+      );
+
+      if (claimedLanguageRound) {
+        await handleCorrectLanguageAnswer(message, claimedLanguageRound);
         return;
       }
     } catch (error) {

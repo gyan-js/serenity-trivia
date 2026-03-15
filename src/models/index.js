@@ -11,12 +11,12 @@ const guildConfigSchema = new mongoose.Schema(
     gameInterval: { type: Number, default: 10 },
     lastGameAt: { type: Date, default: null },
     nextGameType: {
-      type: String, 
-      enum: ["trivia", "flag"],
-      default: "trivia"
+      type: String,
+      enum: ["trivia", "flag", "language"],
+      default: "trivia",
     },
 
-    // kept only for backward safety with old DB docs
+    // backward safety
     triviaInterval: { type: Number, default: 10 },
     gtfInterval: { type: Number, default: 10 },
     lastTriviaAt: { type: Date, default: null },
@@ -118,9 +118,54 @@ const flagQuestionSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+const languageQuestionSchema = new mongoose.Schema(
+  {
+    language: { type: String, required: true },
+    normalizedAnswers: [{ type: String, required: true, index: true }],
+    sampleText: { type: String, required: true },
+    points: { type: Number, default: 12 },
+    region: { type: String, default: "Unknown" },
+    difficulty: {
+      type: String,
+      enum: ["Easy", "Medium", "Hard"],
+      default: "Medium",
+    },
+    isActive: { type: Boolean, default: true },
+    used: { type: Boolean, default: false },
+    usedAt: { type: Date, default: null },
+  },
+  { timestamps: true }
+);
+
+const activeLanguageRoundSchema = new mongoose.Schema(
+  {
+    guildId: { type: String, required: true, unique: true },
+    channelId: { type: String, required: true },
+    languageQuestionId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "LanguageQuestion",
+      required: true,
+    },
+    language: { type: String, required: true },
+    sampleText: { type: String, required: true },
+    normalizedAnswers: [{ type: String, required: true }],
+    points: { type: Number, default: 12 },
+    solved: { type: Boolean, default: false },
+    winnerUserId: { type: String, default: null },
+    winnerUsername: { type: String, default: null },
+    winningAnswer: { type: String, default: null },
+    solvedAt: { type: Date, default: null },
+    askedAt: { type: Date, default: Date.now },
+    expiresAt: { type: Date, required: true },
+  },
+  { timestamps: true }
+);
+
 export const GuildConfig = mongoose.model("GuildConfig", guildConfigSchema);
 export const UserScore = mongoose.model("UserScore", userScoreSchema);
 export const TriviaQuestion = mongoose.model("TriviaQuestion", triviaQuestionSchema);
 export const ActiveRound = mongoose.model("ActiveRound", activeRoundSchema);
 export const FlagQuestion = mongoose.model("FlagQuestion", flagQuestionSchema);
 export const ActiveFlagRound = mongoose.model("ActiveFlagRound", activeFlagRoundSchema);
+export const LanguageQuestion = mongoose.model("LanguageQuestion", languageQuestionSchema);
+export const ActiveLanguageRound = mongoose.model("ActiveLanguageRound", activeLanguageRoundSchema);

@@ -16,16 +16,21 @@ import {
   ActiveRound,
   FlagQuestion,
   ActiveFlagRound,
+  LanguageQuestion,
+  ActiveLanguageRound,
 } from "../models/index.js";
 import {
   buildQuestionEmbed,
   buildFlagQuestionEmbed,
+  buildLanguageQuestionEmbed,
   buildSetupEmbed,
   buildResetEmbed,
   buildCorrectAnswerEmbed,
   buildFlagWinnerEmbed,
+  buildLanguageWinnerEmbed,
   buildTriviaTimeoutEmbed,
   buildFlagTimeoutEmbed,
+  buildLanguageTimeoutEmbed,
   buildLeaderboardEmbed,
 } from "../utils/helpers.js";
 
@@ -76,6 +81,11 @@ export async function registerSlashCommands() {
       .setName("send-flag-trivia")
       .setDescription("Admin only: send a Guess the Flag question immediately for testing.")
       .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+
+    new SlashCommandBuilder()
+      .setName("send-language-trivia")
+      .setDescription("Admin only: send a Guess the Language question immediately for testing.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
   ].map((cmd) => cmd.toJSON());
 
   const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
@@ -122,6 +132,44 @@ export async function getRandomFlagQuestion() {
   );
 
   result = await FlagQuestion.aggregate([
+    {
+      $match: {
+        isActive: true,
+        used: false,
+      },
+    },
+    { $sample: { size: 1 } },
+  ]);
+
+  return result[0] || null;
+}
+
+export async function getRandomLanguageQuestion() {
+  let result = await LanguageQuestion.aggregate([
+    {
+      $match: {
+        isActive: true,
+        used: false,
+      },
+    },
+    { $sample: { size: 1 } },
+  ]);
+
+  if (result.length > 0) {
+    return result[0];
+  }
+
+  await LanguageQuestion.updateMany(
+    { isActive: true },
+    {
+      $set: {
+        used: false,
+        usedAt: null,
+      },
+    }
+  );
+
+  result = await LanguageQuestion.aggregate([
     {
       $match: {
         isActive: true,
@@ -306,6 +354,74 @@ export async function askFlagQuestionForGuild(guildId) {
   }
 }
 
+export async function askLanguageQuestionForGuild(guildId) {
+  try {
+    const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
+    if (!config) return false;
+
+    const existingLanguageRound = await ActiveLanguageRound.findOne({
+      guildId,
+      solved: false,
+    }).lean();
+
+    if (existingLanguageRound) return false;
+
+    const languageQuestion = await getRandomLanguageQuestion();
+    if (!languageQuestion) return false;
+
+    const triviaChannel = await client.channels
+      .fetch(config.triviaChannelId)
+      .catch(() => null);
+
+    if (!triviaChannel) return false;
+
+    const embed = buildLanguageQuestionEmbed(languageQuestion);
+    await triviaChannel.send({ embeds: [embed] });
+
+    await ActiveLanguageRound.findOneAndUpdate(
+      { guildId },
+      {
+        $set: {
+          guildId,
+          channelId: triviaChannel.id,
+          languageQuestionId: languageQuestion._id,
+          language: languageQuestion.language,
+          sampleText: languageQuestion.sampleText,
+          normalizedAnswers: languageQuestion.normalizedAnswers,
+          points: languageQuestion.points || 12,
+          solved: false,
+          winnerUserId: null,
+          winnerUsername: null,
+          winningAnswer: null,
+          solvedAt: null,
+          askedAt: new Date(),
+          expiresAt: new Date(Date.now() + 60 * 1000),
+        },
+      },
+      {
+        upsert: true,
+        new: true,
+        setDefaultsOnInsert: true,
+      }
+    );
+
+    await LanguageQuestion.updateOne(
+      { _id: languageQuestion._id },
+      {
+        $set: {
+          used: true,
+          usedAt: new Date(),
+        },
+      }
+    );
+
+    return true;
+  } catch (error) {
+    console.error(`❌ Failed to ask language question for guild ${guildId}:`, error);
+    return false;
+  }
+}
+
 export async function refreshAllLeaderboards() {
   const configs = await GuildConfig.find({ isStarted: true }).lean();
   for (const config of configs) {
@@ -335,35 +451,29 @@ export async function runDynaicGameScheduler() {
     }
 
     let sent = false;
+    let nextTypeAfterSend = "trivia";
 
     if (nextGameType === "trivia") {
       sent = await askQuestionForGuild(config.guildId);
-
-      if (sent) {
-        await GuildConfig.updateOne(
-          { guildId: config.guildId },
-          {
-            $set: {
-              lastGameAt: new Date(),
-              nextGameType: "flag",
-            },
-          }
-        );
-      }
-    } else {
+      nextTypeAfterSend = "flag";
+    } else if (nextGameType === "flag") {
       sent = await askFlagQuestionForGuild(config.guildId);
+      nextTypeAfterSend = "language";
+    } else {
+      sent = await askLanguageQuestionForGuild(config.guildId);
+      nextTypeAfterSend = "trivia";
+    }
 
-      if (sent) {
-        await GuildConfig.updateOne(
-          { guildId: config.guildId },
-          {
-            $set: {
-              lastGameAt: new Date(),
-              nextGameType: "trivia",
-            },
-          }
-        );
-      }
+    if (sent) {
+      await GuildConfig.updateOne(
+        { guildId: config.guildId },
+        {
+          $set: {
+            lastGameAt: new Date(),
+            nextGameType: nextTypeAfterSend,
+          },
+        }
+      );
     }
   }
 }
@@ -401,11 +511,9 @@ export async function closeExpiredTriviaRounds() {
         ? updated.answers[0]
         : "Unknown";
 
-    await channel
-      .send({
-        embeds: [buildTriviaTimeoutEmbed(correctAnswer)],
-      })
-      .catch(() => null);
+    await channel.send({
+      embeds: [buildTriviaTimeoutEmbed(correctAnswer)],
+    }).catch(() => null);
   }
 }
 
@@ -439,17 +547,52 @@ export async function closeExpiredFlagRounds() {
 
     const correctAnswer = updated.country || "Unknown";
 
-    await channel
-      .send({
-        embeds: [buildFlagTimeoutEmbed(correctAnswer)],
-      })
-      .catch(() => null);
+    await channel.send({
+      embeds: [buildFlagTimeoutEmbed(correctAnswer)],
+    }).catch(() => null);
+  }
+}
+
+export async function closeExpiredLanguageRounds() {
+  const expiredRounds = await ActiveLanguageRound.find({
+    solved: false,
+    expiresAt: { $lte: new Date() },
+  });
+
+  for (const round of expiredRounds) {
+    const updated = await ActiveLanguageRound.findOneAndUpdate(
+      {
+        _id: round._id,
+        solved: false,
+      },
+      {
+        $set: {
+          solved: true,
+          solvedAt: new Date(),
+        },
+      },
+      {
+        new: true,
+      }
+    );
+
+    if (!updated) continue;
+
+    const channel = await client.channels.fetch(updated.channelId).catch(() => null);
+    if (!channel) continue;
+
+    const correctAnswer = updated.language || "Unknown";
+
+    await channel.send({
+      embeds: [buildLanguageTimeoutEmbed(correctAnswer)],
+    }).catch(() => null);
   }
 }
 
 export async function processExpiredRounds() {
   await closeExpiredTriviaRounds();
   await closeExpiredFlagRounds();
+  await closeExpiredLanguageRounds();
 }
 
 let schedulersStarted = false;
@@ -468,7 +611,7 @@ export function startSchedulers() {
     await refreshAllLeaderboards();
   });
 
-  cron.schedule("*/10 * * * * *", async () => {
+  cron.schedule("*/35 * * * * *", async () => {
     await processExpiredRounds();
     console.log("Running ExpiredRound Timeout Scheduler");
   });
@@ -492,8 +635,6 @@ export async function handleTriviaSetup(interaction) {
         gameInterval,
         lastGameAt: null,
         nextGameType: "trivia",
-
-        // old fields reset for backward safety
         triviaInterval: gameInterval,
         gtfInterval: gameInterval,
         lastTriviaAt: null,
@@ -552,8 +693,9 @@ export async function handleTriviaResetSetup(interaction) {
 
   await GuildConfig.deleteOne({ guildId });
   await ActiveRound.deleteOne({ guildId });
-  await UserScore.deleteMany({ guildId });
   await ActiveFlagRound.deleteOne({ guildId });
+  await ActiveLanguageRound.deleteOne({ guildId });
+  await UserScore.deleteMany({ guildId });
 
   const embed = new EmbedBuilder()
     .setColor(0xed4245)
@@ -635,6 +777,39 @@ export async function handleSendFlagTrivia(interaction) {
   });
 }
 
+export async function handleSendLanguageTrivia(interaction) {
+  const config = await GuildConfig.findOne({
+    guildId: interaction.guildId,
+    isStarted: true,
+  });
+
+  if (!config) {
+    return interaction.reply({
+      content: "Trivia is not set up yet. Run `/trivia-setup` first.",
+      ephemeral: true,
+    });
+  }
+
+  const existingRound = await ActiveLanguageRound.findOne({
+    guildId: interaction.guildId,
+    solved: false,
+  });
+
+  if (existingRound) {
+    return interaction.reply({
+      content: "There is already an active Guess the Language round.",
+      ephemeral: true,
+    });
+  }
+
+  await askLanguageQuestionForGuild(interaction.guildId);
+
+  return interaction.reply({
+    content: "🗣️ Guess the Language question sent.",
+    ephemeral: true,
+  });
+}
+
 export async function handleCorrectTriviaAnswer(message, claimedRound) {
   await message.react("✅").catch(() => null);
 
@@ -675,6 +850,29 @@ export async function handleCorrectFlagAnswer(message, claimedFlagRound) {
         claimedFlagRound.points || 15,
         message.content,
         claimedFlagRound.country
+      ),
+    ],
+  });
+
+  await refreshLeaderboard(message.guild.id);
+}
+
+export async function handleCorrectLanguageAnswer(message, claimedLanguageRound) {
+  await message.react("✅").catch(() => null);
+
+  await upsertUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedLanguageRound.points || 12,
+  });
+
+  await message.channel.send({
+    embeds: [
+      buildLanguageWinnerEmbed(
+        `<@${message.author.id}>`,
+        claimedLanguageRound.points || 12,
+        message.content
       ),
     ],
   });
