@@ -25,10 +25,7 @@ export function difficultyBadge(level) {
 export function buildQuestionEmbed(questionData) {
   return new EmbedBuilder()
     .setColor(0x5865f2)
-    .setAuthor({
-      name: "✨ Live Trivia Round",
-      iconURL: client.user?.displayAvatarURL() || undefined,
-    })
+    
     .setTitle("<:brain:1480948942282952735> Trivia Time!")
     .setDescription(
       [
@@ -63,37 +60,31 @@ export function buildQuestionEmbed(questionData) {
 export function buildFlagQuestionEmbed(flagData) {
   return new EmbedBuilder()
     .setColor(0x3498db)
-    .setAuthor({
-      name: "🌍 Guess the Flag",
-      iconURL: client.user?.displayAvatarURL() || undefined,
-    })
-    .setTitle("🚩Guess the flag ?")
+    
+    .setTitle("<:flagguess:1482692699156119664> Guess the flag ?")
     .setDescription(["**First to guess the flag wins**", ""].join("\n"))
     .setImage(flagData.imageUrl)
     .setFooter({
-      text: "Professional Flag Challenge • Earn points for correct guess •",
+      text: "Guess the flag • First correct answer wins",
     })
     .setTimestamp();
-}
+} 
 
 export function buildLanguageQuestionEmbed(languageData) {
   return new EmbedBuilder()
     .setColor(0x9b59b6)
-    .setAuthor({
-      name: "🗣️ Guess the Language",
-      iconURL: client.user?.displayAvatarURL() || undefined,
-    })
-    .setTitle("🧠 Guess the language!")
+    
+    .setTitle("<:brain:1480948942282952735> Guess the language!")
     .setDescription(
       [
-        "**Identify the language from this sample text:**",
+        "**In what language do we say: **",
         "",
-        `>>> ${languageData.sampleText}`,
+        `*\"${languageData.sampleText}\"*`,
       ].join("\n")
     )
     .addFields(
       {
-        name: "🌍 Region",
+        name: "<:worldmap:1482686661207920709> Region",
         value: `\`${languageData.region || "Unknown"}\``,
         inline: true,
       },
@@ -117,7 +108,10 @@ export function buildLanguageQuestionEmbed(languageData) {
 export function buildFlagWinnerEmbed(user, points, answer, country) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
-    .setTitle("🎉 Correct Flag Guess!")
+    .setAuthor({
+      name: "🎉 Correct Flag Guess!",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
     .setDescription(
       [
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
@@ -133,7 +127,10 @@ export function buildFlagWinnerEmbed(user, points, answer, country) {
 export function buildLanguageWinnerEmbed(user, points, answer) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
-    .setTitle("🎉 Correct Language Guess!")
+    .setAuthor({
+      name: "🎉 Correct Language Guess!",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
     .setDescription(
       [
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
@@ -177,7 +174,10 @@ export function buildResetEmbed() {
 export function buildCorrectAnswerEmbed(user, points, answer) {
   return new EmbedBuilder()
     .setColor(0x57f287)
-    .setTitle("🎉 Correct Trivia Answer!")
+    .setAuthor({
+      name: "🎉 Correct Trivia Answer!",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
     .setDescription(
       [
         `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>!`,
@@ -193,7 +193,7 @@ export function buildCorrectAnswerEmbed(user, points, answer) {
 export function buildTriviaTimeoutEmbed(correctAnswer) {
   return new EmbedBuilder()
     .setColor(0xed4245)
-    .setTitle("⏰ Trivia - Time's Up!")
+    .setTitle("<:times_clock:1482649775403831369> Trivia - Time's Up!")
     .setDescription(
       [
         "No one guessed correctly!",
@@ -209,7 +209,7 @@ export function buildTriviaTimeoutEmbed(correctAnswer) {
 export function buildFlagTimeoutEmbed(correctAnswer) {
   return new EmbedBuilder()
     .setColor(0xed4245)
-    .setTitle("🚩 Flag Guessing - Time's Up!")
+    .setTitle("<:times_clock:1482649775403831369> Flag Guessing - Time's Up!")
     .setDescription(
       [
         "No one guessed correctly!",
@@ -225,7 +225,7 @@ export function buildFlagTimeoutEmbed(correctAnswer) {
 export function buildLanguageTimeoutEmbed(correctAnswer) {
   return new EmbedBuilder()
     .setColor(0xed4245)
-    .setTitle("🗣️ Language Guessing - Time's Up!")
+    .setTitle("<:times_clock:1482649775403831369> Language Guessing - Time's Up!")
     .setDescription(
       [
         "No one guessed correctly!",
@@ -243,10 +243,10 @@ export function buildLeaderboardEmbed(guildName, topUsers) {
 
   if (!topUsers.length) {
     description =
-      "╭────────────────────────\n" +
-      "✨ No champions yet.\n" +
-      "Be the first to win a trivia round!\n" +
-      "╰────────────────────────╯";
+      "\n" +
+      "✨ ***No champions yet.***\n" +
+      "***Be the first to win a gaming round!*** ✨\n" +
+      "";
   } else {
     description = topUsers
       .map((user, index) => {
@@ -272,26 +272,15 @@ export function buildLeaderboardEmbed(guildName, topUsers) {
   return new EmbedBuilder()
     .setColor(0xf1c40f)
     .setAuthor({
-      name: `${guildName} Trivia Rankings`,
+      name: `${guildName} Leaderboard`,
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setThumbnail(client.user?.displayAvatarURL() || undefined)
-    .setTitle("__Trivia Ranking__")
+    .setTitle("__Game Score Ranking__")
     .setDescription(`\n${description}`)
-    .addFields(
-      {
-        name: "🔄 Refresh",
-        value: "`Every 5 minutes`",
-        inline: true,
-      },
-      {
-        name: "⚡ Status",
-        value: "`Live ranking`",
-        inline: true,
-      }
-    )
+    
     .setFooter({
-      text: "Answer first • Earn points • Climb the ranks",
+      text: "Updates every 5 minutes • Live Ranking ",
     })
     .setTimestamp();
 }
