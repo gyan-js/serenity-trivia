@@ -1,0 +1,1153 @@
+[
+  {
+    "language": "Armenian",
+    "normalizedAnswers": [
+      "armenian",
+      "հայերեն"
+    ],
+    "sampleText": "իմ լավ ընկեր բարև",
+    "points": 15,
+    "region": "Central Asia",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Persian",
+    "normalizedAnswers": [
+      "persian",
+      "farsi",
+      "فارسی",
+      "فارسي"
+    ],
+    "sampleText": "دوست خوب من سلام",
+    "points": 12,
+    "region": "Middle East",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Lithuanian",
+    "normalizedAnswers": [
+      "lithuanian",
+      "lietuvių",
+      "lietuviu"
+    ],
+    "sampleText": "mano geras drauge labas",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Russian",
+    "normalizedAnswers": [
+      "russian",
+      "русский"
+    ],
+    "sampleText": "мой добрый друг привет",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Somali",
+    "normalizedAnswers": [
+      "somali",
+      "af soomaali",
+      "soomaali"
+    ],
+    "sampleText": "saaxiib wanaagsan kayga salaan",
+    "points": 12,
+    "region": "Africa",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Swedish",
+    "normalizedAnswers": [
+      "swedish",
+      "svenska"
+    ],
+    "sampleText": "min goda vän hej",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Chinese",
+    "normalizedAnswers": [
+      "chinese",
+      "mandarin",
+      "中文",
+      "mandarin chinese"
+    ],
+    "sampleText": "我的 好 朋友 你好",
+    "points": 9,
+    "region": "East Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Malayalam",
+    "normalizedAnswers": [
+      "malayalam",
+      "മലയാളം"
+    ],
+    "sampleText": "എന്റെ നല്ല സുഹൃത്തെ നമസ്കാരം",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Xhosa",
+    "normalizedAnswers": [
+      "xhosa",
+      "isiXhosa",
+      "isixhosa"
+    ],
+    "sampleText": "mhlobo wam olungileyo molo",
+    "points": 12,
+    "region": "Africa",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Arabic",
+    "normalizedAnswers": [
+      "arabic",
+      "العربية"
+    ],
+    "sampleText": "يا صديقي العزيز مرحبا",
+    "points": 12,
+    "region": "Middle East",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Bulgarian",
+    "normalizedAnswers": [
+      "bulgarian",
+      "български"
+    ],
+    "sampleText": "мой добър приятелю здравей",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Estonian",
+    "normalizedAnswers": [
+      "estonian",
+      "eesti"
+    ],
+    "sampleText": "minu hea sõber tere",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "English",
+    "normalizedAnswers": [
+      "english"
+    ],
+    "sampleText": "my dear friend hello",
+    "points": 9,
+    "region": "Global",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Sinhala",
+    "normalizedAnswers": [
+      "sinhala",
+      "sinhalese",
+      "සිංහල"
+    ],
+    "sampleText": "මගේ හොඳ යාළුවා ආයුබෝවන්",
+    "points": 15,
+    "region": "South Asia",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Basque",
+    "normalizedAnswers": [
+      "basque",
+      "euskara"
+    ],
+    "sampleText": "nire lagun ona kaixo",
+    "points": 15,
+    "region": "Europe",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Ukrainian",
+    "normalizedAnswers": [
+      "ukrainian",
+      "українська",
+      "ukrainska"
+    ],
+    "sampleText": "мій добрий друже привіт",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Macedonian",
+    "normalizedAnswers": [
+      "macedonian",
+      "македонски"
+    ],
+    "sampleText": "мој добар пријател здраво",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Azerbaijani",
+    "normalizedAnswers": [
+      "azerbaijani",
+      "azeri",
+      "azərbaycan dili",
+      "azerbaycani"
+    ],
+    "sampleText": "mənim yaxşı dostum salam",
+    "points": 12,
+    "region": "Central Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Maltese",
+    "normalizedAnswers": [
+      "maltese",
+      "malti"
+    ],
+    "sampleText": "ħabib tajjeb tiegħi bonġu",
+    "points": 15,
+    "region": "Europe",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Latvian",
+    "normalizedAnswers": [
+      "latvian",
+      "latviešu",
+      "latviesu"
+    ],
+    "sampleText": "mans labais draugs sveiks",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Odia",
+    "normalizedAnswers": [
+      "odia",
+      "oriya",
+      "ଓଡ଼ିଆ",
+      "ଓଡିଆ"
+    ],
+    "sampleText": "ମୋ ଭଲ ସଙ୍ଗା ନମସ୍କାର",
+    "points": 12,
+    "region": "South Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "German",
+    "normalizedAnswers": [
+      "german",
+      "deutsch"
+    ],
+    "sampleText": "mein guter freund hallo",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Turkish",
+    "normalizedAnswers": [
+      "turkish",
+      "türkçe",
+      "turkce"
+    ],
+    "sampleText": "benim iyi arkadaşım merhaba",
+    "points": 9,
+    "region": "Middle East",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Hebrew",
+    "normalizedAnswers": [
+      "hebrew",
+      "עברית"
+    ],
+    "sampleText": "חברי הטוב היקר שלום",
+    "points": 12,
+    "region": "Middle East",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Marathi",
+    "normalizedAnswers": [
+      "marathi",
+      "मराठी"
+    ],
+    "sampleText": "माझ्या चांगल्या मित्रा नमस्कार",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Irish",
+    "normalizedAnswers": [
+      "irish",
+      "gaeilge"
+    ],
+    "sampleText": "dhuit mo chara dia",
+    "points": 15,
+    "region": "Europe",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Pashto",
+    "normalizedAnswers": [
+      "pashto",
+      "پښتو"
+    ],
+    "sampleText": "زما ښه ملګري سلام",
+    "points": 15,
+    "region": "Central Asia",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Japanese",
+    "normalizedAnswers": [
+      "japanese",
+      "日本語"
+    ],
+    "sampleText": "私の 良い 友達 こんにちは",
+    "points": 9,
+    "region": "East Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "French",
+    "normalizedAnswers": [
+      "french",
+      "français",
+      "francais"
+    ],
+    "sampleText": "mon cher ami bonjour",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Polish",
+    "normalizedAnswers": [
+      "polish",
+      "polski"
+    ],
+    "sampleText": "mój dobry przyjaciel cześć",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Filipino",
+    "normalizedAnswers": [
+      "filipino",
+      "tagalog"
+    ],
+    "sampleText": "mabuting kaibigan ko kumusta",
+    "points": 9,
+    "region": "Southeast Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Korean",
+    "normalizedAnswers": [
+      "korean",
+      "한국어"
+    ],
+    "sampleText": "나의 좋은 친구 안녕",
+    "points": 9,
+    "region": "East Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Hungarian",
+    "normalizedAnswers": [
+      "hungarian",
+      "magyar"
+    ],
+    "sampleText": "kedves jó barát szia",
+    "points": 15,
+    "region": "Europe",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Danish",
+    "normalizedAnswers": [
+      "danish",
+      "dansk"
+    ],
+    "sampleText": "min gode ven hej",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Serbian",
+    "normalizedAnswers": [
+      "serbian",
+      "srpski"
+    ],
+    "sampleText": "moj dobri prijatelju zdravo",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Romanian",
+    "normalizedAnswers": [
+      "romanian",
+      "română",
+      "romana"
+    ],
+    "sampleText": "prieten bun meu salut",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Igbo",
+    "normalizedAnswers": [
+      "igbo",
+      "ibo"
+    ],
+    "sampleText": "ezigbo enyi m ndewo",
+    "points": 12,
+    "region": "Africa",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Urdu",
+    "normalizedAnswers": [
+      "urdu",
+      "اردو"
+    ],
+    "sampleText": "میرے اچھے دوست سلام",
+    "points": 12,
+    "region": "South Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Greek",
+    "normalizedAnswers": [
+      "greek",
+      "ελληνικά",
+      "ellinika"
+    ],
+    "sampleText": "μου καλέ φίλε γεια",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Mongolian",
+    "normalizedAnswers": [
+      "mongolian",
+      "монгол"
+    ],
+    "sampleText": "миний сайн найз сайн",
+    "points": 15,
+    "region": "East Asia",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Italian",
+    "normalizedAnswers": [
+      "italian",
+      "italiano"
+    ],
+    "sampleText": "mio caro amico ciao",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Khmer",
+    "normalizedAnswers": [
+      "khmer",
+      "cambodian",
+      "ភាសាខ្មែរ"
+    ],
+    "sampleText": "មិត្ត ល្អ របស់ខ្ញុំ សួស្តី",
+    "points": 15,
+    "region": "Southeast Asia",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Yoruba",
+    "normalizedAnswers": [
+      "yoruba"
+    ],
+    "sampleText": "ore mi rere bawo",
+    "points": 12,
+    "region": "Africa",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Georgian",
+    "normalizedAnswers": [
+      "georgian",
+      "ქართული"
+    ],
+    "sampleText": "ჩემი კარგი მეგობარო გამარჯობა",
+    "points": 15,
+    "region": "Central Asia",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Bengali",
+    "normalizedAnswers": [
+      "bengali",
+      "bangla",
+      "বাংলা"
+    ],
+    "sampleText": "আমার ভালো বন্ধু হ্যালো",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Telugu",
+    "normalizedAnswers": [
+      "telugu",
+      "తెలుగు"
+    ],
+    "sampleText": "నా మంచి స్నేహితా నమస్తే",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Welsh",
+    "normalizedAnswers": [
+      "welsh",
+      "cymraeg"
+    ],
+    "sampleText": "fy ffrind da helo",
+    "points": 15,
+    "region": "Europe",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Uzbek",
+    "normalizedAnswers": [
+      "uzbek",
+      "oʻzbek",
+      "ozbek"
+    ],
+    "sampleText": "mening yaxshi do'stim salom",
+    "points": 12,
+    "region": "Central Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Slovak",
+    "normalizedAnswers": [
+      "slovak",
+      "slovenčina",
+      "slovencina"
+    ],
+    "sampleText": "môj dobrý priateľ ahoj",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Gujarati",
+    "normalizedAnswers": [
+      "gujarati",
+      "ગુજરાતી"
+    ],
+    "sampleText": "મારા સારા મિત્ર નમસ્તે",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Punjabi",
+    "normalizedAnswers": [
+      "punjabi",
+      "panjabi",
+      "ਪੰਜਾਬੀ"
+    ],
+    "sampleText": "ਸ੍ਰੀ ਅਕਾਲ ਦੋਸਤ ਸਤ",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Hausa",
+    "normalizedAnswers": [
+      "hausa"
+    ],
+    "sampleText": "aboki na nagari sannu",
+    "points": 12,
+    "region": "Africa",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Kannada",
+    "normalizedAnswers": [
+      "kannada",
+      "ಕನ್ನಡ"
+    ],
+    "sampleText": "ನನ್ನ ಒಳ್ಳೆಯ ಸ್ನೇಹಿತ ನಮಸ್ಕಾರ",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Catalan",
+    "normalizedAnswers": [
+      "catalan",
+      "català",
+      "catala"
+    ],
+    "sampleText": "meu bon amic hola",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Croatian",
+    "normalizedAnswers": [
+      "croatian",
+      "hrvatski"
+    ],
+    "sampleText": "moj dobar prijatelju bok",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Icelandic",
+    "normalizedAnswers": [
+      "icelandic",
+      "íslenska",
+      "islenska"
+    ],
+    "sampleText": "minn góði vinur halló",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Zulu",
+    "normalizedAnswers": [
+      "zulu",
+      "isiZulu",
+      "isizulu"
+    ],
+    "sampleText": "mngani wami omuhle sawubona",
+    "points": 12,
+    "region": "Africa",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Hindi",
+    "normalizedAnswers": [
+      "hindi",
+      "हिन्दी",
+      "हिंदी"
+    ],
+    "sampleText": "मेरे अच्छे दोस्त नमस्ते",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Norwegian",
+    "normalizedAnswers": [
+      "norwegian",
+      "norsk"
+    ],
+    "sampleText": "min gode venn hei",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Amharic",
+    "normalizedAnswers": [
+      "amharic",
+      "አማርኛ"
+    ],
+    "sampleText": "ውድ ጥሩ ጓደኛ ሰላም",
+    "points": 15,
+    "region": "Africa",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Vietnamese",
+    "normalizedAnswers": [
+      "vietnamese",
+      "tiếng việt",
+      "tieng viet"
+    ],
+    "sampleText": "chào bạn tốt xin",
+    "points": 9,
+    "region": "Southeast Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Swahili",
+    "normalizedAnswers": [
+      "swahili",
+      "kiswahili"
+    ],
+    "sampleText": "rafiki yangu mwema habari",
+    "points": 9,
+    "region": "Africa",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Spanish",
+    "normalizedAnswers": [
+      "spanish",
+      "español",
+      "espanol"
+    ],
+    "sampleText": "mi buen amigo hola",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Indonesian",
+    "normalizedAnswers": [
+      "indonesian",
+      "bahasa indonesia"
+    ],
+    "sampleText": "teman baik saya halo",
+    "points": 9,
+    "region": "Southeast Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Portuguese",
+    "normalizedAnswers": [
+      "portuguese",
+      "português",
+      "portugues"
+    ],
+    "sampleText": "meu bom amigo olá",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Malay",
+    "normalizedAnswers": [
+      "malay",
+      "bahasa melayu"
+    ],
+    "sampleText": "kawan baik saya hai",
+    "points": 9,
+    "region": "Southeast Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Galician",
+    "normalizedAnswers": [
+      "galician",
+      "galego"
+    ],
+    "sampleText": "meu bo amigo ola",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Dutch",
+    "normalizedAnswers": [
+      "dutch",
+      "nederlands"
+    ],
+    "sampleText": "mijn goede vriend hallo",
+    "points": 9,
+    "region": "Europe",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Kazakh",
+    "normalizedAnswers": [
+      "kazakh",
+      "қазақ",
+      "kazak"
+    ],
+    "sampleText": "менің жақсы досым сәлем",
+    "points": 12,
+    "region": "Central Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Tamil",
+    "normalizedAnswers": [
+      "tamil",
+      "தமிழ்"
+    ],
+    "sampleText": "என் நல்ல நண்பா வணக்கம்",
+    "points": 9,
+    "region": "South Asia",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Finnish",
+    "normalizedAnswers": [
+      "finnish",
+      "suomi"
+    ],
+    "sampleText": "minun hyvä ystävä hei",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Thai",
+    "normalizedAnswers": [
+      "thai",
+      "ภาษาไทย"
+    ],
+    "sampleText": "เพื่อน ที่ ดี สวัสดี",
+    "points": 12,
+    "region": "Southeast Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Kurdish",
+    "normalizedAnswers": [
+      "kurdish",
+      "kurdi",
+      "kurdî"
+    ],
+    "sampleText": "hevalê min baş silav",
+    "points": 15,
+    "region": "Middle East",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Afrikaans",
+    "normalizedAnswers": [
+      "afrikaans"
+    ],
+    "sampleText": "my goeie vriend hallo",
+    "points": 9,
+    "region": "Africa",
+    "difficulty": "Easy",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Czech",
+    "normalizedAnswers": [
+      "czech",
+      "čeština",
+      "cestina"
+    ],
+    "sampleText": "můj dobrý příteli ahoj",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Slovenian",
+    "normalizedAnswers": [
+      "slovenian",
+      "slovene"
+    ],
+    "sampleText": "moj dober prijatelj živjo",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Albanian",
+    "normalizedAnswers": [
+      "albanian",
+      "shqip"
+    ],
+    "sampleText": "miku im mirë përshëndetje",
+    "points": 12,
+    "region": "Europe",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Nepali",
+    "normalizedAnswers": [
+      "nepali",
+      "नेपाली"
+    ],
+    "sampleText": "मेरो राम्रो साथी नमस्ते",
+    "points": 12,
+    "region": "South Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Burmese",
+    "normalizedAnswers": [
+      "burmese",
+      "myanmar",
+      "မြန်မာ"
+    ],
+    "sampleText": "သူငယ်ချင်း ကောင်း ပါ မင်္ဂလာပါ",
+    "points": 15,
+    "region": "Southeast Asia",
+    "difficulty": "Hard",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "language": "Tajik",
+    "normalizedAnswers": [
+      "tajik",
+      "тоҷикӣ",
+      "tojiki"
+    ],
+    "sampleText": "дӯсти хуби ман салом",
+    "points": 12,
+    "region": "Central Asia",
+    "difficulty": "Medium",
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  }
+]
