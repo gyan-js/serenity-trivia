@@ -12,7 +12,7 @@ const guildConfigSchema = new mongoose.Schema(
     lastGameAt: { type: Date, default: null },
     nextGameType: {
       type: String,
-      enum: ["trivia", "flag", "language"],
+      enum: ["trivia", "flag", "language", "typing"],
       default: "trivia",
     },
 
@@ -161,6 +161,41 @@ const activeLanguageRoundSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+const typingRaceQuestionSchema = new mongoose.Schema(
+  {
+    text: { type: String, required: true },
+    normalizedAnswers: [{ type: String, required: true, index: true }],
+    points: { type: Number, default: 20 },
+    isActive: { type: Boolean, default: true },
+    used: { type: Boolean, default: false },
+    usedAt: { type: Date, default: null },
+  },
+  { timestamps: true }
+);
+
+const activeTypingRaceRoundSchema = new mongoose.Schema(
+  {
+    guildId: { type: String, required: true, unique: true },
+    channelId: { type: String, required: true },
+    typingRaceQuestionId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "TypingRaceQuestion",
+      required: true,
+    },
+    text: { type: String, required: true },
+    normalizedAnswers: [{ type: String, required: true }],
+    points: { type: Number, default: 20 },
+    solved: { type: Boolean, default: false },
+    winnerUserId: { type: String, default: null },
+    winnerUsername: { type: String, default: null },
+    winningAnswer: { type: String, default: null },
+    solvedAt: { type: Date, default: null },
+    askedAt: { type: Date, default: Date.now },
+    expiresAt: { type: Date, required: true },
+  },
+  { timestamps: true }
+);
+
 export const GuildConfig = mongoose.model("GuildConfig", guildConfigSchema);
 export const UserScore = mongoose.model("UserScore", userScoreSchema);
 export const TriviaQuestion = mongoose.model("TriviaQuestion", triviaQuestionSchema);
@@ -169,3 +204,5 @@ export const FlagQuestion = mongoose.model("FlagQuestion", flagQuestionSchema);
 export const ActiveFlagRound = mongoose.model("ActiveFlagRound", activeFlagRoundSchema);
 export const LanguageQuestion = mongoose.model("LanguageQuestion", languageQuestionSchema);
 export const ActiveLanguageRound = mongoose.model("ActiveLanguageRound", activeLanguageRoundSchema);
+export const TypingRaceQuestion = mongoose.model("TypingRaceQuestion", typingRaceQuestionSchema);
+export const ActiveTypingRaceRound = mongoose.model("ActiveTypingRaceRound", activeTypingRaceRoundSchema);
