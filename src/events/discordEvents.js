@@ -4,6 +4,7 @@ import {
   ActiveRound,
   ActiveFlagRound,
   ActiveLanguageRound,
+  ActiveTypingRaceRound,
 } from "../models/index.js";
 import { normalizeAnswer } from "../utils/helpers.js";
 import {
@@ -19,6 +20,9 @@ import {
   handleCorrectTriviaAnswer,
   handleCorrectFlagAnswer,
   handleCorrectLanguageAnswer,
+  handleSendTypingRace,
+  handleCorrectTypingRaceAnswer,
+  
 } from "../services/triviaService.js";
 
 export function registerDiscordEvents() {
@@ -78,6 +82,9 @@ export function registerDiscordEvents() {
 
       if (interaction.commandName === "send-language-trivia") {
         return await handleSendLanguageTrivia(interaction);
+      }
+      if (interaction.commandName === "send-typing-race") {
+        return await handleSendTypingRace(interaction);
       }
     } catch (error) {
       console.error("❌ Interaction error:", error);
@@ -178,6 +185,31 @@ export function registerDiscordEvents() {
 
       if (claimedLanguageRound) {
         await handleCorrectLanguageAnswer(message, claimedLanguageRound);
+        return;
+      }
+      const claimedTypingRound = await ActiveTypingRaceRound.findOneAndUpdate(
+        {
+          guildId: message.guild.id,
+          channelId: message.channel.id,
+          solved: false,
+          normalizedAnswers: normalized,
+        },
+        {
+          $set: {
+            solved: true,
+            winnerUserId: message.author.id,
+            winnerUsername: message.author.username,
+            winningAnswer: message.content,
+            solvedAt: new Date(),
+          },
+        },
+        {
+          new: true,
+        }
+      );
+
+      if (claimedTypingRound) {
+        await handleCorrectTypingRaceAnswer(message, claimedTypingRound);
         return;
       }
     } catch (error) {

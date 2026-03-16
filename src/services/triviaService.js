@@ -18,6 +18,8 @@ import {
   ActiveFlagRound,
   LanguageQuestion,
   ActiveLanguageRound,
+  TypingRaceQuestion,
+  ActiveTypingRaceRound,
 } from "../models/index.js";
 import {
   buildQuestionEmbed,
@@ -32,6 +34,9 @@ import {
   buildFlagTimeoutEmbed,
   buildLanguageTimeoutEmbed,
   buildLeaderboardEmbed,
+  buildTypingRaceQuestionEmbed,
+  buildTypingRaceWinnerEmbed,
+  buildTypingRaceTimeoutEmbed,
 } from "../utils/helpers.js";
 
 export async function registerSlashCommands() {
@@ -85,6 +90,11 @@ export async function registerSlashCommands() {
     new SlashCommandBuilder()
       .setName("send-language-trivia")
       .setDescription("Admin only: send a Guess the Language question immediately for testing.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+
+    new SlashCommandBuilder()
+      .setName("send-typing-race")
+      .setDescription("Admin only: send a Typing Race question immediately for testing.")
       .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
   ].map((cmd) => cmd.toJSON());
 
@@ -182,6 +192,43 @@ export async function getRandomLanguageQuestion() {
   return result[0] || null;
 }
 
+export async function getRandomTypingRaceQuestion() {
+  let result = await TypingRaceQuestion.aggregate([
+    {
+      $match: {
+        isActive: true,
+        used: false,
+      },
+    },
+    { $sample: { size: 1 } },
+  ]);
+
+  if (result.length > 0) {
+    return result[0];
+  }
+
+  await TypingRaceQuestion.updateMany(
+    { isActive: true },
+    {
+      $set: {
+        used: false,
+        usedAt: null,
+      },
+    }
+  );
+
+  result = await TypingRaceQuestion.aggregate([
+    {
+      $match: {
+        isActive: true,
+        used: false,
+      },
+    },
+    { $sample: { size: 1 } },
+  ]);
+
+  return result[0] || null;
+}
 export async function upsertUserScore({ guildId, userId, username, points }) {
   return UserScore.findOneAndUpdate(
     { guildId, userId },
@@ -422,6 +469,72 @@ export async function askLanguageQuestionForGuild(guildId) {
   }
 }
 
+export async function askTypingRaceQuestionForGuild(guildId) {
+  try {
+    const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
+    if (!config) return false;
+
+    const existingTypingRound = await ActiveTypingRaceRound.findOne({
+      guildId,
+      solved: false,
+    }).lean();
+
+    if (existingTypingRound) return false;
+
+    const typingQuestion = await getRandomTypingRaceQuestion();
+    if (!typingQuestion) return false;
+
+    const triviaChannel = await client.channels
+      .fetch(config.triviaChannelId)
+      .catch(() => null);
+
+    if (!triviaChannel) return false;
+
+    const embed = buildTypingRaceQuestionEmbed(typingQuestion);
+    await triviaChannel.send({ embeds: [embed] });
+
+    await ActiveTypingRaceRound.findOneAndUpdate(
+      { guildId },
+      {
+        $set: {
+          guildId,
+          channelId: triviaChannel.id,
+          typingRaceQuestionId: typingQuestion._id,
+          text: typingQuestion.text,
+          normalizedAnswers: typingQuestion.normalizedAnswers,
+          points: typingQuestion.points || 20,
+          solved: false,
+          winnerUserId: null,
+          winnerUsername: null,
+          winningAnswer: null,
+          solvedAt: null,
+          askedAt: new Date(),
+          expiresAt: new Date(Date.now() + 60 * 1000),
+        },
+      },
+      {
+        upsert: true,
+        new: true,
+        setDefaultsOnInsert: true,
+      }
+    );
+
+    await TypingRaceQuestion.updateOne(
+      { _id: typingQuestion._id },
+      {
+        $set: {
+          used: true,
+          usedAt: new Date(),
+        },
+      }
+    );
+
+    return true;
+  } catch (error) {
+    console.error(`❌ Failed to ask typing race question for guild ${guildId}:`, error);
+    return false;
+  }
+}
 export async function refreshAllLeaderboards() {
   const configs = await GuildConfig.find({ isStarted: true }).lean();
   for (const config of configs) {
@@ -459,8 +572,11 @@ export async function runDynaicGameScheduler() {
     } else if (nextGameType === "flag") {
       sent = await askFlagQuestionForGuild(config.guildId);
       nextTypeAfterSend = "language";
-    } else {
+    } else if (nextGameType === "language") {
       sent = await askLanguageQuestionForGuild(config.guildId);
+      nextTypeAfterSend = "typing";
+    } else {
+      sent = await askTypingRaceQuestionForGuild(config.guildId);
       nextTypeAfterSend = "trivia";
     }
 
@@ -588,11 +704,46 @@ export async function closeExpiredLanguageRounds() {
     }).catch(() => null);
   }
 }
+export async function closeExpiredTypingRaceRounds() {
+  const expiredRounds = await ActiveTypingRaceRound.find({
+    solved: false,
+    expiresAt: { $lte: new Date() },
+  });
 
+  for (const round of expiredRounds) {
+    const updated = await ActiveTypingRaceRound.findOneAndUpdate(
+      {
+        _id: round._id,
+        solved: false,
+      },
+      {
+        $set: {
+          solved: true,
+          solvedAt: new Date(),
+        },
+      },
+      {
+        new: true,
+      }
+    );
+
+    if (!updated) continue;
+
+    const channel = await client.channels.fetch(updated.channelId).catch(() => null);
+    if (!channel) continue;
+
+    const correctAnswer = updated.text || "Unknown";
+
+    await channel.send({
+      embeds: [buildTypingRaceTimeoutEmbed(correctAnswer)],
+    }).catch(() => null);
+  }
+}
 export async function processExpiredRounds() {
   await closeExpiredTriviaRounds();
   await closeExpiredFlagRounds();
   await closeExpiredLanguageRounds();
+  await closeExpiredTypingRaceRounds();
 }
 
 let schedulersStarted = false;
@@ -810,6 +961,39 @@ export async function handleSendLanguageTrivia(interaction) {
   });
 }
 
+export async function handleSendTypingRace(interaction) {
+  const config = await GuildConfig.findOne({
+    guildId: interaction.guildId,
+    isStarted: true,
+  });
+
+  if (!config) {
+    return interaction.reply({
+      content: "Trivia is not set up yet. Run `/trivia-setup` first.",
+      ephemeral: true,
+    });
+  }
+
+  const existingRound = await ActiveTypingRaceRound.findOne({
+    guildId: interaction.guildId,
+    solved: false,
+  });
+
+  if (existingRound) {
+    return interaction.reply({
+      content: "There is already an active Typing Race round.",
+      ephemeral: true,
+    });
+  }
+
+  await askTypingRaceQuestionForGuild(interaction.guildId);
+
+  return interaction.reply({
+    content: "⌨️ Typing Race question sent.",
+    ephemeral: true,
+  });
+}
+
 export async function handleCorrectTriviaAnswer(message, claimedRound) {
   await message.react("✅").catch(() => null);
 
@@ -872,6 +1056,29 @@ export async function handleCorrectLanguageAnswer(message, claimedLanguageRound)
       buildLanguageWinnerEmbed(
         `<@${message.author.id}>`,
         claimedLanguageRound.points || 12,
+        message.content
+      ),
+    ],
+  });
+
+  await refreshLeaderboard(message.guild.id);
+}
+
+export async function handleCorrectTypingRaceAnswer(message, claimedTypingRound) {
+  await message.react("✅").catch(() => null);
+
+  await upsertUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedTypingRound.points || 20,
+  });
+
+  await message.channel.send({
+    embeds: [
+      buildTypingRaceWinnerEmbed(
+        `<@${message.author.id}>`,
+        claimedTypingRound.points || 20,
         message.content
       ),
     ],

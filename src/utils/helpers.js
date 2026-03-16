@@ -105,6 +105,27 @@ export function buildLanguageQuestionEmbed(languageData) {
     .setTimestamp();
 }
 
+export function buildTypingRaceQuestionEmbed(raceData) {
+  return new EmbedBuilder()
+    .setColor(0xe67e22)
+    .setTitle("🏁 Typing Race!")
+    .setDescription(
+      [
+        "**Type the following sentence first:**",
+        "",
+        `*${raceData.text}*`,
+      ].join("\n")
+    )
+    .addFields({
+      name: "<:giftcard:1480952956445659218> Reward",
+      value: `\`${raceData.points || 20} pts\``,
+      inline: true,
+    })
+    .setFooter({
+      text: "Type the sentence • First one to type correctly wins!",
+    })
+    .setTimestamp();
+}
 export function buildFlagWinnerEmbed(user, points, answer, country) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
@@ -119,7 +140,7 @@ export function buildFlagWinnerEmbed(user, points, answer, country) {
       ].join("\n")
     )
     .setFooter({
-      text: "Win games to climb higher in the weekly lb",
+      text: "This round is now closed",
     })
     .setTimestamp();
 }
@@ -138,11 +159,29 @@ export function buildLanguageWinnerEmbed(user, points, answer) {
       ].join("\n")
     )
     .setFooter({
-      text: "Win games to climb higher in the weekly lb",
+      text: "This round is now closed",
     })
     .setTimestamp();
 }
 
+export function buildTypingRaceWinnerEmbed(user, points, answer) {
+  return new EmbedBuilder()
+    .setColor(0x2ecc71)
+    .setAuthor({
+      name: "🎉 Typing Race Winner!",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
+    .setDescription(
+      [
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
+        `<:lb_check:1481611597423186012> **Typed:** \`${answer}\``,
+      ].join("\n")
+    )
+    .setFooter({
+      text: "This round is now closed",
+    })
+    .setTimestamp();
+}
 export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval) {
   return new EmbedBuilder()
     .setColor(0x57f287)
@@ -154,7 +193,7 @@ export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval)
         `**🧠 Trivia Channel:** ${triviaChannel}`,
         `**🏆 Leaderboard Channel:** ${leaderboardChannel}`,
         `**⏱️ Game Interval:** Every \`${gameInterval}\` minutes`,
-        `**🔁 Rotation:** \`Trivia → Flag → Language\``,
+        `**🔁 Rotation:** \`Trivia → Flag → Language → Typing Race\``,,
       ].join("\n")
     )
     .setFooter({
@@ -234,6 +273,22 @@ export function buildLanguageTimeoutEmbed(correctAnswer) {
     )
     .setFooter({
       text: "This language round has ended",
+    })
+    .setTimestamp();
+}
+
+export function buildTypingRaceTimeoutEmbed(correctAnswer) {
+  return new EmbedBuilder()
+    .setColor(0xed4245)
+    .setTitle("<:times_clock:1482649775403831369> Typing Race - Time's Up!")
+    .setDescription(
+      [
+        "No one typed it correctly or in time!",
+        `The sentence was : \`${correctAnswer}\``,
+      ].join("\n")
+    )
+    .setFooter({
+      text: "This typing race has ended",
     })
     .setTimestamp();
 }
