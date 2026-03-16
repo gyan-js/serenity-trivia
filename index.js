@@ -4,8 +4,8 @@ dotenv.config();
 import dns from "node:dns/promises";
 import mongoose from "mongoose";
 
-import { client } from "./config/client.js";
-import { registerDiscordEvents } from "./events/discordEvents.js";
+import { client } from "./src/config/client.js";
+import { registerDiscordEvents } from "./src/events/discordEvents.js";
 
 dns.setServers(["1.1.1.1"]);
 
