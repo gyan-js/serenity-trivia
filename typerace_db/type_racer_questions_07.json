@@ -1,0 +1,502 @@
+[
+  {
+    "text": "The baker found a yellow flower with a cheerful smile.",
+    "normalizedAnswers": [
+      "the baker found a yellow flower with a cheerful smile"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker lost a red notebook under the streetlight.",
+    "normalizedAnswers": [
+      "the baker lost a red notebook under the streetlight"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern by the school gate before sunrise.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern by the school gate before sunrise"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern beside the kitchen door every Sunday.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern beside the kitchen door every sunday"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker found a red notebook near the busy station.",
+    "normalizedAnswers": [
+      "the baker found a red notebook near the busy station"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern near the river every Sunday.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern near the river every sunday"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased a quiet pond near the market square.",
+    "normalizedAnswers": [
+      "the playful puppy chased a quiet pond near the market square"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker found a bright scarf as the music played.",
+    "normalizedAnswers": [
+      "the baker found a bright scarf as the music played"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased the wooden gate across the narrow street.",
+    "normalizedAnswers": [
+      "the playful puppy chased the wooden gate across the narrow street"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached a narrow tunnel just before noon.",
+    "normalizedAnswers": [
+      "the morning train reached a narrow tunnel just before noon"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern inside the old barn during winter.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern inside the old barn during winter"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached the final station before sunrise.",
+    "normalizedAnswers": [
+      "the morning train reached the final station before sunrise"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The new app loads the user profile during the night shift.",
+    "normalizedAnswers": [
+      "the new app loads the user profile during the night shift"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached a narrow tunnel after the loud signal.",
+    "normalizedAnswers": [
+      "the morning train reached a narrow tunnel after the loud signal"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The new app loads a fresh report without any warning.",
+    "normalizedAnswers": [
+      "the new app loads a fresh report without any warning"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased a shiny pebble beside the kitchen door.",
+    "normalizedAnswers": [
+      "the playful puppy chased a shiny pebble beside the kitchen door"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker found a red notebook while the crowd waited.",
+    "normalizedAnswers": [
+      "the baker found a red notebook while the crowd waited"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker found the thick blanket after a long walk.",
+    "normalizedAnswers": [
+      "the baker found the thick blanket after a long walk"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached the desert highway before sunrise.",
+    "normalizedAnswers": [
+      "the morning train reached the desert highway before sunrise"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker lost the empty bottle without any trouble.",
+    "normalizedAnswers": [
+      "the baker lost the empty bottle without any trouble"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern across the narrow street during the festival.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern across the narrow street during the festival"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased the wooden gate beside the kitchen door.",
+    "normalizedAnswers": [
+      "the playful puppy chased the wooden gate beside the kitchen door"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased a shiny pebble near the market square.",
+    "normalizedAnswers": [
+      "the playful puppy chased a shiny pebble near the market square"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached a narrow tunnel after a short delay.",
+    "normalizedAnswers": [
+      "the morning train reached a narrow tunnel after a short delay"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached the snowy bridge after a short delay.",
+    "normalizedAnswers": [
+      "the morning train reached the snowy bridge after a short delay"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached a quiet village during the long journey.",
+    "normalizedAnswers": [
+      "the morning train reached a quiet village during the long journey"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker found the old watch with a cheerful smile.",
+    "normalizedAnswers": [
+      "the baker found the old watch with a cheerful smile"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker lost the spare ticket before the storm arrived.",
+    "normalizedAnswers": [
+      "the baker lost the spare ticket before the storm arrived"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased a shiny pebble across the narrow street.",
+    "normalizedAnswers": [
+      "the playful puppy chased a shiny pebble across the narrow street"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached the old harbor during the long journey.",
+    "normalizedAnswers": [
+      "the morning train reached the old harbor during the long journey"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern next to the bus stop after the short break.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern next to the bus stop after the short break"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern beside the kitchen door on rainy mornings.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern beside the kitchen door on rainy mornings"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The baker lost a yellow flower while the crowd waited.",
+    "normalizedAnswers": [
+      "the baker lost a yellow flower while the crowd waited"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The new app loads the missing file after the power returns.",
+    "normalizedAnswers": [
+      "the new app loads the missing file after the power returns"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern beside the quiet library during winter.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern beside the quiet library during winter"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The new app loads the user profile after the power returns.",
+    "normalizedAnswers": [
+      "the new app loads the user profile after the power returns"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern inside the old barn on warm evenings.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern inside the old barn on warm evenings"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The new app loads the error message during the night shift.",
+    "normalizedAnswers": [
+      "the new app loads the error message during the night shift"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern beside the quiet library after the long meeting.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern beside the quiet library after the long meeting"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern beside the quiet library during springtime.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern beside the quiet library during springtime"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern under the tall pine after lunch.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern under the tall pine after lunch"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The new app loads the missing file after the update ends.",
+    "normalizedAnswers": [
+      "the new app loads the missing file after the update ends"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern near the river during the weekend.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern near the river during the weekend"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The new app loads a fresh report in just a minute.",
+    "normalizedAnswers": [
+      "the new app loads a fresh report in just a minute"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased the fallen leaves by the school gate.",
+    "normalizedAnswers": [
+      "the playful puppy chased the fallen leaves by the school gate"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern by the school gate during winter.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern by the school gate during winter"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased the low fence inside the old barn.",
+    "normalizedAnswers": [
+      "the playful puppy chased the low fence inside the old barn"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The morning train reached a narrow tunnel with all lights on.",
+    "normalizedAnswers": [
+      "the morning train reached a narrow tunnel with all lights on"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "A bright student carries a blue lantern next to the bus stop before sunrise.",
+    "normalizedAnswers": [
+      "a bright student carries a blue lantern next to the bus stop before sunrise"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  },
+  {
+    "text": "The playful puppy chased a muddy path under the evening sky.",
+    "normalizedAnswers": [
+      "the playful puppy chased a muddy path under the evening sky"
+    ],
+    "points": 20,
+    "isActive": true,
+    "used": false,
+    "usedAt": null
+  }
+]
