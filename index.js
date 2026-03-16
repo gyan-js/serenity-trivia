@@ -3,11 +3,23 @@ dotenv.config();
 
 import dns from "node:dns/promises";
 import mongoose from "mongoose";
+import express from "express";
 
 import { client } from "./src/config/client.js";
 import { registerDiscordEvents } from "./src/events/discordEvents.js";
 
 dns.setServers(["1.1.1.1"]);
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Bot is running");
+});
+
+app.listen(PORT, () => {
+  console.log(`🌐 Web server running on port ${PORT}`);
+});
 
 (async () => {
   try {
@@ -24,16 +36,17 @@ dns.setServers(["1.1.1.1"]);
     }
 
     registerDiscordEvents();
-    console.log("🎭 Registered Discord Events")
+    console.log("🎭 Registered Discord Events");
+
     await mongoose.connect(process.env.MONGO_URL, {
       serverSelectionTimeoutMS: 5000,
     });
 
-    console.log("🎃 Connected to MongoDB")
+    console.log("🎃 Connected to MongoDB");
 
-    await client.login(process.env.DISCORD_TOKEN)
+    await client.login(process.env.DISCORD_TOKEN);
 
-    console.log("🎯 Logging in...")
+    console.log("🎯 Logging in...");
   } catch (error) {
     console.error("❌ Startup failed:", error);
   }
