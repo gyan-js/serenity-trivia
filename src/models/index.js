@@ -12,7 +12,7 @@ const guildConfigSchema = new mongoose.Schema(
     lastGameAt: { type: Date, default: null },
     nextGameType: {
       type: String,
-      enum: ["trivia", "flag", "language", "typing"],
+      enum: ["trivia", "flag", "language", "typing", "anime"],
       default: "trivia",
     },
 
@@ -195,6 +195,61 @@ const activeTypingRaceRoundSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+const characterSchema = new mongoose.Schema(
+  {
+    characterName: { type: String, required: true, unique: true },
+  
+    normalizedAnswers: [{ type: String, required: true, index: true }],
+  
+    imageUrl: { type: String, required: true },
+  
+    
+  
+    points: { type: Number, default: 20 },
+  
+    
+  
+    isActive: { type: Boolean, default: true },
+  
+    used: { type: Boolean, default: false },
+  
+    usedAt: { type: Date, default: null }
+  
+  },
+  { timestamps: true }
+  );
+const activeAnimeCharacterRoundSchema = new mongoose.Schema(
+  {
+    guildId: { type: String, required: true, unique: true },
+    channelId: { type: String, required: true },
+  
+    characterId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "AnimeCharacter",
+      required: true,
+    },
+  
+    characterName: { type: String, required: true },
+    imageUrl: { type: String, required: true },
+  
+    normalizedAnswers: [{ type: String, required: true }],
+  
+    points: { type: Number, default: 20 },
+  
+    solved: { type: Boolean, default: false },
+  
+    winnerUserId: { type: String, default: null },
+    winnerUsername: { type: String, default: null },
+    winningAnswer: { type: String, default: null },
+  
+    solvedAt: { type: Date, default: null },
+  
+    askedAt: { type: Date, default: Date.now },
+    expiresAt: { type: Date, required: true }
+  
+  },
+  { timestamps: true }
+  );
 
 export const GuildConfig = mongoose.model("GuildConfig", guildConfigSchema);
 export const UserScore = mongoose.model("UserScore", userScoreSchema);
@@ -206,3 +261,10 @@ export const LanguageQuestion = mongoose.model("LanguageQuestion", languageQuest
 export const ActiveLanguageRound = mongoose.model("ActiveLanguageRound", activeLanguageRoundSchema);
 export const TypingRaceQuestion = mongoose.model("TypingRaceQuestion", typingRaceQuestionSchema);
 export const ActiveTypingRaceRound = mongoose.model("ActiveTypingRaceRound", activeTypingRaceRoundSchema);
+export const ActiveAnimeCharacterRound = mongoose.model(
+  "ActiveAnimeCharacterRound",
+  activeAnimeCharacterRoundSchema
+);
+export const AnimeCharacter =
+  mongoose.models.AnimeCharacter ||
+  mongoose.model("AnimeCharacter", characterSchema);

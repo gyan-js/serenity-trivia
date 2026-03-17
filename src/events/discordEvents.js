@@ -5,6 +5,7 @@ import {
   ActiveFlagRound,
   ActiveLanguageRound,
   ActiveTypingRaceRound,
+  ActiveAnimeCharacterRound,
 } from "../models/index.js";
 import { normalizeAnswer } from "../utils/helpers.js";
 import {
@@ -22,6 +23,8 @@ import {
   handleCorrectLanguageAnswer,
   handleSendTypingRace,
   handleCorrectTypingRaceAnswer,
+  handleCorrectAnimeAnswer,
+  handleSendAnime,
   
 } from "../services/triviaService.js";
 
@@ -85,6 +88,9 @@ export function registerDiscordEvents() {
       }
       if (interaction.commandName === "send-typing-race") {
         return await handleSendTypingRace(interaction);
+      }
+      if (interaction.commandName === "send-anime") {
+        return await handleSendAnime(interaction);
       }
     } catch (error) {
       console.error("❌ Interaction error:", error);
@@ -210,6 +216,30 @@ export function registerDiscordEvents() {
 
       if (claimedTypingRound) {
         await handleCorrectTypingRaceAnswer(message, claimedTypingRound);
+        return;
+      }
+
+      const claimedAnime = await ActiveAnimeCharacterRound.findOneAndUpdate(
+        {
+          guildId: message.guild.id,
+          channelId: message.channel.id,
+          solved: false,
+          normalizedAnswers: normalized,
+        },
+        {
+          $set: {
+            solved: true,
+            winnerUserId: message.author.id,
+            winnerUsername: message.author.username,
+            winningAnswer: message.content,
+            solvedAt: new Date(),
+          },
+        },
+        { new: true }
+      );
+      
+      if (claimedAnime) {
+        await handleCorrectAnimeAnswer(message, claimedAnime);
         return;
       }
     } catch (error) {

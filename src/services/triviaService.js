@@ -20,6 +20,7 @@ import {
   ActiveLanguageRound,
   TypingRaceQuestion,
   ActiveTypingRaceRound,
+  AnimeCharacter, ActiveAnimeCharacterRound 
 } from "../models/index.js";
 import {
   buildQuestionEmbed,
@@ -37,6 +38,9 @@ import {
   buildTypingRaceQuestionEmbed,
   buildTypingRaceWinnerEmbed,
   buildTypingRaceTimeoutEmbed,
+  buildAnimeCharacterEmbed,
+  buildAnimeCharacterWinnerEmbed,
+  buildAnimeCharacterTimeoutEmbed,
 } from "../utils/helpers.js";
 
 export async function registerSlashCommands() {
@@ -95,6 +99,11 @@ export async function registerSlashCommands() {
     new SlashCommandBuilder()
       .setName("send-typing-race")
       .setDescription("Admin only: send a Typing Race question immediately for testing.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+
+    new SlashCommandBuilder()
+      .setName("send-anime")
+      .setDescription("Admin only: send an Anime Character question immediately for testing.")
       .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
   ].map((cmd) => cmd.toJSON());
 
@@ -224,6 +233,27 @@ export async function getRandomTypingRaceQuestion() {
         used: false,
       },
     },
+    { $sample: { size: 1 } },
+  ]);
+
+  return result[0] || null;
+}
+
+export async function getRandomAnimeCharacter() {
+  let result = await AnimeCharacter.aggregate([
+    { $match: { isActive: true, used: false } },
+    { $sample: { size: 1 } },
+  ]);
+
+  if (result.length) return result[0];
+
+  await AnimeCharacter.updateMany(
+    { isActive: true },
+    { $set: { used: false, usedAt: null } }
+  );
+
+  result = await AnimeCharacter.aggregate([
+    { $match: { isActive: true, used: false } },
     { $sample: { size: 1 } },
   ]);
 
@@ -535,6 +565,61 @@ export async function askTypingRaceQuestionForGuild(guildId) {
     return false;
   }
 }
+
+export async function askAnimeCharacterForGuild(guildId) {
+  try {
+    const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
+    if (!config) return false;
+
+    const existing = await ActiveAnimeCharacterRound.findOne({
+      guildId,
+      solved: false,
+    }).lean();
+
+    if (existing) return false;
+
+    const char = await getRandomAnimeCharacter();
+    if (!char) return false;
+
+    const channel = await client.channels
+      .fetch(config.triviaChannelId)
+      .catch(() => null);
+
+    if (!channel) return false;
+
+    const embed = buildAnimeCharacterEmbed(char);
+    await channel.send({ embeds: [embed] });
+
+    await ActiveAnimeCharacterRound.findOneAndUpdate(
+      { guildId },
+      {
+        $set: {
+          guildId,
+          channelId: channel.id,
+          characterId: char._id,
+          characterName: char.characterName,
+          imageUrl: char.imageUrl,
+          normalizedAnswers: char.normalizedAnswers,
+          points: char.points || 20,
+          solved: false,
+          askedAt: new Date(),
+          expiresAt: new Date(Date.now() + 60 * 1000),
+        },
+      },
+      { upsert: true, new: true }
+    );
+
+    await AnimeCharacter.updateOne(
+      { _id: char._id },
+      { $set: { used: true, usedAt: new Date() } }
+    );
+
+    return true;
+  } catch (err) {
+    console.error("❌ Anime error:", err);
+    return false;
+  }
+}
 export async function refreshAllLeaderboards() {
   const configs = await GuildConfig.find({ isStarted: true }).lean();
   for (const config of configs) {
@@ -575,8 +660,12 @@ export async function runDynaicGameScheduler() {
     } else if (nextGameType === "language") {
       sent = await askLanguageQuestionForGuild(config.guildId);
       nextTypeAfterSend = "typing";
-    } else {
+    } else if (nextGameType === "typing") {
       sent = await askTypingRaceQuestionForGuild(config.guildId);
+      nextTypeAfterSend = "anime";
+    }
+    else {
+      sent = await askAnimeCharacterForGuild(config.guildId);
       nextTypeAfterSend = "trivia";
     }
 
@@ -739,11 +828,36 @@ export async function closeExpiredTypingRaceRounds() {
     }).catch(() => null);
   }
 }
+
+export async function closeExpiredAnimeRounds() {
+  const rounds = await ActiveAnimeCharacterRound.find({
+    solved: false,
+    expiresAt: { $lte: new Date() },
+  });
+
+  for (const round of rounds) {
+    const updated = await ActiveAnimeCharacterRound.findOneAndUpdate(
+      { _id: round._id, solved: false },
+      { $set: { solved: true, solvedAt: new Date() } },
+      { new: true }
+    );
+
+    if (!updated) continue;
+
+    const channel = await client.channels.fetch(updated.channelId).catch(() => null);
+    if (!channel) continue;
+
+    await channel.send({
+      embeds: [buildAnimeCharacterTimeoutEmbed(updated.characterName)],
+    });
+  }
+}
 export async function processExpiredRounds() {
   await closeExpiredTriviaRounds();
   await closeExpiredFlagRounds();
   await closeExpiredLanguageRounds();
   await closeExpiredTypingRaceRounds();
+  await closeExpiredAnimeRounds()
 }
 
 let schedulersStarted = false;
@@ -994,6 +1108,39 @@ export async function handleSendTypingRace(interaction) {
   });
 }
 
+export async function handleSendAnime(interaction) {
+  const config = await GuildConfig.findOne({
+    guildId: interaction.guildId,
+    isStarted: true,
+  });
+
+  if (!config) {
+    return interaction.reply({
+      content: "Trivia is not set up yet. Run `/trivia-setup` first.",
+      ephemeral: true,
+    });
+  }
+
+  const existingRound = await ActiveAnimeCharacterRound.findOne({
+    guildId: interaction.guildId,
+    solved: false,
+  });
+
+  if (existingRound) {
+    return interaction.reply({
+      content: "There is already an active Anime Character round.",
+      ephemeral: true,
+    });
+  }
+
+  await askAnimeCharacterForGuild(interaction.guildId);
+
+  return interaction.reply({
+    content: "🎌 Anime Character question sent.",
+    ephemeral: true,
+  });
+}
+
 export async function handleCorrectTriviaAnswer(message, claimedRound) {
   await message.react("✅").catch(() => null);
 
@@ -1079,6 +1226,29 @@ export async function handleCorrectTypingRaceAnswer(message, claimedTypingRound)
       buildTypingRaceWinnerEmbed(
         `<@${message.author.id}>`,
         claimedTypingRound.points || 20,
+        message.content
+      ),
+    ],
+  });
+
+  await refreshLeaderboard(message.guild.id);
+}
+
+export async function handleCorrectAnimeAnswer(message, round) {
+  await message.react("✅");
+
+  await upsertUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: round.points || 20,
+  });
+
+  await message.channel.send({
+    embeds: [
+      buildAnimeCharacterWinnerEmbed(
+        `<@${message.author.id}>`,
+        round.points || 20,
         message.content
       ),
     ],

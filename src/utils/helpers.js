@@ -126,6 +126,23 @@ export function buildTypingRaceQuestionEmbed(raceData) {
     })
     .setTimestamp();
 }
+
+export function buildAnimeCharacterEmbed(data) {
+  return new EmbedBuilder()
+    .setColor(0xff4757)
+    .setTitle("🎌 Guess the anime character !")
+    .setDescription("**Who is this anime character ?**")
+    .setImage(data.imageUrl)
+    .addFields({
+      name: "<:giftcard:1480952956445659218> Reward",
+      value: `\`${data.points || 20} pts\``,
+      inline: true,
+    })
+    .setFooter({
+      text: "Anime Challenge • Type exact name",
+    })
+    .setTimestamp();
+}
 export function buildFlagWinnerEmbed(user, points, answer, country) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
@@ -135,7 +152,7 @@ export function buildFlagWinnerEmbed(user, points, answer, country) {
     })
     .setDescription(
       [
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>`,
         `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``,
       ].join("\n")
     )
@@ -154,7 +171,7 @@ export function buildLanguageWinnerEmbed(user, points, answer) {
     })
     .setDescription(
       [
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>`,
         `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``,
       ].join("\n")
     )
@@ -173,13 +190,29 @@ export function buildTypingRaceWinnerEmbed(user, points, answer) {
     })
     .setDescription(
       [
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>!`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>`,
         `<:lb_check:1481611597423186012> **Typed:** \`${answer}\``,
       ].join("\n")
     )
     .setFooter({
       text: "This round is now closed",
     })
+    .setTimestamp();
+}
+
+export function buildAnimeCharacterWinnerEmbed(user, points, answer) {
+  return new EmbedBuilder()
+    .setColor(0x2ecc71)
+    .setAuthor({
+      name: "🎉 Correct Anime Character Guess !",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
+    .setDescription(
+      [
+        `${user} won ${points} points <:gems_5:1480828695466741831>`,
+        `**Answer:** \`${answer}\``,
+      ].join("\n")
+    )
     .setTimestamp();
 }
 export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval) {
@@ -193,7 +226,7 @@ export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval)
         `**🧠 Trivia Channel:** ${triviaChannel}`,
         `**🏆 Leaderboard Channel:** ${leaderboardChannel}`,
         `**⏱️ Game Interval:** Every \`${gameInterval}\` minutes`,
-        `**🔁 Rotation:** \`Trivia → Flag → Language → Typing Race\``,,
+        `**🔁 Rotation:** \`Trivia → Flag → Language → Typing Race → Anime\``,,
       ].join("\n")
     )
     .setFooter({
@@ -219,7 +252,7 @@ export function buildCorrectAnswerEmbed(user, points, answer) {
     })
     .setDescription(
       [
-        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>!`,
+        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
         `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``,
       ].join("\n")
     )
@@ -290,6 +323,19 @@ export function buildTypingRaceTimeoutEmbed(correctAnswer) {
     .setFooter({
       text: "This typing race has ended",
     })
+    .setTimestamp();
+}
+
+export function buildAnimeCharacterTimeoutEmbed(answer) {
+  return new EmbedBuilder()
+    .setColor(0xed4245)
+    .setTitle("<:times_clock:1482649775403831369> Character Guessing - Time's Up!")
+    .setDescription(
+      [
+        "No one guessed the character!",
+        `The character was: \`${answer}\``,
+      ].join("\n")
+    )
     .setTimestamp();
 }
 
