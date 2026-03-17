@@ -139,7 +139,37 @@ export function buildAnimeCharacterEmbed(data) {
       inline: true,
     })
     .setFooter({
-      text: "Anime Challenge • Type exact name",
+      text: "Guess the Character • First one to type correctly wins!",
+    })
+    .setTimestamp();
+}
+
+export function buildLogoEmbed(data) {
+  return new EmbedBuilder()
+    .setColor(0x1abc9c)
+    .setTitle("🧩 Guess the logo!")
+    .setDescription("**Which brand is this?**")
+    .setImage(data.imageUrl)
+    .addFields(
+      {
+        name: "📚 Category",
+        value: `\`${data.category || "General"}\``,
+        inline: true,
+      },
+      {
+        name: "<:giftcard:1480952956445659218> Reward",
+        value: `\`${data.points} pts\``,
+        inline: true,
+    },
+    
+    {
+      name: "<:target2:1480956785715187872> Difficulty",
+      value: `\`${difficultyBadge(data.difficulty || "Medium")}\``,
+      inline: true,
+    },
+    )
+    .setFooter({
+      text: "Guess the Logo • First one to type correctly wins!",
     })
     .setTimestamp();
 }
@@ -215,6 +245,22 @@ export function buildAnimeCharacterWinnerEmbed(user, points, answer) {
     )
     .setTimestamp();
 }
+
+export function buildLogoWinnerEmbed(user, points, answer) {
+  return new EmbedBuilder()
+    .setColor(0x2ecc71)
+    .setAuthor({
+      name: "🎉 Correct Logo Guess !",
+      iconURL: client.user?.displayAvatarURL() || undefined,
+    })
+    .setDescription(
+      [
+        `${user} won ${points} points <:gems_5:1480828695466741831>`,
+        `**Answer:** \`${answer}\``,
+      ].join("\n")
+    )
+    .setTimestamp();
+}
 export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval) {
   return new EmbedBuilder()
     .setColor(0x57f287)
@@ -226,7 +272,7 @@ export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval)
         `**🧠 Trivia Channel:** ${triviaChannel}`,
         `**🏆 Leaderboard Channel:** ${leaderboardChannel}`,
         `**⏱️ Game Interval:** Every \`${gameInterval}\` minutes`,
-        `**🔁 Rotation:** \`Trivia → Flag → Language → Typing Race → Anime\``,,
+        `**🔁 Rotation:** \`Trivia → Flag → Language → Typing → Anime → Logo\``,,
       ].join("\n")
     )
     .setFooter({
@@ -334,6 +380,19 @@ export function buildAnimeCharacterTimeoutEmbed(answer) {
       [
         "No one guessed the character!",
         `The character was: \`${answer}\``,
+      ].join("\n")
+    )
+    .setTimestamp();
+}
+
+export function buildLogoTimeoutEmbed(answer) {
+  return new EmbedBuilder()
+    .setColor(0xed4245)
+    .setTitle("<:times_clock:1482649775403831369> Logo Guessing - Time's Up!")
+    .setDescription(
+      [
+        "No one guessed the logo!",
+        `The logo was of : \`${answer}\``,
       ].join("\n")
     )
     .setTimestamp();

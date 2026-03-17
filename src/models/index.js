@@ -12,7 +12,7 @@ const guildConfigSchema = new mongoose.Schema(
     lastGameAt: { type: Date, default: null },
     nextGameType: {
       type: String,
-      enum: ["trivia", "flag", "language", "typing", "anime"],
+      enum: ["trivia", "flag", "language", "typing", "anime", "logo"],
       default: "trivia",
     },
 
@@ -250,7 +250,57 @@ const activeAnimeCharacterRoundSchema = new mongoose.Schema(
   },
   { timestamps: true }
   );
-
+  const activeLogoRoundSchema = new mongoose.Schema(
+    {
+      guildId: { type: String, required: true, unique: true },
+      channelId: { type: String, required: true },
+    
+      logoId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "LogoQuestion",
+        required: true,
+      },
+    
+      brand: { type: String, required: true },
+      imageUrl: { type: String, required: true },
+    
+      normalizedAnswers: [{ type: String, required: true }],
+    
+      points: { type: Number, default: 20 },
+    
+      solved: { type: Boolean, default: false },
+    
+      winnerUserId: { type: String, default: null },
+      winnerUsername: { type: String, default: null },
+      winningAnswer: { type: String, default: null },
+    
+      solvedAt: { type: Date, default: null },
+    
+      askedAt: { type: Date, default: Date.now },
+      expiresAt: { type: Date, required: true }
+    
+    },
+    { timestamps: true }
+    );
+    
+    const logoQuestionSchema = new mongoose.Schema(
+      {
+        brand: { type: String, required: true, unique: true },
+        normalizedAnswers: [{ type: String, required: true, index: true }],
+        imageUrl: { type: String, required: true },
+        points: { type: Number, default: 20 },
+        difficulty: {
+          type: String,
+          enum: ["Easy", "Medium", "Hard"],
+          default: "Medium",
+        },
+        category: { type: String, default: "General" },
+        isActive: { type: Boolean, default: true },
+        used: { type: Boolean, default: false },
+        usedAt: { type: Date, default: null },
+      },
+      { timestamps: true }
+    );    
 export const GuildConfig = mongoose.model("GuildConfig", guildConfigSchema);
 export const UserScore = mongoose.model("UserScore", userScoreSchema);
 export const TriviaQuestion = mongoose.model("TriviaQuestion", triviaQuestionSchema);
@@ -268,3 +318,11 @@ export const ActiveAnimeCharacterRound = mongoose.model(
 export const AnimeCharacter =
   mongoose.models.AnimeCharacter ||
   mongoose.model("AnimeCharacter", characterSchema);
+  
+  export const ActiveLogoRound = mongoose.model(
+    "ActiveLogoRound",
+    activeLogoRoundSchema
+  );
+  export const LogoQuestion =
+  mongoose.models.LogoQuestion ||
+  mongoose.model("LogoQuestion", logoQuestionSchema);

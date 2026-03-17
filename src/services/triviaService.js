@@ -20,7 +20,8 @@ import {
   ActiveLanguageRound,
   TypingRaceQuestion,
   ActiveTypingRaceRound,
-  AnimeCharacter, ActiveAnimeCharacterRound 
+  AnimeCharacter, ActiveAnimeCharacterRound, 
+  LogoQuestion, ActiveLogoRound
 } from "../models/index.js";
 import {
   buildQuestionEmbed,
@@ -41,6 +42,9 @@ import {
   buildAnimeCharacterEmbed,
   buildAnimeCharacterWinnerEmbed,
   buildAnimeCharacterTimeoutEmbed,
+  buildLogoEmbed,
+buildLogoWinnerEmbed,
+buildLogoTimeoutEmbed,
 } from "../utils/helpers.js";
 
 export async function registerSlashCommands() {
@@ -104,6 +108,11 @@ export async function registerSlashCommands() {
     new SlashCommandBuilder()
       .setName("send-anime")
       .setDescription("Admin only: send an Anime Character question immediately for testing.")
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+
+    new SlashCommandBuilder()
+      .setName("send-logo")
+      .setDescription("Admin only: send a logo question")
       .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
   ].map((cmd) => cmd.toJSON());
 
@@ -253,6 +262,27 @@ export async function getRandomAnimeCharacter() {
   );
 
   result = await AnimeCharacter.aggregate([
+    { $match: { isActive: true, used: false } },
+    { $sample: { size: 1 } },
+  ]);
+
+  return result[0] || null;
+}
+
+export async function getRandomLogoQuestion() {
+  let result = await LogoQuestion.aggregate([
+    { $match: { isActive: true, used: false } },
+    { $sample: { size: 1 } },
+  ]);
+
+  if (result.length) return result[0];
+
+  await LogoQuestion.updateMany(
+    { isActive: true },
+    { $set: { used: false, usedAt: null } }
+  );
+
+  result = await LogoQuestion.aggregate([
     { $match: { isActive: true, used: false } },
     { $sample: { size: 1 } },
   ]);
@@ -620,6 +650,61 @@ export async function askAnimeCharacterForGuild(guildId) {
     return false;
   }
 }
+
+export async function askLogoQuestionForGuild(guildId) {
+  try {
+    const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
+    if (!config) return false;
+
+    const existing = await ActiveLogoRound.findOne({
+      guildId,
+      solved: false,
+    }).lean();
+
+    if (existing) return false;
+
+    const logo = await getRandomLogoQuestion();
+    if (!logo) return false;
+
+    const channel = await client.channels
+      .fetch(config.triviaChannelId)
+      .catch(() => null);
+
+    if (!channel) return false;
+
+    const embed = buildLogoEmbed(logo);
+    await channel.send({ embeds: [embed] });
+
+    await ActiveLogoRound.findOneAndUpdate(
+      { guildId },
+      {
+        $set: {
+          guildId,
+          channelId: channel.id,
+          logoId: logo._id,
+          brand: logo.brand,
+          imageUrl: logo.imageUrl,
+          normalizedAnswers: logo.normalizedAnswers,
+          points: logo.points,
+          solved: false,
+          askedAt: new Date(),
+          expiresAt: new Date(Date.now() + 60 * 1000),
+        },
+      },
+      { upsert: true, new: true }
+    );
+
+    await LogoQuestion.updateOne(
+      { _id: logo._id },
+      { $set: { used: true, usedAt: new Date() } }
+    );
+
+    return true;
+  } catch (err) {
+    console.error("❌ Logo error:", err);
+    return false;
+  }
+}
 export async function refreshAllLeaderboards() {
   const configs = await GuildConfig.find({ isStarted: true }).lean();
   for (const config of configs) {
@@ -664,8 +749,12 @@ export async function runDynaicGameScheduler() {
       sent = await askTypingRaceQuestionForGuild(config.guildId);
       nextTypeAfterSend = "anime";
     }
-    else {
+    else if (nextGameType === "anime") {
       sent = await askAnimeCharacterForGuild(config.guildId);
+      nextTypeAfterSend = "logo";
+    }
+    else {
+      sent = await askLogoQuestionForGuild(config.guildId);
       nextTypeAfterSend = "trivia";
     }
 
@@ -852,12 +941,37 @@ export async function closeExpiredAnimeRounds() {
     });
   }
 }
+
+export async function closeExpiredLogoRounds() {
+  const rounds = await ActiveLogoRound.find({
+    solved: false,
+    expiresAt: { $lte: new Date() },
+  });
+
+  for (const round of rounds) {
+    const updated = await ActiveLogoRound.findOneAndUpdate(
+      { _id: round._id, solved: false },
+      { $set: { solved: true, solvedAt: new Date() } },
+      { new: true }
+    );
+
+    if (!updated) continue;
+
+    const channel = await client.channels.fetch(updated.channelId).catch(() => null);
+    if (!channel) continue;
+
+    await channel.send({
+      embeds: [buildLogoTimeoutEmbed(updated.brand)],
+    });
+  }
+}
 export async function processExpiredRounds() {
   await closeExpiredTriviaRounds();
   await closeExpiredFlagRounds();
   await closeExpiredLanguageRounds();
   await closeExpiredTypingRaceRounds();
   await closeExpiredAnimeRounds()
+  await closeExpiredLogoRounds();
 }
 
 let schedulersStarted = false;
@@ -1140,7 +1254,26 @@ export async function handleSendAnime(interaction) {
     ephemeral: true,
   });
 }
+export async function handleSendLogo(interaction) {
+  const existing = await ActiveLogoRound.findOne({
+    guildId: interaction.guildId,
+    solved: false,
+  });
 
+  if (existing) {
+    return interaction.reply({
+      content: "There is already an active logo round.",
+      ephemeral: true,
+    });
+  }
+
+  await askLogoQuestionForGuild(interaction.guildId);
+
+  return interaction.reply({
+    content: "🏢 Logo question sent.",
+    ephemeral: true,
+  });
+}
 export async function handleCorrectTriviaAnswer(message, claimedRound) {
   await message.react("✅").catch(() => null);
 
@@ -1249,6 +1382,29 @@ export async function handleCorrectAnimeAnswer(message, round) {
       buildAnimeCharacterWinnerEmbed(
         `<@${message.author.id}>`,
         round.points || 20,
+        message.content
+      ),
+    ],
+  });
+
+  await refreshLeaderboard(message.guild.id);
+}
+
+export async function handleCorrectLogoAnswer(message, round) {
+  await message.react("✅");
+
+  await upsertUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: round.points,
+  });
+
+  await message.channel.send({
+    embeds: [
+      buildLogoWinnerEmbed(
+        `<@${message.author.id}>`,
+        round.points,
         message.content
       ),
     ],

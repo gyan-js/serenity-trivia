@@ -6,6 +6,8 @@ import {
   ActiveLanguageRound,
   ActiveTypingRaceRound,
   ActiveAnimeCharacterRound,
+  ActiveLogoRound,
+
 } from "../models/index.js";
 import { normalizeAnswer } from "../utils/helpers.js";
 import {
@@ -25,6 +27,8 @@ import {
   handleCorrectTypingRaceAnswer,
   handleCorrectAnimeAnswer,
   handleSendAnime,
+  handleCorrectLogoAnswer,
+  handleSendLogo
   
 } from "../services/triviaService.js";
 
@@ -91,6 +95,9 @@ export function registerDiscordEvents() {
       }
       if (interaction.commandName === "send-anime") {
         return await handleSendAnime(interaction);
+      }
+      if (interaction.commandName === "send-logo") {
+        return await handleSendLogo(interaction);
       }
     } catch (error) {
       console.error("❌ Interaction error:", error);
@@ -240,6 +247,30 @@ export function registerDiscordEvents() {
       
       if (claimedAnime) {
         await handleCorrectAnimeAnswer(message, claimedAnime);
+        return;
+      }
+
+      const claimedLogo = await ActiveLogoRound.findOneAndUpdate(
+        {
+          guildId: message.guild.id,
+          channelId: message.channel.id,
+          solved: false,
+          normalizedAnswers: normalized,
+        },
+        {
+          $set: {
+            solved: true,
+            winnerUserId: message.author.id,
+            winnerUsername: message.author.username,
+            winningAnswer: message.content,
+            solvedAt: new Date(),
+          },
+        },
+        { new: true }
+      );
+      
+      if (claimedLogo) {
+        await handleCorrectLogoAnswer(message, claimedLogo);
         return;
       }
     } catch (error) {
