@@ -1126,9 +1126,9 @@ export async function handleTriviaReset(interaction) {
       }
     );
 
-    /**const guild = interaction.guild;
+    const guild = interaction.guild;
 
-    let geniusRole = guild.roles.cache.find(
+    /**let geniusRole = guild.roles.cache.find(
       (role) => role.name === (config.weeklyWinnerRoleName || "Genius")
     );
 
@@ -1139,7 +1139,7 @@ export async function handleTriviaReset(interaction) {
       }).catch(() => null);
     }
 
-    if (geniusRole) {
+    /**if (geniusRole) {
       try {
         const allMembers = await guild.members.fetch();
 
@@ -1156,8 +1156,8 @@ export async function handleTriviaReset(interaction) {
       } catch (error) {
         console.error("❌ Failed to assign Genius role:", error);
       }
-    }
-  }**/
+    }**/
+  }
 
   await UserScore.deleteMany({ guildId });
 

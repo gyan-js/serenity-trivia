@@ -34,23 +34,7 @@ export function buildQuestionEmbed(questionData) {
         "╰────────────────────╯",
       ].join("\n")
     )
-    .addFields(
-      {
-        name: "📚 Category",
-        value: `\`${questionData.category || "General"}\``,
-        inline: true,
-      },
-      {
-        name: "<:target2:1480956785715187872> Difficulty",
-        value: `\`${difficultyBadge(questionData.difficulty || "Medium")}\``,
-        inline: true,
-      },
-      {
-        name: "<:giftcard:1480952956445659218> Reward",
-        value: `\`${questionData.points || 10} pts\``,
-        inline: true,
-      }
-    )
+  
     .setFooter({
       text: "Type your answer in chat • First correct answer wins",
     })
@@ -82,23 +66,7 @@ export function buildLanguageQuestionEmbed(languageData) {
         `*\"${languageData.sampleText}\"*`,
       ].join("\n")
     )
-    .addFields(
-      {
-        name: "<:worldmap:1482686661207920709> Region",
-        value: `\`${languageData.region || "Unknown"}\``,
-        inline: true,
-      },
-      {
-        name: "<:target2:1480956785715187872> Difficulty",
-        value: `\`${difficultyBadge(languageData.difficulty || "medium")}\``,
-        inline: true,
-      },
-      {
-        name: "<:giftcard:1480952956445659218> Reward",
-        value: `\`${languageData.points || 12} pts\``,
-        inline: true,
-      }
-    )
+
     .setFooter({
       text: "Guess the language • First correct answer wins",
     })
@@ -108,7 +76,7 @@ export function buildLanguageQuestionEmbed(languageData) {
 export function buildTypingRaceQuestionEmbed(raceData) {
   return new EmbedBuilder()
     .setColor(0xe67e22)
-    .setTitle("🏁 Typing Race!")
+    .setTitle("<:raceflag:1483583329113739284> Typing Race!")
     .setDescription(
       [
         "**Type the following sentence first:**",
@@ -116,11 +84,7 @@ export function buildTypingRaceQuestionEmbed(raceData) {
         `*${raceData.text}*`,
       ].join("\n")
     )
-    .addFields({
-      name: "<:giftcard:1480952956445659218> Reward",
-      value: `\`${raceData.points || 20} pts\``,
-      inline: true,
-    })
+    
     .setFooter({
       text: "Type the sentence • First one to type correctly wins!",
     })
@@ -130,14 +94,10 @@ export function buildTypingRaceQuestionEmbed(raceData) {
 export function buildAnimeCharacterEmbed(data) {
   return new EmbedBuilder()
     .setColor(0xff4757)
-    .setTitle("🎌 Guess the anime character !")
+    .setTitle("<:animeshrine:1483582169187094549> Guess the anime character !")
     .setDescription("**Who is this anime character ?**")
     .setImage(data.imageUrl)
-    .addFields({
-      name: "<:giftcard:1480952956445659218> Reward",
-      value: `\`${data.points || 20} pts\``,
-      inline: true,
-    })
+    
     .setFooter({
       text: "Guess the Character • First one to type correctly wins!",
     })
@@ -147,27 +107,10 @@ export function buildAnimeCharacterEmbed(data) {
 export function buildLogoEmbed(data) {
   return new EmbedBuilder()
     .setColor(0x1abc9c)
-    .setTitle("🧩 Guess the logo!")
+    .setTitle("<:jigsaw:1483783823849422959> Guess the logo!")
     .setDescription("**Which brand is this?**")
     .setImage(data.imageUrl)
-    .addFields(
-      {
-        name: "📚 Category",
-        value: `\`${data.category || "General"}\``,
-        inline: true,
-      },
-      {
-        name: "<:giftcard:1480952956445659218> Reward",
-        value: `\`${data.points} pts\``,
-        inline: true,
-    },
     
-    {
-      name: "<:target2:1480956785715187872> Difficulty",
-      value: `\`${difficultyBadge(data.difficulty || "Medium")}\``,
-      inline: true,
-    },
-    )
     .setFooter({
       text: "Guess the Logo • First one to type correctly wins!",
     })
@@ -183,7 +126,7 @@ export function buildFlagWinnerEmbed(user, points, rank, leaderboardChannelId) {
     .setDescription(
       [
         `🏅 **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
         `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
@@ -203,7 +146,7 @@ export function buildLanguageWinnerEmbed(user, points, rank, leaderboardChannelI
     .setDescription(
       [
         `🏅 **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
         `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
@@ -223,7 +166,7 @@ export function buildTypingRaceWinnerEmbed(user, points, rank, leaderboardChanne
     .setDescription(
       [
         `🏅 **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
         `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
@@ -243,7 +186,7 @@ export function buildAnimeCharacterWinnerEmbed(user, points, rank, leaderboardCh
     .setDescription(
       [
         `🏅 **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
         `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
@@ -260,7 +203,7 @@ export function buildLogoWinnerEmbed(user, points, rank, leaderboardChannelId) {
     .setDescription(
       [
         `🏅 **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
         `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
@@ -308,7 +251,7 @@ export function buildCorrectAnswerEmbed(user, points, answer, rank, leaderboardC
     .setDescription(
       [
         `🏅 **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
         `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
@@ -451,11 +394,11 @@ export function buildLeaderboardEmbed(guildName, topUsers, options = {}) {
   return new EmbedBuilder()
     .setColor(0xf1c40f)
     .setAuthor({
-      name: `${guildName} Trivia Rankings`,
+      name: `${guildName} Game Rankings`,
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setThumbnail(client.user?.displayAvatarURL() || undefined)
-    .setTitle(`__${boardType} Trivia Ranking__`)
+    .setTitle(`__${boardType} Game Ranking__`)
     .setDescription(`\n${winnerLine}${description}`)
     
     .setFooter({
