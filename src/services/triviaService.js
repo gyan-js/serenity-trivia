@@ -50,7 +50,7 @@ buildLogoTimeoutEmbed,
 export async function registerSlashCommands() {
   const commands = [
     new SlashCommandBuilder()
-      .setName("trivia-setup")
+      .setName("games-setup")
       .setDescription("Admin only: set up trivia and leaderboard channels.")
       .addChannelOption((option) =>
         option
@@ -72,28 +72,23 @@ export async function registerSlashCommands() {
           .setDescription("Time interval between each game rotation")
           .setMinValue(1)
           .setRequired(true)
-      )
-      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+      ),
 
     new SlashCommandBuilder()
-      .setName("trivia-reset")
-      .setDescription("Admin only: reset this server's leaderboard.")
-      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+      .setName("weekly-reset")
+      .setDescription("Admin only: reset this server's leaderboard."),
 
     new SlashCommandBuilder()
-      .setName("trivia-reset-setup")
-      .setDescription("Admin only: completely reset the trivia setup for this server.")
-      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+      .setName("reset-games-setup")
+      .setDescription("Admin only: completely reset the trivia setup for this server."),
 
     new SlashCommandBuilder()
       .setName("send-trivia")
-      .setDescription("Admin only: send a trivia question right now for testing.")
-      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+      .setDescription("Admin only: send a trivia question right now for testing."),
 
     new SlashCommandBuilder()
       .setName("send-flag-trivia")
-      .setDescription("Admin only: send a Guess the Flag question immediately for testing.")
-      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+      .setDescription("Admin only: send a Guess the Flag question immediately for testing."),
 
     new SlashCommandBuilder()
       .setName("send-language-trivia")
