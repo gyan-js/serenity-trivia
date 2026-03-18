@@ -381,7 +381,7 @@ export async function refreshPermanentLeaderboard(guildId) {
     }
 
     const embed = buildLeaderboardEmbed(guild?.name || "Server", topUsers, {
-      boardType: "Permanent",
+      boardType: "Alltime",
       winnerOfWeekText: winnerText,
     });
 
@@ -1126,7 +1126,7 @@ export async function handleTriviaReset(interaction) {
       }
     );
 
-    const guild = interaction.guild;
+    /**const guild = interaction.guild;
 
     let geniusRole = guild.roles.cache.find(
       (role) => role.name === (config.weeklyWinnerRoleName || "Genius")
@@ -1157,7 +1157,7 @@ export async function handleTriviaReset(interaction) {
         console.error("❌ Failed to assign Genius role:", error);
       }
     }
-  }
+  }**/
 
   await UserScore.deleteMany({ guildId });
 
