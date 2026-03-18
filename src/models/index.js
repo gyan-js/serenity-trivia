@@ -5,7 +5,15 @@ const guildConfigSchema = new mongoose.Schema(
     guildId: { type: String, required: true, unique: true },
     triviaChannelId: { type: String, required: true },
     leaderboardChannelId: { type: String, required: true },
-    leaderboardMessageId: { type: String, default: null },
+    leaderboardChannelId: { type: String, required: true },
+
+    weeklyLeaderboardMessageId: { type: String, default: null },
+    permanentLeaderboardMessageId: { type: String, default: null },
+
+    lastWeeklyWinnerUserId: { type: String, default: null },
+    lastWeeklyWinnerUsername: { type: String, default: null },
+
+    weeklyWinnerRoleName: { type: String, default: "Genius" },
     isStarted: { type: Boolean, default: true },
 
     gameInterval: { type: Number, default: 10 },
@@ -37,7 +45,18 @@ const userScoreSchema = new mongoose.Schema(
 );
 
 userScoreSchema.index({ guildId: 1, userId: 1 }, { unique: true });
+const permanentUserScoreSchema = new mongoose.Schema(
+  {
+    guildId: { type: String, required: true, index: true },
+    userId: { type: String, required: true },
+    username: { type: String, required: true },
+    points: { type: Number, default: 0 },
+    wins: { type: Number, default: 0 },
+  },
+  { timestamps: true }
+);
 
+permanentUserScoreSchema.index({ guildId: 1, userId: 1 }, { unique: true });
 const triviaQuestionSchema = new mongoose.Schema(
   {
     question: { type: String, required: true },
@@ -326,3 +345,8 @@ export const AnimeCharacter =
   export const LogoQuestion =
   mongoose.models.LogoQuestion ||
   mongoose.model("LogoQuestion", logoQuestionSchema);
+
+  export const PermanentUserScore = mongoose.model(
+    "PermanentUserScore",
+    permanentUserScoreSchema
+  );

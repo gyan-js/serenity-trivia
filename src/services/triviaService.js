@@ -21,7 +21,7 @@ import {
   TypingRaceQuestion,
   ActiveTypingRaceRound,
   AnimeCharacter, ActiveAnimeCharacterRound, 
-  LogoQuestion, ActiveLogoRound
+  LogoQuestion, ActiveLogoRound, PermanentUserScore,
 } from "../models/index.js";
 import {
   buildQuestionEmbed,
@@ -303,8 +303,23 @@ export async function upsertUserScore({ guildId, userId, username, points }) {
     }
   );
 }
+export async function upsertPermanentUserScore({ guildId, userId, username, points }) {
+  return PermanentUserScore.findOneAndUpdate(
+    { guildId, userId },
+    {
+      $set: { username },
+      $inc: { points, wins: 1 },
+    },
+    {
+      upsert: true,
+      new: true,
+      setDefaultsOnInsert: true,
+    }
+  );
+}
 
-export async function refreshLeaderboard(guildId) {
+
+export async function refreshWeeklyLeaderboard(guildId) {
   try {
     const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
     if (!config) return;
@@ -318,12 +333,14 @@ export async function refreshLeaderboard(guildId) {
       .lean();
 
     const guild = await client.guilds.fetch(guildId).catch(() => null);
-    const embed = buildLeaderboardEmbed(guild?.name || "Server", topUsers);
+    const embed = buildLeaderboardEmbed(guild?.name || "Server", topUsers, {
+      boardType: "Weekly",
+    });
 
     let leaderboardMessage = null;
-    if (config.leaderboardMessageId) {
+    if (config.weeklyLeaderboardMessageId) {
       leaderboardMessage = await channel.messages
-        .fetch(config.leaderboardMessageId)
+        .fetch(config.weeklyLeaderboardMessageId)
         .catch(() => null);
     }
 
@@ -333,13 +350,67 @@ export async function refreshLeaderboard(guildId) {
       const sent = await channel.send({ embeds: [embed] });
       await GuildConfig.updateOne(
         { guildId },
-        { $set: { leaderboardMessageId: sent.id } }
+        { $set: { weeklyLeaderboardMessageId: sent.id } }
       );
     }
   } catch (error) {
-    console.error(`❌ Failed to refresh leaderboard for guild ${guildId}:`, error);
+    console.error(`❌ Failed to refresh weekly leaderboard for guild ${guildId}:`, error);
   }
 }
+
+export async function refreshPermanentLeaderboard(guildId) {
+  try {
+    const config = await GuildConfig.findOne({ guildId, isStarted: true }).lean();
+    if (!config) return;
+
+    const channel = await client.channels.fetch(config.leaderboardChannelId).catch(() => null);
+    if (!channel) return;
+
+    const topUsers = await PermanentUserScore.find({ guildId })
+      .sort({ points: -1, wins: -1, updatedAt: 1 })
+      .limit(10)
+      .lean();
+
+    const guild = await client.guilds.fetch(guildId).catch(() => null);
+
+    let winnerText = null;
+    if (config.lastWeeklyWinnerUserId) {
+      winnerText = `<@${config.lastWeeklyWinnerUserId}>`;
+    } else if (config.lastWeeklyWinnerUsername) {
+      winnerText = config.lastWeeklyWinnerUsername;
+    }
+
+    const embed = buildLeaderboardEmbed(guild?.name || "Server", topUsers, {
+      boardType: "Permanent",
+      winnerOfWeekText: winnerText,
+    });
+
+    let leaderboardMessage = null;
+    if (config.permanentLeaderboardMessageId) {
+      leaderboardMessage = await channel.messages
+        .fetch(config.permanentLeaderboardMessageId)
+        .catch(() => null);
+    }
+
+    if (leaderboardMessage) {
+      await leaderboardMessage.edit({ embeds: [embed] });
+    } else {
+      const sent = await channel.send({ embeds: [embed] });
+      await GuildConfig.updateOne(
+        { guildId },
+        { $set: { permanentLeaderboardMessageId: sent.id } }
+      );
+    }
+  } catch (error) {
+    console.error(`❌ Failed to refresh permanent leaderboard for guild ${guildId}:`, error);
+  }
+}
+
+export async function refreshLeaderboard(guildId) {
+  await refreshPermanentLeaderboard(guildId);
+  await refreshWeeklyLeaderboard(guildId);
+}
+
 
 export async function askQuestionForGuild(guildId) {
   try {
@@ -1036,8 +1107,61 @@ export async function handleTriviaSetup(interaction) {
 }
 
 export async function handleTriviaReset(interaction) {
-  await UserScore.deleteMany({ guildId: interaction.guildId });
-  await refreshLeaderboard(interaction.guildId);
+  const guildId = interaction.guildId;
+
+  const topWeeklyUser = await UserScore.findOne({ guildId })
+    .sort({ points: -1, wins: -1, updatedAt: 1 })
+    .lean();
+
+  const config = await GuildConfig.findOne({ guildId });
+
+  if (topWeeklyUser && config) {
+    await GuildConfig.updateOne(
+      { guildId },
+      {
+        $set: {
+          lastWeeklyWinnerUserId: topWeeklyUser.userId,
+          lastWeeklyWinnerUsername: topWeeklyUser.username,
+        },
+      }
+    );
+
+    const guild = interaction.guild;
+
+    let geniusRole = guild.roles.cache.find(
+      (role) => role.name === (config.weeklyWinnerRoleName || "Genius")
+    );
+
+    if (!geniusRole) {
+      geniusRole = await guild.roles.create({
+        name: config.weeklyWinnerRoleName || "Genius",
+        reason: "Weekly trivia winner role",
+      }).catch(() => null);
+    }
+
+    if (geniusRole) {
+      try {
+        const allMembers = await guild.members.fetch();
+
+        for (const [, member] of allMembers) {
+          if (member.roles.cache.has(geniusRole.id)) {
+            await member.roles.remove(geniusRole).catch(() => null);
+          }
+        }
+
+        const winnerMember = await guild.members.fetch(topWeeklyUser.userId).catch(() => null);
+        if (winnerMember) {
+          await winnerMember.roles.add(geniusRole).catch(() => null);
+        }
+      } catch (error) {
+        console.error("❌ Failed to assign Genius role:", error);
+      }
+    }
+  }
+
+  await UserScore.deleteMany({ guildId });
+
+  await refreshLeaderboard(guildId);
 
   return interaction.reply({
     embeds: [buildResetEmbed()],
@@ -1048,46 +1172,72 @@ export async function handleTriviaReset(interaction) {
 export async function handleTriviaResetSetup(interaction) {
   const guildId = interaction.guildId;
 
-  const config = await GuildConfig.findOne({ guildId });
+  try {
+    const config = await GuildConfig.findOne({ guildId });
 
-  if (config?.leaderboardChannelId && config?.leaderboardMessageId) {
-    try {
+
+    if (config?.leaderboardChannelId) {
       const channel = await client.channels
         .fetch(config.leaderboardChannelId)
         .catch(() => null);
 
       if (channel) {
-        const msg = await channel.messages
-          .fetch(config.leaderboardMessageId)
-          .catch(() => null);
+        const messageIds = [
+          config.weeklyLeaderboardMessageId,
+          config.permanentLeaderboardMessageId,
+        ];
 
-        if (msg) {
-          await msg.delete().catch(() => null);
+        for (const messageId of messageIds) {
+          if (!messageId) continue;
+
+          const msg = await channel.messages
+            .fetch(messageId)
+            .catch(() => null);
+
+          if (msg) {
+            await msg.delete().catch(() => null);
+          }
         }
       }
-    } catch (err) {
-      console.error("Failed to delete leaderboard message:", err);
     }
+
+
+    await ActiveRound.deleteOne({ guildId });
+    await ActiveFlagRound.deleteOne({ guildId });
+    await ActiveLanguageRound.deleteOne({ guildId });
+    await ActiveTypingRaceRound.deleteOne({ guildId });
+    await ActiveAnimeCharacterRound.deleteOne({ guildId });
+    await ActiveLogoRound.deleteOne({ guildId });
+
+ 
+    await UserScore.deleteMany({ guildId }); // weekly
+    await PermanentUserScore.deleteMany({ guildId }); // permanent
+
+ 
+    await GuildConfig.deleteOne({ guildId });
+
+   
+    const embed = new EmbedBuilder()
+      .setColor(0xed4245)
+      .setTitle("⚠️ Trivia Setup Reset")
+      .setDescription(
+        "The trivia bot setup has been completely removed from this server.\n\nRun `/trivia-setup` again to start it."
+      )
+      .setTimestamp();
+
+    return interaction.reply({
+      embeds: [embed],
+      ephemeral: true,
+    });
+
+  } catch (error) {
+    console.error("❌ Reset setup error:", error);
+
+    return interaction.reply({
+      content: "Something went wrong while resetting the setup.",
+      ephemeral: true,
+    });
   }
-
-  await GuildConfig.deleteOne({ guildId });
-  await ActiveRound.deleteOne({ guildId });
-  await ActiveFlagRound.deleteOne({ guildId });
-  await ActiveLanguageRound.deleteOne({ guildId });
-  await UserScore.deleteMany({ guildId });
-
-  const embed = new EmbedBuilder()
-    .setColor(0xed4245)
-    .setTitle("⚠️ Trivia Setup Reset")
-    .setDescription(
-      "The trivia bot setup has been completely removed from this server.\n\nRun `/trivia-setup` again to start it."
-    )
-    .setTimestamp();
-
-  return interaction.reply({
-    embeds: [embed],
-    ephemeral: true,
-  });
 }
 
 export async function handleSendTrivia(interaction) {
@@ -1284,12 +1434,36 @@ export async function handleCorrectTriviaAnswer(message, claimedRound) {
     points: claimedRound.points,
   });
 
+  await upsertPermanentUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedRound.points,
+  });
+
+  const userScore = await UserScore.findOne({
+    guildId: message.guild.id,
+    userId: message.author.id,
+  });
+
+  const rank =
+    (await UserScore.countDocuments({
+      guildId: message.guild.id,
+      points: { $gt: userScore.points },
+    })) + 1;
+
+  const config = await GuildConfig.findOne({
+    guildId: message.guild.id,
+  });
+
   await message.channel.send({
     embeds: [
       buildCorrectAnswerEmbed(
         `<@${message.author.id}>`,
         claimedRound.points,
-        message.content
+        userScore.points,
+        rank,
+        config.leaderboardChannelId
       ),
     ],
   });
@@ -1307,13 +1481,36 @@ export async function handleCorrectFlagAnswer(message, claimedFlagRound) {
     points: claimedFlagRound.points || 15,
   });
 
+  await upsertPermanentUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedRound.points,
+  });
+
+  const userScore = await UserScore.findOne({
+    guildId: message.guild.id,
+    userId: message.author.id,
+  });
+
+  const rank =
+    (await UserScore.countDocuments({
+      guildId: message.guild.id,
+      points: { $gt: userScore.points },
+    })) + 1;
+
+  const config = await GuildConfig.findOne({
+    guildId: message.guild.id,
+  });
+
   await message.channel.send({
     embeds: [
       buildFlagWinnerEmbed(
         `<@${message.author.id}>`,
         claimedFlagRound.points || 15,
-        message.content,
-        claimedFlagRound.country
+        //userScore.points,
+        rank,
+        config.leaderboardChannelId
       ),
     ],
   });
@@ -1331,12 +1528,35 @@ export async function handleCorrectLanguageAnswer(message, claimedLanguageRound)
     points: claimedLanguageRound.points || 12,
   });
 
+  await upsertPermanentUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedRound.points,
+  });
+
+  const userScore = await UserScore.findOne({
+    guildId: message.guild.id,
+    userId: message.author.id,
+  });
+
+  const rank =
+    (await UserScore.countDocuments({
+      guildId: message.guild.id,
+      points: { $gt: userScore.points },
+    })) + 1;
+
+  const config = await GuildConfig.findOne({
+    guildId: message.guild.id,
+  });
+
   await message.channel.send({
     embeds: [
       buildLanguageWinnerEmbed(
         `<@${message.author.id}>`,
         claimedLanguageRound.points || 12,
-        message.content
+        rank,
+        config.leaderboardChannelId
       ),
     ],
   });
@@ -1354,12 +1574,35 @@ export async function handleCorrectTypingRaceAnswer(message, claimedTypingRound)
     points: claimedTypingRound.points || 20,
   });
 
+  await upsertPermanentUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedRound.points,
+  });
+
+  const userScore = await UserScore.findOne({
+    guildId: message.guild.id,
+    userId: message.author.id,
+  });
+
+  const rank =
+    (await UserScore.countDocuments({
+      guildId: message.guild.id,
+      points: { $gt: userScore.points },
+    })) + 1;
+
+  const config = await GuildConfig.findOne({
+    guildId: message.guild.id,
+  });
+
   await message.channel.send({
     embeds: [
       buildTypingRaceWinnerEmbed(
         `<@${message.author.id}>`,
         claimedTypingRound.points || 20,
-        message.content
+        rank,
+        config.leaderboardChannelId
       ),
     ],
   });
@@ -1377,12 +1620,36 @@ export async function handleCorrectAnimeAnswer(message, round) {
     points: round.points || 20,
   });
 
+  await upsertPermanentUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedRound.points,
+  });
+
+  const userScore = await UserScore.findOne({
+    guildId: message.guild.id,
+    userId: message.author.id,
+  });
+
+  const rank =
+    (await UserScore.countDocuments({
+      guildId: message.guild.id,
+      points: { $gt: userScore.points },
+    })) + 1;
+
+  const config = await GuildConfig.findOne({
+    guildId: message.guild.id,
+  });
+
   await message.channel.send({
     embeds: [
       buildAnimeCharacterWinnerEmbed(
         `<@${message.author.id}>`,
         round.points || 20,
-        message.content
+        rank,
+        config.leaderboardChannelId
+        
       ),
     ],
   });
@@ -1400,12 +1667,36 @@ export async function handleCorrectLogoAnswer(message, round) {
     points: round.points,
   });
 
+  await upsertPermanentUserScore({
+    guildId: message.guild.id,
+    userId: message.author.id,
+    username: message.author.username,
+    points: claimedRound.points,
+  });
+
+  const userScore = await UserScore.findOne({
+    guildId: message.guild.id,
+    userId: message.author.id,
+  });
+
+  const rank =
+    (await UserScore.countDocuments({
+      guildId: message.guild.id,
+      points: { $gt: userScore.points },
+    })) + 1;
+
+  const config = await GuildConfig.findOne({
+    guildId: message.guild.id,
+  });
+
   await message.channel.send({
     embeds: [
       buildLogoWinnerEmbed(
         `<@${message.author.id}>`,
         round.points,
-        message.content
+
+        rank,
+        config.leaderboardChannelId
       ),
     ],
   });

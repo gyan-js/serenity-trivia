@@ -173,7 +173,7 @@ export function buildLogoEmbed(data) {
     })
     .setTimestamp();
 }
-export function buildFlagWinnerEmbed(user, points, answer, country) {
+export function buildFlagWinnerEmbed(user, points, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
@@ -182,8 +182,9 @@ export function buildFlagWinnerEmbed(user, points, answer, country) {
     })
     .setDescription(
       [
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>`,
-        `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``,
+        `🏅 **Rank:** \`#${rank}\``,
+        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -192,7 +193,7 @@ export function buildFlagWinnerEmbed(user, points, answer, country) {
     .setTimestamp();
 }
 
-export function buildLanguageWinnerEmbed(user, points, answer) {
+export function buildLanguageWinnerEmbed(user, points, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
@@ -201,8 +202,9 @@ export function buildLanguageWinnerEmbed(user, points, answer) {
     })
     .setDescription(
       [
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>`,
-        `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``,
+        `🏅 **Rank:** \`#${rank}\``,
+        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -211,7 +213,7 @@ export function buildLanguageWinnerEmbed(user, points, answer) {
     .setTimestamp();
 }
 
-export function buildTypingRaceWinnerEmbed(user, points, answer) {
+export function buildTypingRaceWinnerEmbed(user, points, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
@@ -220,8 +222,9 @@ export function buildTypingRaceWinnerEmbed(user, points, answer) {
     })
     .setDescription(
       [
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>`,
-        `<:lb_check:1481611597423186012> **Typed:** \`${answer}\``,
+        `🏅 **Rank:** \`#${rank}\``,
+        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -230,7 +233,7 @@ export function buildTypingRaceWinnerEmbed(user, points, answer) {
     .setTimestamp();
 }
 
-export function buildAnimeCharacterWinnerEmbed(user, points, answer) {
+export function buildAnimeCharacterWinnerEmbed(user, points, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
@@ -239,14 +242,15 @@ export function buildAnimeCharacterWinnerEmbed(user, points, answer) {
     })
     .setDescription(
       [
-        `${user} won ${points} points <:gems_5:1480828695466741831>`,
-        `**Answer:** \`${answer}\``,
+        `🏅 **Rank:** \`#${rank}\``,
+        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setTimestamp();
 }
 
-export function buildLogoWinnerEmbed(user, points, answer) {
+export function buildLogoWinnerEmbed(user, points, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
@@ -255,13 +259,18 @@ export function buildLogoWinnerEmbed(user, points, answer) {
     })
     .setDescription(
       [
-        `${user} won ${points} points <:gems_5:1480828695466741831>`,
-        `**Answer:** \`${answer}\``,
+        `🏅 **Rank:** \`#${rank}\``,
+        `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
+        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setTimestamp();
 }
-export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval) {
+export function buildSetupEmbed(
+  triviaChannel,
+  leaderboardChannel,
+  gameInterval
+) {
   return new EmbedBuilder()
     .setColor(0x57f287)
     .setTitle("✅ Trivia System Activated")
@@ -272,7 +281,8 @@ export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval)
         `**🧠 Trivia Channel:** ${triviaChannel}`,
         `**🏆 Leaderboard Channel:** ${leaderboardChannel}`,
         `**⏱️ Game Interval:** Every \`${gameInterval}\` minutes`,
-        `**🔁 Rotation:** \`Trivia → Flag → Language → Typing → Anime → Logo\``,,
+        `**📌 Boards in that channel:** \`Weekly + Permanent\``,
+        `**🔁 Rotation:** \`Trivia → Flag → Language → Typing → Anime → Logo\``,
       ].join("\n")
     )
     .setFooter({
@@ -280,16 +290,15 @@ export function buildSetupEmbed(triviaChannel, leaderboardChannel, gameInterval)
     })
     .setTimestamp();
 }
-
 export function buildResetEmbed() {
   return new EmbedBuilder()
     .setColor(0xed4245)
-    .setTitle("🗑️ Leaderboard Reset")
-    .setDescription("All trivia scores for this server have been cleared.")
+    .setTitle("🗑️ Weekly Leaderboard Reset")
+    .setDescription("The weekly trivia leaderboard has been cleared.")
     .setTimestamp();
 }
 
-export function buildCorrectAnswerEmbed(user, points, answer) {
+export function buildCorrectAnswerEmbed(user, points, answer, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x57f287)
     .setAuthor({
@@ -298,8 +307,9 @@ export function buildCorrectAnswerEmbed(user, points, answer) {
     })
     .setDescription(
       [
+        `🏅 **Rank:** \`#${rank}\``,
         `<:info:1481610239102161096> ${user} won ${points} points. <:gems_5:1480828695466741831>`,
-        `<:lb_check:1481611597423186012> **Answer:** \`${answer}\``,
+        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -331,7 +341,7 @@ export function buildFlagTimeoutEmbed(correctAnswer) {
     .setDescription(
       [
         "No one guessed correctly!",
-        `The answer was : \`${correctAnswer}\``,
+        `The flag was : \`${correctAnswer}\``,
       ].join("\n")
     )
     .setFooter({
@@ -347,7 +357,7 @@ export function buildLanguageTimeoutEmbed(correctAnswer) {
     .setDescription(
       [
         "No one guessed correctly!",
-        `The answer was : \`${correctAnswer}\``,
+        `The language was : \`${correctAnswer}\``,
       ].join("\n")
     )
     .setFooter({
@@ -398,15 +408,20 @@ export function buildLogoTimeoutEmbed(answer) {
     .setTimestamp();
 }
 
-export function buildLeaderboardEmbed(guildName, topUsers) {
+export function buildLeaderboardEmbed(guildName, topUsers, options = {}) {
+  const {
+    boardType = "Weekly",
+    winnerOfWeekText = null,
+  } = options;
+
   let description = "";
 
   if (!topUsers.length) {
     description =
-      "\n" +
-      "✨ ***No champions yet.***\n" +
-      "***Be the first to win a gaming round!*** ✨\n" +
-      "";
+      "╭────────────────────────\n" +
+      "✨ No champions yet.\n" +
+      "Be the first to win a trivia round!\n" +
+      "╰────────────────────────╯";
   } else {
     description = topUsers
       .map((user, index) => {
@@ -429,18 +444,33 @@ export function buildLeaderboardEmbed(guildName, topUsers) {
       .join("\n");
   }
 
+  const winnerLine = winnerOfWeekText
+    ? `**Winner of the week - ${winnerOfWeekText}**\n\n`
+    : "";
+
   return new EmbedBuilder()
     .setColor(0xf1c40f)
     .setAuthor({
-      name: `${guildName} Leaderboard`,
+      name: `${guildName} Trivia Rankings`,
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setThumbnail(client.user?.displayAvatarURL() || undefined)
-    .setTitle("__Game Score Ranking__")
-    .setDescription(`\n${description}`)
-    
+    .setTitle(`__${boardType} Trivia Ranking__`)
+    .setDescription(`\n${winnerLine}${description}`)
+    .addFields(
+      {
+        name: "🔄 Refresh",
+        value: "`Every 5 minutes`",
+        inline: true,
+      },
+      {
+        name: "⚡ Status",
+        value: "`Live ranking`",
+        inline: true,
+      }
+    )
     .setFooter({
-      text: "Updates every 5 minutes • Live Ranking ",
+      text: "Answer first • Earn points • Climb the ranks",
     })
     .setTimestamp();
 }
