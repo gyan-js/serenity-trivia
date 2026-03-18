@@ -1485,7 +1485,7 @@ export async function handleCorrectFlagAnswer(message, claimedFlagRound) {
     guildId: message.guild.id,
     userId: message.author.id,
     username: message.author.username,
-    points: claimedRound.points,
+    points: claimedFlagRound.points,
   });
 
   const userScore = await UserScore.findOne({
@@ -1532,7 +1532,7 @@ export async function handleCorrectLanguageAnswer(message, claimedLanguageRound)
     guildId: message.guild.id,
     userId: message.author.id,
     username: message.author.username,
-    points: claimedRound.points,
+    points: claimedLanguageRound.points,
   });
 
   const userScore = await UserScore.findOne({
@@ -1578,7 +1578,7 @@ export async function handleCorrectTypingRaceAnswer(message, claimedTypingRound)
     guildId: message.guild.id,
     userId: message.author.id,
     username: message.author.username,
-    points: claimedRound.points,
+    points: claimedTypingRound.points,
   });
 
   const userScore = await UserScore.findOne({
@@ -1624,7 +1624,7 @@ export async function handleCorrectAnimeAnswer(message, round) {
     guildId: message.guild.id,
     userId: message.author.id,
     username: message.author.username,
-    points: claimedRound.points,
+    points: round.points,
   });
 
   const userScore = await UserScore.findOne({
@@ -1671,7 +1671,7 @@ export async function handleCorrectLogoAnswer(message, round) {
     guildId: message.guild.id,
     userId: message.author.id,
     username: message.author.username,
-    points: claimedRound.points,
+    points: round.points,
   });
 
   const userScore = await UserScore.findOne({
