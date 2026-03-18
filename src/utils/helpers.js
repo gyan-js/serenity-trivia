@@ -418,10 +418,10 @@ export function buildLeaderboardEmbed(guildName, topUsers, options = {}) {
 
   if (!topUsers.length) {
     description =
-      "╭────────────────────────\n" +
-      "✨ No champions yet.\n" +
-      "Be the first to win a trivia round!\n" +
-      "╰────────────────────────╯";
+      "" +
+      "✨ ***No champions yet.***\n" +
+      "***Be the first to win a trivia round!*** ✨\n" +
+      "";
   } else {
     description = topUsers
       .map((user, index) => {
@@ -457,20 +457,9 @@ export function buildLeaderboardEmbed(guildName, topUsers, options = {}) {
     .setThumbnail(client.user?.displayAvatarURL() || undefined)
     .setTitle(`__${boardType} Trivia Ranking__`)
     .setDescription(`\n${winnerLine}${description}`)
-    .addFields(
-      {
-        name: "🔄 Refresh",
-        value: "`Every 5 minutes`",
-        inline: true,
-      },
-      {
-        name: "⚡ Status",
-        value: "`Live ranking`",
-        inline: true,
-      }
-    )
+    
     .setFooter({
-      text: "Answer first • Earn points • Climb the ranks",
+      text: "Updates every 5 minutes • Live Ranking ",
     })
     .setTimestamp();
 }
