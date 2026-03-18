@@ -55,27 +55,32 @@ export function registerDiscordEvents() {
     if (!interaction.isChatInputCommand()) return;
     if (!interaction.guildId) return;
 
+    const ALLOWED_USERS = [
+      "1304672174124302431",
+      "946286311952760832"
+
+    ]
     const isAdmin = interaction.memberPermissions?.has(
       PermissionsBitField.Flags.Administrator
     );
-
-    if (!isAdmin) {
+      
+    if (!ALLOWED_USERS.includes(interaction.user.id)) {
       return interaction.reply({
-        content: "Only admins can use this command.",
+        content: "Only the owner or developer can use this command !",
         ephemeral: true,
       });
     }
 
     try {
-      if (interaction.commandName === "trivia-setup") {
+      if (interaction.commandName === "games-setup") {
         return await handleTriviaSetup(interaction);
       }
 
-      if (interaction.commandName === "trivia-reset") {
+      if (interaction.commandName === "weekly-reset") {
         return await handleTriviaReset(interaction);
       }
 
-      if (interaction.commandName === "trivia-reset-setup") {
+      if (interaction.commandName === "reset-games-setup") {
         return await handleTriviaResetSetup(interaction);
       }
 
