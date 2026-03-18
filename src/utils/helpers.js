@@ -45,7 +45,7 @@ export function buildFlagQuestionEmbed(flagData) {
   return new EmbedBuilder()
     .setColor(0x3498db)
     
-    .setTitle("<:flagguess:1482692699156119664> Guess the flag ?")
+    .setTitle("<:languages2:1483803525904465920>> Guess the flag ?")
     .setDescription(["**First to guess the flag wins**", ""].join("\n"))
     .setImage(flagData.imageUrl)
     .setFooter({
@@ -58,7 +58,7 @@ export function buildLanguageQuestionEmbed(languageData) {
   return new EmbedBuilder()
     .setColor(0x9b59b6)
     
-    .setTitle("<:brain:1480948942282952735> Guess the language!")
+    .setTitle("<:languages3:1483803493499146250>> Guess the language!")
     .setDescription(
       [
         "**In what language do we say: **",
@@ -120,14 +120,14 @@ export function buildFlagWinnerEmbed(user, points, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
-      name: "🎉 Correct Flag Guess!",
+      name: "Correct Flag Guess!",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setDescription(
       [
-        `🏅 **Rank:** \`#${rank}\``,
+        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -140,14 +140,14 @@ export function buildLanguageWinnerEmbed(user, points, rank, leaderboardChannelI
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
-      name: "🎉 Correct Language Guess!",
+      name: "Correct Language Guess!",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setDescription(
       [
-        `🏅 **Rank:** \`#${rank}\``,
+        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -160,14 +160,14 @@ export function buildTypingRaceWinnerEmbed(user, points, rank, leaderboardChanne
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
-      name: "🎉 Typing Race Winner!",
+      name: "Typing Race Winner!",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setDescription(
       [
-        `🏅 **Rank:** \`#${rank}\``,
+        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -180,14 +180,14 @@ export function buildAnimeCharacterWinnerEmbed(user, points, rank, leaderboardCh
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
-      name: "🎉 Correct Anime Character Guess !",
+      name: "Correct Anime Character Guess !",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setDescription(
       [
-        `🏅 **Rank:** \`#${rank}\``,
+        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setTimestamp();
@@ -197,14 +197,14 @@ export function buildLogoWinnerEmbed(user, points, rank, leaderboardChannelId) {
   return new EmbedBuilder()
     .setColor(0x2ecc71)
     .setAuthor({
-      name: "🎉 Correct Logo Guess !",
+      name: "Correct Logo Guess !",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setDescription(
       [
-        `🏅 **Rank:** \`#${rank}\``,
+        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setTimestamp();
@@ -245,14 +245,14 @@ export function buildCorrectAnswerEmbed(user, points, answer, rank, leaderboardC
   return new EmbedBuilder()
     .setColor(0x57f287)
     .setAuthor({
-      name: "🎉 Correct Trivia Answer!",
+      name: "Correct Trivia Answer!",
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setDescription(
       [
-        `🏅 **Rank:** \`#${rank}\``,
+        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
         `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:lb_check:1481611597423186012> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -372,13 +372,20 @@ export function buildLeaderboardEmbed(guildName, topUsers, options = {}) {
           "<:firstprize:1480839203536240732>",
           "<:secondplace:1480839974201856090>",
           "<:3rdplace1:1480840249213976696>",
+          /**"<:commonrank:1481620673087410230>",
           "<:commonrank:1481620673087410230>",
           "<:commonrank:1481620673087410230>",
           "<:commonrank:1481620673087410230>",
           "<:commonrank:1481620673087410230>",
           "<:commonrank:1481620673087410230>",
-          "<:commonrank:1481620673087410230>",
-          "<:commonrank:1481620673087410230>",
+          "<:commonrank:1481620673087410230>",**/
+          "<:rankfour:1482327250832593009>",
+          "<:rankfive:1482332546946568226>", 
+          "<:ranksix:1482332658804588687>" ,
+          "<:rankseven:1482332780464705717>" ,
+          "<:rankeight:1482332837750505532>", 
+          "<:ranknine:1482332892825911468>", 
+          "<:rankten:1482332982323970152>",
         ];
 
         const icon = rankIcons[index] || "•";
@@ -394,7 +401,7 @@ export function buildLeaderboardEmbed(guildName, topUsers, options = {}) {
   return new EmbedBuilder()
     .setColor(0xf1c40f)
     .setAuthor({
-      name: `${guildName} Game Rankings`,
+      name: `${guildName} Game Leaderboard`,
       iconURL: client.user?.displayAvatarURL() || undefined,
     })
     .setThumbnail(client.user?.displayAvatarURL() || undefined)
