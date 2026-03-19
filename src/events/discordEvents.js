@@ -58,8 +58,14 @@ export function registerDiscordEvents() {
     const ALLOWED_USERS = [
       "1304672174124302431",
       "946286311952760832"
-
     ]
+      /**"1304672174124302431",
+      "946286311952760832",
+      {}**/
+      //"1160931941466521742"
+      
+
+   
     const isAdmin = interaction.memberPermissions?.has(
       PermissionsBitField.Flags.Administrator
     );

@@ -51,18 +51,18 @@ export async function registerSlashCommands() {
   const commands = [
     new SlashCommandBuilder()
       .setName("games-setup")
-      .setDescription("Admin only: set up trivia and leaderboard channels.")
+      .setDescription("Set up serenity games 🎲.")
       .addChannelOption((option) =>
         option
-          .setName("trivia_channel")
-          .setDescription("Channel where trivia questions will be posted")
+          .setName("games")
+          .setDescription("Channel where the games will be played")
           .addChannelTypes(ChannelType.GuildText)
           .setRequired(true)
       )
       .addChannelOption((option) =>
         option
-          .setName("leaderboard_channel")
-          .setDescription("Channel where the leaderboard will be posted")
+          .setName("leaderboard")
+          .setDescription("Channel where the leaderboards will be posted")
           .addChannelTypes(ChannelType.GuildText)
           .setRequired(true)
       )
@@ -76,13 +76,13 @@ export async function registerSlashCommands() {
 
     new SlashCommandBuilder()
       .setName("weekly-reset")
-      .setDescription("Admin only: reset this server's leaderboard."),
+      .setDescription("Reset the games weekly leaderboard re."),
 
     new SlashCommandBuilder()
       .setName("reset-games-setup")
-      .setDescription("Admin only: completely reset the trivia setup for this server."),
+      .setDescription("Reset the serenity games config."),
 
-    new SlashCommandBuilder()
+    /**new SlashCommandBuilder()
       .setName("send-trivia")
       .setDescription("Admin only: send a trivia question right now for testing."),
 
@@ -108,7 +108,7 @@ export async function registerSlashCommands() {
     new SlashCommandBuilder()
       .setName("send-logo")
       .setDescription("Admin only: send a logo question")
-      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),
+      .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator),**/
   ].map((cmd) => cmd.toJSON());
 
   const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
@@ -1214,9 +1214,9 @@ export async function handleTriviaResetSetup(interaction) {
    
     const embed = new EmbedBuilder()
       .setColor(0xed4245)
-      .setTitle("⚠️ Trivia Setup Reset")
+      .setTitle("⚠️ Games Setup Reset")
       .setDescription(
-        "The trivia bot setup has been completely removed from this server.\n\nRun `/trivia-setup` again to start it."
+        "The games bot setup has been completely removed from this server.\n\nRun `/games-setup` again to start it."
       )
       .setTimestamp();
 
