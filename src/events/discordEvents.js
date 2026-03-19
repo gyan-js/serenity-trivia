@@ -14,21 +14,19 @@ import {
   registerSlashCommands,
   startSchedulers,
   refreshAllLeaderboards,
-  handleTriviaSetup,
-  handleTriviaReset,
-  handleTriviaResetSetup,
-  handleSendTrivia,
-  handleSendFlagTrivia,
-  handleSendLanguageTrivia,
+  handleGamesSetup,
+  handleWeeklyReset,
+  handleGamesResetSetup,
+ 
   handleCorrectTriviaAnswer,
   handleCorrectFlagAnswer,
   handleCorrectLanguageAnswer,
-  handleSendTypingRace,
+  
   handleCorrectTypingRaceAnswer,
   handleCorrectAnimeAnswer,
-  handleSendAnime,
+ 
   handleCorrectLogoAnswer,
-  handleSendLogo
+ 
   
 } from "../services/triviaService.js";
 
@@ -79,37 +77,18 @@ export function registerDiscordEvents() {
 
     try {
       if (interaction.commandName === "games-setup") {
-        return await handleTriviaSetup(interaction);
+        return await handleGamesSetup(interaction);
       }
 
       if (interaction.commandName === "weekly-reset") {
-        return await handleTriviaReset(interaction);
+        return await handleWeeklyReset(interaction);
       }
 
       if (interaction.commandName === "reset-games-setup") {
-        return await handleTriviaResetSetup(interaction);
+        return await handleGamesResetSetup(interaction);
       }
 
-      if (interaction.commandName === "send-trivia") {
-        return await handleSendTrivia(interaction);
-      }
-
-      if (interaction.commandName === "send-flag-trivia") {
-        return await handleSendFlagTrivia(interaction);
-      }
-
-      if (interaction.commandName === "send-language-trivia") {
-        return await handleSendLanguageTrivia(interaction);
-      }
-      if (interaction.commandName === "send-typing-race") {
-        return await handleSendTypingRace(interaction);
-      }
-      if (interaction.commandName === "send-anime") {
-        return await handleSendAnime(interaction);
-      }
-      if (interaction.commandName === "send-logo") {
-        return await handleSendLogo(interaction);
-      }
+    
     } catch (error) {
       console.error("❌ Interaction error:", error);
 

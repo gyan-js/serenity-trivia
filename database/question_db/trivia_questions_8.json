@@ -1,0 +1,1174 @@
+[
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: tree with cones?",
+    "answers": [
+      "pine"
+    ],
+    "normalizedAnswers": [
+      "pine"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote The Alchemist?",
+    "answers": [
+      "Paulo Coelho"
+    ],
+    "normalizedAnswers": [
+      "paulo coelho"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Tunisia?",
+    "answers": [
+      "Tunis"
+    ],
+    "normalizedAnswers": [
+      "tunis"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Everest located?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who composed the Moonlight Sonata?",
+    "answers": [
+      "Ludwig van Beethoven"
+    ],
+    "normalizedAnswers": [
+      "ludwig van beethoven",
+      "beethoven"
+    ],
+    "points": 20,
+    "category": "Music",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Phnom Penh is the capital of which country?",
+    "answers": [
+      "Cambodia"
+    ],
+    "normalizedAnswers": [
+      "cambodia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you chew food?",
+    "answers": [
+      "teeth"
+    ],
+    "normalizedAnswers": [
+      "teeth"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The Glorious Revolution is most closely associated with which country?",
+    "answers": [
+      "England"
+    ],
+    "normalizedAnswers": [
+      "england"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Belgrade is the capital of which country?",
+    "answers": [
+      "Serbia"
+    ],
+    "normalizedAnswers": [
+      "serbia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which martial art, whose name means 'gentle way,' originated in Japan?",
+    "answers": [
+      "judo"
+    ],
+    "normalizedAnswers": [
+      "judo"
+    ],
+    "points": 20,
+    "category": "Sports",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Mojave Desert?",
+    "answers": [
+      "North America"
+    ],
+    "normalizedAnswers": [
+      "north america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which language is primarily spoken in Austria?",
+    "answers": [
+      "German"
+    ],
+    "normalizedAnswers": [
+      "german"
+    ],
+    "points": 20,
+    "category": "Language",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Czech Republic?",
+    "answers": [
+      "Prague"
+    ],
+    "normalizedAnswers": [
+      "prague"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who was the Mughal emperor who built the Taj Mahal?",
+    "answers": [
+      "Shah Jahan"
+    ],
+    "normalizedAnswers": [
+      "shah jahan"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote The Divine Comedy?",
+    "answers": [
+      "Dante Alighieri"
+    ],
+    "normalizedAnswers": [
+      "dante alighieri"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Zn?",
+    "answers": [
+      "Zinc"
+    ],
+    "normalizedAnswers": [
+      "zinc"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Great Wall?",
+    "answers": [
+      "China"
+    ],
+    "normalizedAnswers": [
+      "china"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Socrates was associated with which nationality or empire?",
+    "answers": [
+      "Greek"
+    ],
+    "normalizedAnswers": [
+      "greek"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is a scientist who studies weather commonly called or known as?",
+    "answers": [
+      "meteorologist"
+    ],
+    "normalizedAnswers": [
+      "meteorologist"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Slovakia?",
+    "answers": [
+      "Bratislava"
+    ],
+    "normalizedAnswers": [
+      "bratislava"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What food is described as a Italian dessert with coffee flavor?",
+    "answers": [
+      "tiramisu"
+    ],
+    "normalizedAnswers": [
+      "tiramisu"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a instrument with wooden bars?",
+    "answers": [
+      "xylophone"
+    ],
+    "normalizedAnswers": [
+      "xylophone"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a brass instrument with valves?",
+    "answers": [
+      "trumpet"
+    ],
+    "normalizedAnswers": [
+      "trumpet"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Hamlet was written by which author?",
+    "answers": [
+      "William Shakespeare"
+    ],
+    "normalizedAnswers": [
+      "william shakespeare"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which artist is famous for cutting off part of his ear?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "normalizedAnswers": [
+      "vincent van gogh",
+      "van gogh"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the force that pulls objects toward Earth commonly called or known as?",
+    "answers": [
+      "gravity"
+    ],
+    "normalizedAnswers": [
+      "gravity"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which animal is a fish and not a mammal: shark or dolphin?",
+    "answers": [
+      "shark"
+    ],
+    "normalizedAnswers": [
+      "shark"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What main ingredient is commonly used to make jam?",
+    "answers": [
+      "fruit"
+    ],
+    "normalizedAnswers": [
+      "fruit"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Ganges River flows through which country?",
+    "answers": [
+      "India"
+    ],
+    "normalizedAnswers": [
+      "india"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which music or performance genre matches this clue: sung drama?",
+    "answers": [
+      "opera"
+    ],
+    "normalizedAnswers": [
+      "opera"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Frankenstein?",
+    "answers": [
+      "Mary Shelley"
+    ],
+    "normalizedAnswers": [
+      "mary shelley"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Tashkent is the capital of which country?",
+    "answers": [
+      "Uzbekistan"
+    ],
+    "normalizedAnswers": [
+      "uzbekistan"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is China in?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The Seine River flows through which country?",
+    "answers": [
+      "France"
+    ],
+    "normalizedAnswers": [
+      "france"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Germany?",
+    "answers": [
+      "Berlin"
+    ],
+    "normalizedAnswers": [
+      "berlin"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Budapest is the capital of which country?",
+    "answers": [
+      "Hungary"
+    ],
+    "normalizedAnswers": [
+      "hungary"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Paris is the capital of which country?",
+    "answers": [
+      "France"
+    ],
+    "normalizedAnswers": [
+      "france"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Alexander the Great was associated with which nationality or empire?",
+    "answers": [
+      "Macedonian"
+    ],
+    "normalizedAnswers": [
+      "macedonian"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which spice is obtained from the dried stigma of a flower and is very expensive?",
+    "answers": [
+      "saffron"
+    ],
+    "normalizedAnswers": [
+      "saffron"
+    ],
+    "points": 20,
+    "category": "Food",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Kiribati in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Brazil and is known as the Christ the Redeemer?",
+    "answers": [
+      "Christ the Redeemer"
+    ],
+    "normalizedAnswers": [
+      "christ the redeemer"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Thailand in?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Chile in?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'racket'?",
+    "answers": [
+      "tennis"
+    ],
+    "normalizedAnswers": [
+      "tennis"
+    ],
+    "points": 10,
+    "category": "Sports",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Iran?",
+    "answers": [
+      "Tehran"
+    ],
+    "normalizedAnswers": [
+      "tehran"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the center of an atom commonly called or known as?",
+    "answers": [
+      "nucleus"
+    ],
+    "normalizedAnswers": [
+      "nucleus"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Sodium?",
+    "answers": [
+      "Na"
+    ],
+    "normalizedAnswers": [
+      "na"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: Neverland?",
+    "answers": [
+      "Peter Pan"
+    ],
+    "normalizedAnswers": [
+      "peter pan"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Greek goddess of wisdom?",
+    "answers": [
+      "Athena"
+    ],
+    "normalizedAnswers": [
+      "athena"
+    ],
+    "points": 15,
+    "category": "Mythology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Renaissance art?",
+    "answers": [
+      "Florence"
+    ],
+    "normalizedAnswers": [
+      "florence"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which instrument measures temperature?",
+    "answers": [
+      "thermometer"
+    ],
+    "normalizedAnswers": [
+      "thermometer"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Jungle Book was written by which author?",
+    "answers": [
+      "Rudyard Kipling"
+    ],
+    "normalizedAnswers": [
+      "rudyard kipling"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which gland in the neck helps regulate metabolism?",
+    "answers": [
+      "thyroid"
+    ],
+    "normalizedAnswers": [
+      "thyroid"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Volga River?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Peru in?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which pack animal from the Andes is native to South America?",
+    "answers": [
+      "llama"
+    ],
+    "normalizedAnswers": [
+      "llama"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "New Delhi is the capital of which country?",
+    "answers": [
+      "India"
+    ],
+    "normalizedAnswers": [
+      "india"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for the Parthenon?",
+    "answers": [
+      "Greeks"
+    ],
+    "normalizedAnswers": [
+      "greeks"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in India and is known as the Taj Mahal?",
+    "answers": [
+      "Taj Mahal"
+    ],
+    "normalizedAnswers": [
+      "taj mahal"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Crime and Punishment?",
+    "answers": [
+      "Fyodor Dostoevsky"
+    ],
+    "normalizedAnswers": [
+      "fyodor dostoevsky"
+    ],
+    "points": 20,
+    "category": "Literature",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Jordan and is known as the Petra?",
+    "answers": [
+      "Petra"
+    ],
+    "normalizedAnswers": [
+      "petra"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "How many sides does a hexagon have?",
+    "answers": [
+      "6"
+    ],
+    "normalizedAnswers": [
+      "6"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Indonesia?",
+    "answers": [
+      "Jakarta"
+    ],
+    "normalizedAnswers": [
+      "jakarta"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Bulgaria?",
+    "answers": [
+      "Sofia"
+    ],
+    "normalizedAnswers": [
+      "sofia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "How many sides does a triangle have?",
+    "answers": [
+      "3"
+    ],
+    "normalizedAnswers": [
+      "3"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Yangtze River flows through which country?",
+    "answers": [
+      "China"
+    ],
+    "normalizedAnswers": [
+      "china"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which part of the eye controls how much light enters?",
+    "answers": [
+      "iris"
+    ],
+    "normalizedAnswers": [
+      "iris"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What do we call the galaxy that contains our Solar System?",
+    "answers": [
+      "Milky Way"
+    ],
+    "normalizedAnswers": [
+      "milky way"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a instrument you hit?",
+    "answers": [
+      "drum"
+    ],
+    "normalizedAnswers": [
+      "drum"
+    ],
+    "points": 10,
+    "category": "Music",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Nigeria in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Thames River?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: race car named Lightning McQueen?",
+    "answers": [
+      "Cars"
+    ],
+    "normalizedAnswers": [
+      "cars"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Fuji located?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Elbrus located?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Ninety-Five Theses is most closely linked with which place or civilization?",
+    "answers": [
+      "Germany"
+    ],
+    "normalizedAnswers": [
+      "germany"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Canberra is the capital of which country?",
+    "answers": [
+      "Australia"
+    ],
+    "normalizedAnswers": [
+      "australia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Poland in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe direction?",
+    "answers": [
+      "compass"
+    ],
+    "normalizedAnswers": [
+      "compass"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: sisters Elsa and Anna?",
+    "answers": [
+      "Frozen"
+    ],
+    "normalizedAnswers": [
+      "frozen"
+    ],
+    "points": 10,
+    "category": "Entertainment",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is 9 squared?",
+    "answers": [
+      "81"
+    ],
+    "normalizedAnswers": [
+      "81"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the study of living things commonly called or known as?",
+    "answers": [
+      "biology"
+    ],
+    "normalizedAnswers": [
+      "biology"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of United Arab Emirates?",
+    "answers": [
+      "Abu Dhabi"
+    ],
+    "normalizedAnswers": [
+      "abu dhabi"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Egyptian god linked with mummification?",
+    "answers": [
+      "Anubis"
+    ],
+    "normalizedAnswers": [
+      "anubis"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is 100 divided by 4?",
+    "answers": [
+      "25"
+    ],
+    "normalizedAnswers": [
+      "25"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote The Adventures of Tom Sawyer?",
+    "answers": [
+      "Mark Twain"
+    ],
+    "normalizedAnswers": [
+      "mark twain"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: family of superheroes?",
+    "answers": [
+      "The Incredibles"
+    ],
+    "normalizedAnswers": [
+      "the incredibles"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which gas do humans breathe in to survive?",
+    "answers": [
+      "oxygen"
+    ],
+    "normalizedAnswers": [
+      "oxygen"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ocean is the smallest ocean on Earth?",
+    "answers": [
+      "Arctic"
+    ],
+    "normalizedAnswers": [
+      "arctic"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Havana is the capital of which country?",
+    "answers": [
+      "Cuba"
+    ],
+    "normalizedAnswers": [
+      "cuba"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a word that names a person, place, or thing?",
+    "answers": [
+      "noun"
+    ],
+    "normalizedAnswers": [
+      "noun"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  }
+]

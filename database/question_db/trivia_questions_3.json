@@ -1,0 +1,1177 @@
+[
+  {
+    "question": "Which scientist discovered radium with Pierre Curie?",
+    "answers": [
+      "Marie Curie"
+    ],
+    "normalizedAnswers": [
+      "marie curie"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the next prime number after 7?",
+    "answers": [
+      "11"
+    ],
+    "normalizedAnswers": [
+      "11"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Lisbon is the capital of which country?",
+    "answers": [
+      "Portugal"
+    ],
+    "normalizedAnswers": [
+      "portugal"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is described as: not an Olympic sport?",
+    "answers": [
+      "chess"
+    ],
+    "normalizedAnswers": [
+      "chess"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Singapore is the capital of which country?",
+    "answers": [
+      "Singapore"
+    ],
+    "normalizedAnswers": [
+      "singapore"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is the largest planet?",
+    "answers": [
+      "Jupiter"
+    ],
+    "normalizedAnswers": [
+      "jupiter"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who painted Guernica?",
+    "answers": [
+      "Pablo Picasso"
+    ],
+    "normalizedAnswers": [
+      "pablo picasso",
+      "picasso"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which sport uses wickets?",
+    "answers": [
+      "cricket"
+    ],
+    "normalizedAnswers": [
+      "cricket"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Tuvalu in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Hungary?",
+    "answers": [
+      "Budapest"
+    ],
+    "normalizedAnswers": [
+      "budapest"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Papua New Guinea in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Tunis is the capital of which country?",
+    "answers": [
+      "Tunisia"
+    ],
+    "normalizedAnswers": [
+      "tunisia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Jakarta is the capital of which country?",
+    "answers": [
+      "Indonesia"
+    ],
+    "normalizedAnswers": [
+      "indonesia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What food is described as a dense chocolate square?",
+    "answers": [
+      "brownie"
+    ],
+    "normalizedAnswers": [
+      "brownie"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'dribble'?",
+    "answers": [
+      "basketball"
+    ],
+    "normalizedAnswers": [
+      "basketball"
+    ],
+    "points": 10,
+    "category": "Sports",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Greek god of war?",
+    "answers": [
+      "Ares"
+    ],
+    "normalizedAnswers": [
+      "ares"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the study of substances and reactions commonly called or known as?",
+    "answers": [
+      "chemistry"
+    ],
+    "normalizedAnswers": [
+      "chemistry"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Mahatma Gandhi was associated with which nationality or empire?",
+    "answers": [
+      "Indian"
+    ],
+    "normalizedAnswers": [
+      "indian"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Ethiopia in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Mexico City is the capital of which country?",
+    "answers": [
+      "Mexico"
+    ],
+    "normalizedAnswers": [
+      "mexico"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which music or performance genre matches this clue: rap and beat?",
+    "answers": [
+      "hip-hop"
+    ],
+    "normalizedAnswers": [
+      "hip-hop"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Code of Hammurabi is most closely linked with which place or civilization?",
+    "answers": [
+      "Babylon"
+    ],
+    "normalizedAnswers": [
+      "babylon"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Vanuatu in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe distance traveled?",
+    "answers": [
+      "odometer"
+    ],
+    "normalizedAnswers": [
+      "odometer"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'club'?",
+    "answers": [
+      "golf"
+    ],
+    "normalizedAnswers": [
+      "golf"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a handheld instrument with jingles?",
+    "answers": [
+      "tambourine"
+    ],
+    "normalizedAnswers": [
+      "tambourine"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Switzerland?",
+    "answers": [
+      "Bern"
+    ],
+    "normalizedAnswers": [
+      "bern"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Fe?",
+    "answers": [
+      "Iron"
+    ],
+    "normalizedAnswers": [
+      "iron"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe length?",
+    "answers": [
+      "ruler"
+    ],
+    "normalizedAnswers": [
+      "ruler"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Aluminum?",
+    "answers": [
+      "Al"
+    ],
+    "normalizedAnswers": [
+      "al"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Netherlands?",
+    "answers": [
+      "Amsterdam"
+    ],
+    "normalizedAnswers": [
+      "amsterdam"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who was the leader of the civil rights movement who gave the 'I Have a Dream' speech?",
+    "answers": [
+      "Martin Luther King Jr."
+    ],
+    "normalizedAnswers": [
+      "martin luther king jr",
+      "martin luther king jr"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Italy in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Burj Khalifa?",
+    "answers": [
+      "United Arab Emirates"
+    ],
+    "normalizedAnswers": [
+      "united arab emirates"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: wizard?",
+    "answers": [
+      "Harry Potter"
+    ],
+    "normalizedAnswers": [
+      "harry potter"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who is commonly credited with inventing or developing the airplane?",
+    "answers": [
+      "Wright brothers"
+    ],
+    "normalizedAnswers": [
+      "wright brothers",
+      "orville and wilbur wright"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'paddle'?",
+    "answers": [
+      "table tennis"
+    ],
+    "normalizedAnswers": [
+      "table tennis"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Julius Caesar was associated with which nationality or empire?",
+    "answers": [
+      "Roman"
+    ],
+    "normalizedAnswers": [
+      "roman"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Beijing is the capital of which country?",
+    "answers": [
+      "China"
+    ],
+    "normalizedAnswers": [
+      "china"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is described as: throwing event?",
+    "answers": [
+      "javelin"
+    ],
+    "normalizedAnswers": [
+      "javelin"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Au?",
+    "answers": [
+      "Gold"
+    ],
+    "normalizedAnswers": [
+      "gold"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Adventures of Tom Sawyer was written by which author?",
+    "answers": [
+      "Mark Twain"
+    ],
+    "normalizedAnswers": [
+      "mark twain"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe temperature?",
+    "answers": [
+      "thermometer"
+    ],
+    "normalizedAnswers": [
+      "thermometer"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which gas do plants absorb from the air for photosynthesis?",
+    "answers": [
+      "carbon dioxide"
+    ],
+    "normalizedAnswers": [
+      "carbon dioxide"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Prague is the capital of which country?",
+    "answers": [
+      "Czech Republic"
+    ],
+    "normalizedAnswers": [
+      "czech republic"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Baghdad is the capital of which country?",
+    "answers": [
+      "Iraq"
+    ],
+    "normalizedAnswers": [
+      "iraq"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which part of a plant usually grows underground and absorbs water?",
+    "answers": [
+      "root"
+    ],
+    "normalizedAnswers": [
+      "root"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which river flows through Baghdad?",
+    "answers": [
+      "Tigris"
+    ],
+    "normalizedAnswers": [
+      "tigris"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'shuttlecock'?",
+    "answers": [
+      "badminton"
+    ],
+    "normalizedAnswers": [
+      "badminton"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Amazon River?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for the Hanging Gardens?",
+    "answers": [
+      "Babylonians"
+    ],
+    "normalizedAnswers": [
+      "babylonians"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Brasilia is the capital of which country?",
+    "answers": [
+      "Brazil"
+    ],
+    "normalizedAnswers": [
+      "brazil"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a word with a similar meaning?",
+    "answers": [
+      "synonym"
+    ],
+    "normalizedAnswers": [
+      "synonym"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Mount Everest?",
+    "answers": [
+      "Nepal"
+    ],
+    "normalizedAnswers": [
+      "nepal"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is France in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Kangchenjunga located?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Caracas is the capital of which country?",
+    "answers": [
+      "Venezuela"
+    ],
+    "normalizedAnswers": [
+      "venezuela"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'home run'?",
+    "answers": [
+      "baseball"
+    ],
+    "normalizedAnswers": [
+      "baseball"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who was the nurse known as the Lady with the Lamp?",
+    "answers": [
+      "Florence Nightingale"
+    ],
+    "normalizedAnswers": [
+      "florence nightingale"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Martin Luther King Jr. was associated with which nationality or empire?",
+    "answers": [
+      "American"
+    ],
+    "normalizedAnswers": [
+      "american"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Astana is the capital of which country?",
+    "answers": [
+      "Kazakhstan"
+    ],
+    "normalizedAnswers": [
+      "kazakhstan"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Mexico in?",
+    "answers": [
+      "North America"
+    ],
+    "normalizedAnswers": [
+      "north america"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Paraguay?",
+    "answers": [
+      "Asuncion"
+    ],
+    "normalizedAnswers": [
+      "asuncion"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'bicycle'?",
+    "answers": [
+      "cycling"
+    ],
+    "normalizedAnswers": [
+      "cycling"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Greek god of the sea?",
+    "answers": [
+      "Poseidon"
+    ],
+    "normalizedAnswers": [
+      "poseidon"
+    ],
+    "points": 15,
+    "category": "Mythology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is half of 100?",
+    "answers": [
+      "50"
+    ],
+    "normalizedAnswers": [
+      "50"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which artist sculpted David and the Pieta?",
+    "answers": [
+      "Michelangelo"
+    ],
+    "normalizedAnswers": [
+      "michelangelo"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Greek god of thunder?",
+    "answers": [
+      "Zeus"
+    ],
+    "normalizedAnswers": [
+      "zeus"
+    ],
+    "points": 15,
+    "category": "Mythology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ocean is the second-largest ocean on Earth?",
+    "answers": [
+      "Atlantic"
+    ],
+    "normalizedAnswers": [
+      "atlantic"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sea lies between Saudi Arabia and Africa?",
+    "answers": [
+      "Red Sea"
+    ],
+    "normalizedAnswers": [
+      "red sea"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Argentina in?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which very large semi-aquatic animal is native to Africa?",
+    "answers": [
+      "hippopotamus"
+    ],
+    "normalizedAnswers": [
+      "hippopotamus"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Neon?",
+    "answers": [
+      "Ne"
+    ],
+    "normalizedAnswers": [
+      "ne"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Canada and is known as the CN Tower?",
+    "answers": [
+      "CN Tower"
+    ],
+    "normalizedAnswers": [
+      "cn tower"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Pretoria is the capital of which country?",
+    "answers": [
+      "South Africa"
+    ],
+    "normalizedAnswers": [
+      "south africa"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Fall of the Berlin Wall is most closely associated with which country?",
+    "answers": [
+      "Germany"
+    ],
+    "normalizedAnswers": [
+      "germany"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Bern is the capital of which country?",
+    "answers": [
+      "Switzerland"
+    ],
+    "normalizedAnswers": [
+      "switzerland"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "In which century did the Black Death in Europe begin?",
+    "answers": [
+      "14th"
+    ],
+    "normalizedAnswers": [
+      "14th",
+      "14"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "falafel is most closely associated with which country or region?",
+    "answers": [
+      "Middle East"
+    ],
+    "normalizedAnswers": [
+      "middle east"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'pool'?",
+    "answers": [
+      "swimming"
+    ],
+    "normalizedAnswers": [
+      "swimming"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: city of animals?",
+    "answers": [
+      "Zootopia"
+    ],
+    "normalizedAnswers": [
+      "zootopia"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'bow'?",
+    "answers": [
+      "archery"
+    ],
+    "normalizedAnswers": [
+      "archery"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Sri Lanka?",
+    "answers": [
+      "Sri Jayawardenepura Kotte"
+    ],
+    "normalizedAnswers": [
+      "sri jayawardenepura kotte",
+      "sri jayawardenepura kotte"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the Roman numeral for 100?",
+    "answers": [
+      "C"
+    ],
+    "normalizedAnswers": [
+      "c"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who painted Water Lilies?",
+    "answers": [
+      "Claude Monet"
+    ],
+    "normalizedAnswers": [
+      "claude monet"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The Odyssey was written by which author?",
+    "answers": [
+      "Homer"
+    ],
+    "normalizedAnswers": [
+      "homer"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is animals without backbones commonly called or known as?",
+    "answers": [
+      "invertebrates"
+    ],
+    "normalizedAnswers": [
+      "invertebrates"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Ca?",
+    "answers": [
+      "Calcium"
+    ],
+    "normalizedAnswers": [
+      "calcium"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Peru and is known as the Machu Picchu?",
+    "answers": [
+      "Machu Picchu"
+    ],
+    "normalizedAnswers": [
+      "machu picchu"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Poland?",
+    "answers": [
+      "Warsaw"
+    ],
+    "normalizedAnswers": [
+      "warsaw"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  }
+]

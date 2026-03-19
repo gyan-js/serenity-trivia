@@ -45,7 +45,7 @@ export function buildFlagQuestionEmbed(flagData) {
   return new EmbedBuilder()
     .setColor(0x3498db)
     
-    .setTitle("<:languages2:1483803525904465920>> Guess the flag ?")
+    .setTitle("<:languages2:1483803525904465920> Guess the flag ?")
     .setDescription(["**First to guess the flag wins**", ""].join("\n"))
     .setImage(flagData.imageUrl)
     .setFooter({
@@ -58,7 +58,7 @@ export function buildLanguageQuestionEmbed(languageData) {
   return new EmbedBuilder()
     .setColor(0x9b59b6)
     
-    .setTitle("<:languages3:1483803493499146250>> Guess the language!")
+    .setTitle("<:languages3:1483803493499146250> Guess the language!")
     .setDescription(
       [
         "**In what language do we say: **",
@@ -125,9 +125,9 @@ export function buildFlagWinnerEmbed(user, points, rank, leaderboardChannelId) {
     })
     .setDescription(
       [
-        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:crown10:1483865272560652338> **Rank:** \`#${rank}\``,
+        `<:info2:1483870748945940750> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
+        `<:winner2:1483870108676915331> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -145,9 +145,9 @@ export function buildLanguageWinnerEmbed(user, points, rank, leaderboardChannelI
     })
     .setDescription(
       [
-        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:crown10:1483865272560652338> **Rank:** \`#${rank}\``,
+        `<:info2:1483870748945940750> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
+        `<:winner2:1483870108676915331> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -165,9 +165,9 @@ export function buildTypingRaceWinnerEmbed(user, points, rank, leaderboardChanne
     })
     .setDescription(
       [
-        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:crown10:1483865272560652338> **Rank:** \`#${rank}\``,
+        `<:info2:1483870748945940750> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
+        `<:winner2:1483870108676915331> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({
@@ -185,9 +185,9 @@ export function buildAnimeCharacterWinnerEmbed(user, points, rank, leaderboardCh
     })
     .setDescription(
       [
-        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:crown10:1483865272560652338> **Rank:** \`#${rank}\``,
+        `<:info2:1483870748945940750> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
+        `<:winner2:1483870108676915331> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setTimestamp();
@@ -202,9 +202,9 @@ export function buildLogoWinnerEmbed(user, points, rank, leaderboardChannelId) {
     })
     .setDescription(
       [
-        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:crown10:1483865272560652338> **Rank:** \`#${rank}\``,
+        `<:info2:1483870748945940750> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
+        `<:winner2:1483870108676915331> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setTimestamp();
@@ -250,9 +250,9 @@ export function buildCorrectAnswerEmbed(user, points, answer, rank, leaderboardC
     })
     .setDescription(
       [
-        `<:crown:1483797789107421256> **Rank:** \`#${rank}\``,
-        `<:info:1481610239102161096> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
-        `<:podium1:1483800438171111557> **Check the Rankings:** <#${leaderboardChannelId}>`,
+        `<:crown10:1483865272560652338> **Rank:** \`#${rank}\``,
+        `<:info2:1483870748945940750> ${user} won ${points} points <:gems_5:1480828695466741831>.`,
+        `<:winner2:1483870108676915331> **Check the Rankings:** <#${leaderboardChannelId}>`,
       ].join("\n")
     )
     .setFooter({

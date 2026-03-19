@@ -1,0 +1,1177 @@
+[
+  {
+    "question": "Which festival is known as the festival of lights in India?",
+    "answers": [
+      "Diwali"
+    ],
+    "normalizedAnswers": [
+      "diwali"
+    ],
+    "points": 15,
+    "category": "Culture",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Meiji Restoration is most closely associated with which country?",
+    "answers": [
+      "Japan"
+    ],
+    "normalizedAnswers": [
+      "japan"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which bird is known for mimicking human speech?",
+    "answers": [
+      "parrot"
+    ],
+    "normalizedAnswers": [
+      "parrot"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is New Zealand in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Leonardo da Vinci was associated with which nationality or empire?",
+    "answers": [
+      "Italian"
+    ],
+    "normalizedAnswers": [
+      "italian"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of India?",
+    "answers": [
+      "New Delhi"
+    ],
+    "normalizedAnswers": [
+      "new delhi"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "answers": [
+      "Madrid"
+    ],
+    "normalizedAnswers": [
+      "madrid"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a word that shows an action?",
+    "answers": [
+      "verb"
+    ],
+    "normalizedAnswers": [
+      "verb"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ocean surrounds Antarctica?",
+    "answers": [
+      "Southern"
+    ],
+    "normalizedAnswers": [
+      "southern"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'try'?",
+    "answers": [
+      "rugby"
+    ],
+    "normalizedAnswers": [
+      "rugby"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Australia in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Seine River?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who is commonly credited with inventing or developing the light bulb?",
+    "answers": [
+      "Thomas Edison"
+    ],
+    "normalizedAnswers": [
+      "thomas edison"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Mekong River?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "hummus is most closely associated with which country or region?",
+    "answers": [
+      "Middle East"
+    ],
+    "normalizedAnswers": [
+      "middle east"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Great Expectations?",
+    "answers": [
+      "Charles Dickens"
+    ],
+    "normalizedAnswers": [
+      "charles dickens"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which Chinese philosopher is linked with the Analects?",
+    "answers": [
+      "Confucius"
+    ],
+    "normalizedAnswers": [
+      "confucius"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Zinc?",
+    "answers": [
+      "Zn"
+    ],
+    "normalizedAnswers": [
+      "zn"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which animal begins life in water and later lives on land, making it an amphibian?",
+    "answers": [
+      "frog"
+    ],
+    "normalizedAnswers": [
+      "frog"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is 15 plus 27?",
+    "answers": [
+      "42"
+    ],
+    "normalizedAnswers": [
+      "42"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Lima is the capital of which country?",
+    "answers": [
+      "Peru"
+    ],
+    "normalizedAnswers": [
+      "peru"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for the pyramids?",
+    "answers": [
+      "Egyptians"
+    ],
+    "normalizedAnswers": [
+      "egyptians"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Saudi Arabia?",
+    "answers": [
+      "Riyadh"
+    ],
+    "normalizedAnswers": [
+      "riyadh"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: magic carpet?",
+    "answers": [
+      "Aladdin"
+    ],
+    "normalizedAnswers": [
+      "aladdin"
+    ],
+    "points": 10,
+    "category": "Entertainment",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Gulliver's Travels was written by which author?",
+    "answers": [
+      "Jonathan Swift"
+    ],
+    "normalizedAnswers": [
+      "jonathan swift"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Thimphu is the capital of which country?",
+    "answers": [
+      "Bhutan"
+    ],
+    "normalizedAnswers": [
+      "bhutan"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What food is described as a dessert with crust?",
+    "answers": [
+      "pie"
+    ],
+    "normalizedAnswers": [
+      "pie"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "pizza is most closely associated with which country or region?",
+    "answers": [
+      "Italy"
+    ],
+    "normalizedAnswers": [
+      "italy"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the name of the island off the southeast coast of Africa?",
+    "answers": [
+      "Madagascar"
+    ],
+    "normalizedAnswers": [
+      "madagascar"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Mustafa Kemal Ataturk was associated with which nationality or empire?",
+    "answers": [
+      "Turkish"
+    ],
+    "normalizedAnswers": [
+      "turkish"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "In tennis, what is the score called when both players have 40?",
+    "answers": [
+      "deuce"
+    ],
+    "normalizedAnswers": [
+      "deuce"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for the Rosetta Stone?",
+    "answers": [
+      "Egyptians"
+    ],
+    "normalizedAnswers": [
+      "egyptians"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "fondue is most closely associated with which country or region?",
+    "answers": [
+      "Switzerland"
+    ],
+    "normalizedAnswers": [
+      "switzerland"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Table Mountain?",
+    "answers": [
+      "Cape Town"
+    ],
+    "normalizedAnswers": [
+      "cape town"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who painted Mona Lisa?",
+    "answers": [
+      "Leonardo da Vinci"
+    ],
+    "normalizedAnswers": [
+      "leonardo da vinci",
+      "da vinci"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Hg?",
+    "answers": [
+      "Mercury"
+    ],
+    "normalizedAnswers": [
+      "mercury"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Australia and is known as the Sydney Opera House?",
+    "answers": [
+      "Sydney Opera House"
+    ],
+    "normalizedAnswers": [
+      "sydney opera house"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What currency is used in the United States?",
+    "answers": [
+      "dollar"
+    ],
+    "normalizedAnswers": [
+      "dollar"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Nairobi is the capital of which country?",
+    "answers": [
+      "Kenya"
+    ],
+    "normalizedAnswers": [
+      "kenya"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which part of the cell contains genetic material in most cells?",
+    "answers": [
+      "nucleus"
+    ],
+    "normalizedAnswers": [
+      "nucleus"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which intelligent marine mammal is known for clicks and whistles?",
+    "answers": [
+      "dolphin"
+    ],
+    "normalizedAnswers": [
+      "dolphin"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which element has the atomic number 1?",
+    "answers": [
+      "Hydrogen"
+    ],
+    "normalizedAnswers": [
+      "hydrogen"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Opera House?",
+    "answers": [
+      "Sydney"
+    ],
+    "normalizedAnswers": [
+      "sydney"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Jamaica in?",
+    "answers": [
+      "North America"
+    ],
+    "normalizedAnswers": [
+      "north america"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Norse trickster?",
+    "answers": [
+      "Loki"
+    ],
+    "normalizedAnswers": [
+      "loki"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which empire was ruled by Suleiman the Magnificent?",
+    "answers": [
+      "Ottoman Empire"
+    ],
+    "normalizedAnswers": [
+      "ottoman empire"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Christ the Redeemer?",
+    "answers": [
+      "Brazil"
+    ],
+    "normalizedAnswers": [
+      "brazil"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which layer of the atmosphere contains the ozone layer?",
+    "answers": [
+      "stratosphere"
+    ],
+    "normalizedAnswers": [
+      "stratosphere"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Dublin is the capital of which country?",
+    "answers": [
+      "Ireland"
+    ],
+    "normalizedAnswers": [
+      "ireland"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ocean separates the Americas from Europe and Africa?",
+    "answers": [
+      "Atlantic"
+    ],
+    "normalizedAnswers": [
+      "atlantic"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: clownfish searching for his son?",
+    "answers": [
+      "Finding Nemo"
+    ],
+    "normalizedAnswers": [
+      "finding nemo"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: rat who cooks?",
+    "answers": [
+      "Ratatouille"
+    ],
+    "normalizedAnswers": [
+      "ratatouille"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: carries the One Ring?",
+    "answers": [
+      "Frodo Baggins"
+    ],
+    "normalizedAnswers": [
+      "frodo baggins"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Treaty of Versailles is most closely linked with which place or civilization?",
+    "answers": [
+      "France"
+    ],
+    "normalizedAnswers": [
+      "france"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Bratislava is the capital of which country?",
+    "answers": [
+      "Slovakia"
+    ],
+    "normalizedAnswers": [
+      "slovakia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What main ingredient is commonly used to make bread?",
+    "answers": [
+      "flour"
+    ],
+    "normalizedAnswers": [
+      "flour"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Bhutan?",
+    "answers": [
+      "Thimphu"
+    ],
+    "normalizedAnswers": [
+      "thimphu"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "How many degrees are in a right angle?",
+    "answers": [
+      "90"
+    ],
+    "normalizedAnswers": [
+      "90"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Mont Blanc located?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which desert covers much of northern Africa?",
+    "answers": [
+      "Sahara"
+    ],
+    "normalizedAnswers": [
+      "sahara"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: travels to Oz?",
+    "answers": [
+      "Dorothy"
+    ],
+    "normalizedAnswers": [
+      "dorothy"
+    ],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which writing system is used for Arabic?",
+    "answers": [
+      "Arabic script"
+    ],
+    "normalizedAnswers": [
+      "arabic script"
+    ],
+    "points": 20,
+    "category": "Language",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which dessert is made from meringue and often topped with fruit in New Zealand and Australia?",
+    "answers": [
+      "pavlova"
+    ],
+    "normalizedAnswers": [
+      "pavlova"
+    ],
+    "points": 20,
+    "category": "Food",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: young deer?",
+    "answers": [
+      "Bambi"
+    ],
+    "normalizedAnswers": [
+      "bambi"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Asuncion is the capital of which country?",
+    "answers": [
+      "Paraguay"
+    ],
+    "normalizedAnswers": [
+      "paraguay"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Ireland?",
+    "answers": [
+      "Dublin"
+    ],
+    "normalizedAnswers": [
+      "dublin"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Romeo and Juliet was written by which author?",
+    "answers": [
+      "William Shakespeare"
+    ],
+    "normalizedAnswers": [
+      "william shakespeare"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Dead Sea Scrolls is most closely linked with which place or civilization?",
+    "answers": [
+      "Middle East"
+    ],
+    "normalizedAnswers": [
+      "middle east"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which blood type is called the universal donor in basic school biology?",
+    "answers": [
+      "O negative"
+    ],
+    "normalizedAnswers": [
+      "o negative",
+      "o-",
+      "o minus"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The Mekong River flows through which country?",
+    "answers": [
+      "Vietnam"
+    ],
+    "normalizedAnswers": [
+      "vietnam"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a word that describes a noun?",
+    "answers": [
+      "adjective"
+    ],
+    "normalizedAnswers": [
+      "adjective"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Paradise Lost?",
+    "answers": [
+      "John Milton"
+    ],
+    "normalizedAnswers": [
+      "john milton"
+    ],
+    "points": 20,
+    "category": "Literature",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Egypt in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "How many legs does a spider have?",
+    "answers": [
+      "eight"
+    ],
+    "normalizedAnswers": [
+      "eight",
+      "8"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which instrument has 88 keys on a standard version?",
+    "answers": [
+      "piano"
+    ],
+    "normalizedAnswers": [
+      "piano"
+    ],
+    "points": 20,
+    "category": "Music",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: lion cub named Simba?",
+    "answers": [
+      "The Lion King"
+    ],
+    "normalizedAnswers": [
+      "the lion king"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a keyboard instrument?",
+    "answers": [
+      "piano"
+    ],
+    "normalizedAnswers": [
+      "piano"
+    ],
+    "points": 10,
+    "category": "Music",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is the hottest planet?",
+    "answers": [
+      "Venus"
+    ],
+    "normalizedAnswers": [
+      "venus"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Harry Potter?",
+    "answers": [
+      "J.K. Rowling"
+    ],
+    "normalizedAnswers": [
+      "jk rowling",
+      "j k rowling"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist developed the laws of planetary motion before Newton?",
+    "answers": [
+      "Johannes Kepler"
+    ],
+    "normalizedAnswers": [
+      "johannes kepler"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: large hard-shelled tropical fruit?",
+    "answers": [
+      "coconut"
+    ],
+    "normalizedAnswers": [
+      "coconut"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What food is described as a dessert made with soft cheese?",
+    "answers": [
+      "cheesecake"
+    ],
+    "normalizedAnswers": [
+      "cheesecake"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is 144 divided by 12?",
+    "answers": [
+      "12"
+    ],
+    "normalizedAnswers": [
+      "12"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who was the Roman leader assassinated on the Ides of March?",
+    "answers": [
+      "Julius Caesar"
+    ],
+    "normalizedAnswers": [
+      "julius caesar"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Ankara is the capital of which country?",
+    "answers": [
+      "Turkey"
+    ],
+    "normalizedAnswers": [
+      "turkey"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'mat'?",
+    "answers": [
+      "wrestling"
+    ],
+    "normalizedAnswers": [
+      "wrestling"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Eiffel Tower?",
+    "answers": [
+      "France"
+    ],
+    "normalizedAnswers": [
+      "france"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call the natural satellite of Earth?",
+    "answers": [
+      "Moon"
+    ],
+    "normalizedAnswers": [
+      "moon"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Sahara Desert?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Rhine River flows through which country?",
+    "answers": [
+      "Germany"
+    ],
+    "normalizedAnswers": [
+      "germany"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  }
+]

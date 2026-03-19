@@ -1,0 +1,1180 @@
+[
+  {
+    "question": "In which country would you find the Sagrada Familia?",
+    "answers": [
+      "Spain"
+    ],
+    "normalizedAnswers": [
+      "spain"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Abraham Lincoln was associated with which nationality or empire?",
+    "answers": [
+      "American"
+    ],
+    "normalizedAnswers": [
+      "american"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call the star at the center of our Solar System?",
+    "answers": [
+      "Sun"
+    ],
+    "normalizedAnswers": [
+      "sun"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with holy city?",
+    "answers": [
+      "Jerusalem"
+    ],
+    "normalizedAnswers": [
+      "jerusalem"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Divine Comedy was written by which author?",
+    "answers": [
+      "Dante Alighieri"
+    ],
+    "normalizedAnswers": [
+      "dante alighieri"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Bismarck was associated with which nationality or empire?",
+    "answers": [
+      "German"
+    ],
+    "normalizedAnswers": [
+      "german"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Rome is the capital of which country?",
+    "answers": [
+      "Italy"
+    ],
+    "normalizedAnswers": [
+      "italy"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Morocco?",
+    "answers": [
+      "Rabat"
+    ],
+    "normalizedAnswers": [
+      "rabat"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: fruit often linked with keeping the doctor away?",
+    "answers": [
+      "apple"
+    ],
+    "normalizedAnswers": [
+      "apple"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is 12 multiplied by 12?",
+    "answers": [
+      "144"
+    ],
+    "normalizedAnswers": [
+      "144"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Canada in?",
+    "answers": [
+      "North America"
+    ],
+    "normalizedAnswers": [
+      "north america"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Vietnam?",
+    "answers": [
+      "Hanoi"
+    ],
+    "normalizedAnswers": [
+      "hanoi"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Old Man and the Sea was written by which author?",
+    "answers": [
+      "Ernest Hemingway"
+    ],
+    "normalizedAnswers": [
+      "ernest hemingway"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Santo Domingo is the capital of which country?",
+    "answers": [
+      "Dominican Republic"
+    ],
+    "normalizedAnswers": [
+      "dominican republic"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which blood cells help fight infection?",
+    "answers": [
+      "white blood cells"
+    ],
+    "normalizedAnswers": [
+      "white blood cells"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "baklava is most closely associated with which country or region?",
+    "answers": [
+      "Turkey"
+    ],
+    "normalizedAnswers": [
+      "turkey"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who was the French military leader who became emperor?",
+    "answers": [
+      "Napoleon Bonaparte"
+    ],
+    "normalizedAnswers": [
+      "napoleon bonaparte"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which author wrote The Lord of the Rings?",
+    "answers": [
+      "J.R.R. Tolkien"
+    ],
+    "normalizedAnswers": [
+      "jrr tolkien",
+      "jr r tolkien"
+    ],
+    "points": 20,
+    "category": "Literature",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Sucre is the capital of which country?",
+    "answers": [
+      "Bolivia"
+    ],
+    "normalizedAnswers": [
+      "bolivia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which organ in the human body is mainly responsible for thinking?",
+    "answers": [
+      "brain"
+    ],
+    "normalizedAnswers": [
+      "brain"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for the Great Wall?",
+    "answers": [
+      "Chinese"
+    ],
+    "normalizedAnswers": [
+      "chinese"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Kenya?",
+    "answers": [
+      "Nairobi"
+    ],
+    "normalizedAnswers": [
+      "nairobi"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which vitamin is mainly produced when skin is exposed to sunlight?",
+    "answers": [
+      "Vitamin D"
+    ],
+    "normalizedAnswers": [
+      "vitamin d",
+      "d"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Manila is the capital of which country?",
+    "answers": [
+      "Philippines"
+    ],
+    "normalizedAnswers": [
+      "philippines"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Nigeria?",
+    "answers": [
+      "Abuja"
+    ],
+    "normalizedAnswers": [
+      "abuja"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Alchemist was written by which author?",
+    "answers": [
+      "Paulo Coelho"
+    ],
+    "normalizedAnswers": [
+      "paulo coelho"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "How many months have 31 days?",
+    "answers": [
+      "7"
+    ],
+    "normalizedAnswers": [
+      "7",
+      "seven"
+    ],
+    "points": 20,
+    "category": "Math",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What main ingredient is commonly used to make guacamole?",
+    "answers": [
+      "avocado"
+    ],
+    "normalizedAnswers": [
+      "avocado"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Fiji in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Egyptian sun god?",
+    "answers": [
+      "Ra"
+    ],
+    "normalizedAnswers": [
+      "ra"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol O?",
+    "answers": [
+      "Oxygen"
+    ],
+    "normalizedAnswers": [
+      "oxygen"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: vampire?",
+    "answers": [
+      "Dracula"
+    ],
+    "normalizedAnswers": [
+      "dracula"
+    ],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which wall divided Berlin until 1989?",
+    "answers": [
+      "Berlin Wall"
+    ],
+    "normalizedAnswers": [
+      "berlin wall"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Berlin is the capital of which country?",
+    "answers": [
+      "Germany"
+    ],
+    "normalizedAnswers": [
+      "germany"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Italy?",
+    "answers": [
+      "Rome"
+    ],
+    "normalizedAnswers": [
+      "rome"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Alice's Adventures in Wonderland was written by which author?",
+    "answers": [
+      "Lewis Carroll"
+    ],
+    "normalizedAnswers": [
+      "lewis carroll"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Germany and is known as the Brandenburg Gate?",
+    "answers": [
+      "Brandenburg Gate"
+    ],
+    "normalizedAnswers": [
+      "brandenburg gate"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Kalahari Desert?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol S?",
+    "answers": [
+      "Sulfur"
+    ],
+    "normalizedAnswers": [
+      "sulfur",
+      "sulphur"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you clean the blood?",
+    "answers": [
+      "kidneys"
+    ],
+    "normalizedAnswers": [
+      "kidneys"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Turkey?",
+    "answers": [
+      "Ankara"
+    ],
+    "normalizedAnswers": [
+      "ankara"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What currency is used in Japan?",
+    "answers": [
+      "yen"
+    ],
+    "normalizedAnswers": [
+      "yen"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: long yellow fruit?",
+    "answers": [
+      "banana"
+    ],
+    "normalizedAnswers": [
+      "banana"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who was the scientist who championed heliocentrism in Italy?",
+    "answers": [
+      "Galileo Galilei"
+    ],
+    "normalizedAnswers": [
+      "galileo galilei"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Myanmar?",
+    "answers": [
+      "Naypyidaw"
+    ],
+    "normalizedAnswers": [
+      "naypyidaw"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Addis Ababa is the capital of which country?",
+    "answers": [
+      "Ethiopia"
+    ],
+    "normalizedAnswers": [
+      "ethiopia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Harry Potter was written by which author?",
+    "answers": [
+      "J.K. Rowling"
+    ],
+    "normalizedAnswers": [
+      "jk rowling",
+      "j k rowling"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Ljubljana is the capital of which country?",
+    "answers": [
+      "Slovenia"
+    ],
+    "normalizedAnswers": [
+      "slovenia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote The Jungle Book?",
+    "answers": [
+      "Rudyard Kipling"
+    ],
+    "normalizedAnswers": [
+      "rudyard kipling"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Mount Fuji?",
+    "answers": [
+      "Japan"
+    ],
+    "normalizedAnswers": [
+      "japan"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Ag?",
+    "answers": [
+      "Silver"
+    ],
+    "normalizedAnswers": [
+      "silver"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for the Colosseum?",
+    "answers": [
+      "Romans"
+    ],
+    "normalizedAnswers": [
+      "romans"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who painted The Night Watch?",
+    "answers": [
+      "Rembrandt"
+    ],
+    "normalizedAnswers": [
+      "rembrandt"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Atacama Desert?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "feijoada is most closely associated with which country or region?",
+    "answers": [
+      "Brazil"
+    ],
+    "normalizedAnswers": [
+      "brazil"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Macbeth?",
+    "answers": [
+      "William Shakespeare"
+    ],
+    "normalizedAnswers": [
+      "william shakespeare"
+    ],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Bosphorus?",
+    "answers": [
+      "Istanbul"
+    ],
+    "normalizedAnswers": [
+      "istanbul"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Paraguay in?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is known as the 'City of Canals' in Italy?",
+    "answers": [
+      "Venice"
+    ],
+    "normalizedAnswers": [
+      "venice"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Big Ben?",
+    "answers": [
+      "United Kingdom"
+    ],
+    "normalizedAnswers": [
+      "united kingdom"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe speed?",
+    "answers": [
+      "speedometer"
+    ],
+    "normalizedAnswers": [
+      "speedometer"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: wooden puppet?",
+    "answers": [
+      "Pinocchio"
+    ],
+    "normalizedAnswers": [
+      "pinocchio"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which artist painted the ceiling of the Sistine Chapel?",
+    "answers": [
+      "Michelangelo"
+    ],
+    "normalizedAnswers": [
+      "michelangelo"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the name of the large island off Italy?",
+    "answers": [
+      "Sicily"
+    ],
+    "normalizedAnswers": [
+      "sicily"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Palau in?",
+    "answers": [
+      "Oceania"
+    ],
+    "normalizedAnswers": [
+      "oceania"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is the Sahara Desert on?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Sydney Opera House?",
+    "answers": [
+      "Australia"
+    ],
+    "normalizedAnswers": [
+      "australia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Murray River?",
+    "answers": [
+      "Australia"
+    ],
+    "normalizedAnswers": [
+      "australia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Pb?",
+    "answers": [
+      "Lead"
+    ],
+    "normalizedAnswers": [
+      "lead"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the process by which vapor becomes liquid commonly called or known as?",
+    "answers": [
+      "condensation"
+    ],
+    "normalizedAnswers": [
+      "condensation"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "How many planets are in the Solar System?",
+    "answers": [
+      "8"
+    ],
+    "normalizedAnswers": [
+      "8",
+      "eight"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Acropolis?",
+    "answers": [
+      "Athens"
+    ],
+    "normalizedAnswers": [
+      "athens"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical formula for carbon dioxide?",
+    "answers": [
+      "CO2"
+    ],
+    "normalizedAnswers": [
+      "co2"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which century did the fall of the Western Roman Empire begin?",
+    "answers": [
+      "5th"
+    ],
+    "normalizedAnswers": [
+      "5th",
+      "5"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of China?",
+    "answers": [
+      "Beijing"
+    ],
+    "normalizedAnswers": [
+      "beijing"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "In which century did the French Revolution begin?",
+    "answers": [
+      "18th"
+    ],
+    "normalizedAnswers": [
+      "18th",
+      "18"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for Machu Picchu?",
+    "answers": [
+      "Incas"
+    ],
+    "normalizedAnswers": [
+      "incas"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Seoul is the capital of which country?",
+    "answers": [
+      "South Korea"
+    ],
+    "normalizedAnswers": [
+      "south korea"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Red Square?",
+    "answers": [
+      "Moscow"
+    ],
+    "normalizedAnswers": [
+      "moscow"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Ganges River?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Hamlet?",
+    "answers": [
+      "William Shakespeare"
+    ],
+    "normalizedAnswers": [
+      "william shakespeare"
+    ],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Washington, D.C. is the capital of which country?",
+    "answers": [
+      "United States"
+    ],
+    "normalizedAnswers": [
+      "united states"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Tanzania and is known as the Mount Kilimanjaro?",
+    "answers": [
+      "Mount Kilimanjaro"
+    ],
+    "normalizedAnswers": [
+      "mount kilimanjaro"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The Iliad was written by which author?",
+    "answers": [
+      "Homer"
+    ],
+    "normalizedAnswers": [
+      "homer"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of South Africa?",
+    "answers": [
+      "Pretoria"
+    ],
+    "normalizedAnswers": [
+      "pretoria"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Chlorine?",
+    "answers": [
+      "Cl"
+    ],
+    "normalizedAnswers": [
+      "cl"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: fruit used to make raisins?",
+    "answers": [
+      "grape"
+    ],
+    "normalizedAnswers": [
+      "grape"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What currency is used in France today?",
+    "answers": [
+      "euro"
+    ],
+    "normalizedAnswers": [
+      "euro"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Ecuador in?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which mammal lays eggs: platypus or tiger?",
+    "answers": [
+      "platypus"
+    ],
+    "normalizedAnswers": [
+      "platypus"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  }
+]

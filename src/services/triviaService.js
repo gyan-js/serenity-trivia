@@ -76,7 +76,7 @@ export async function registerSlashCommands() {
 
     new SlashCommandBuilder()
       .setName("weekly-reset")
-      .setDescription("Reset the games weekly leaderboard re."),
+      .setDescription("Reset the games weekly leaderboard."),
 
     new SlashCommandBuilder()
       .setName("reset-games-setup")
@@ -1064,9 +1064,9 @@ export function startSchedulers() {
   console.log("✅ Schedulers started");
 }
 
-export async function handleTriviaSetup(interaction) {
-  const triviaChannel = interaction.options.getChannel("trivia_channel");
-  const leaderboardChannel = interaction.options.getChannel("leaderboard_channel");
+export async function handleGamesSetup(interaction) {
+  const triviaChannel = interaction.options.getChannel("games");
+  const leaderboardChannel = interaction.options.getChannel("leaderboard");
   const gameInterval = interaction.options.getInteger("game_interval");
 
   await GuildConfig.findOneAndUpdate(
@@ -1101,7 +1101,7 @@ export async function handleTriviaSetup(interaction) {
   });
 }
 
-export async function handleTriviaReset(interaction) {
+export async function handleWeeklyReset(interaction) {
   const guildId = interaction.guildId;
 
   const topWeeklyUser = await UserScore.findOne({ guildId })
@@ -1164,7 +1164,7 @@ export async function handleTriviaReset(interaction) {
   });
 }
 
-export async function handleTriviaResetSetup(interaction) {
+export async function handleGamesResetSetup(interaction) {
   const guildId = interaction.guildId;
 
   try {
@@ -1268,157 +1268,7 @@ export async function handleSendTrivia(interaction) {
   });
 }
 
-export async function handleSendFlagTrivia(interaction) {
-  const config = await GuildConfig.findOne({
-    guildId: interaction.guildId,
-    isStarted: true,
-  });
 
-  if (!config) {
-    return interaction.reply({
-      content: "Trivia is not set up yet. Run `/trivia-setup` first.",
-      ephemeral: true,
-    });
-  }
-
-  const existingRound = await ActiveFlagRound.findOne({
-    guildId: interaction.guildId,
-    solved: false,
-  });
-
-  if (existingRound) {
-    return interaction.reply({
-      content: "There is already an active Guess the Flag round.",
-      ephemeral: true,
-    });
-  }
-
-  await askFlagQuestionForGuild(interaction.guildId);
-
-  return interaction.reply({
-    content: "🚩 Guess the Flag question sent.",
-    ephemeral: true,
-  });
-}
-
-export async function handleSendLanguageTrivia(interaction) {
-  const config = await GuildConfig.findOne({
-    guildId: interaction.guildId,
-    isStarted: true,
-  });
-
-  if (!config) {
-    return interaction.reply({
-      content: "Trivia is not set up yet. Run `/trivia-setup` first.",
-      ephemeral: true,
-    });
-  }
-
-  const existingRound = await ActiveLanguageRound.findOne({
-    guildId: interaction.guildId,
-    solved: false,
-  });
-
-  if (existingRound) {
-    return interaction.reply({
-      content: "There is already an active Guess the Language round.",
-      ephemeral: true,
-    });
-  }
-
-  await askLanguageQuestionForGuild(interaction.guildId);
-
-  return interaction.reply({
-    content: "🗣️ Guess the Language question sent.",
-    ephemeral: true,
-  });
-}
-
-export async function handleSendTypingRace(interaction) {
-  const config = await GuildConfig.findOne({
-    guildId: interaction.guildId,
-    isStarted: true,
-  });
-
-  if (!config) {
-    return interaction.reply({
-      content: "Trivia is not set up yet. Run `/trivia-setup` first.",
-      ephemeral: true,
-    });
-  }
-
-  const existingRound = await ActiveTypingRaceRound.findOne({
-    guildId: interaction.guildId,
-    solved: false,
-  });
-
-  if (existingRound) {
-    return interaction.reply({
-      content: "There is already an active Typing Race round.",
-      ephemeral: true,
-    });
-  }
-
-  await askTypingRaceQuestionForGuild(interaction.guildId);
-
-  return interaction.reply({
-    content: "⌨️ Typing Race question sent.",
-    ephemeral: true,
-  });
-}
-
-export async function handleSendAnime(interaction) {
-  const config = await GuildConfig.findOne({
-    guildId: interaction.guildId,
-    isStarted: true,
-  });
-
-  if (!config) {
-    return interaction.reply({
-      content: "Trivia is not set up yet. Run `/trivia-setup` first.",
-      ephemeral: true,
-    });
-  }
-
-  const existingRound = await ActiveAnimeCharacterRound.findOne({
-    guildId: interaction.guildId,
-    solved: false,
-  });
-
-  if (existingRound) {
-    return interaction.reply({
-      content: "There is already an active Anime Character round.",
-      ephemeral: true,
-    });
-  }
-
-  await askAnimeCharacterForGuild(interaction.guildId);
-
-  return interaction.reply({
-    content: "🎌 Anime Character question sent.",
-    ephemeral: true,
-  });
-}
-export async function handleSendLogo(interaction) {
-  const existing = await ActiveLogoRound.findOne({
-    guildId: interaction.guildId,
-    solved: false,
-  });
-
-  if (existing) {
-    return interaction.reply({
-      content: "There is already an active logo round.",
-      ephemeral: true,
-    });
-  }
-
-  await askLogoQuestionForGuild(interaction.guildId);
-
-  return interaction.reply({
-    content: "🏢 Logo question sent.",
-    ephemeral: true,
-  });
-}
 export async function handleCorrectTriviaAnswer(message, claimedRound) {
   await message.react("✅").catch(() => null);
 

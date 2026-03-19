@@ -1,0 +1,1177 @@
+[
+  {
+    "question": "Which ancient civilization is best known for the Code of Hammurabi?",
+    "answers": [
+      "Babylonians"
+    ],
+    "normalizedAnswers": [
+      "babylonians"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Italy and is known as the Leaning Tower of Pisa?",
+    "answers": [
+      "Leaning Tower of Pisa"
+    ],
+    "normalizedAnswers": [
+      "leaning tower of pisa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Panama City is the capital of which country?",
+    "answers": [
+      "Panama"
+    ],
+    "normalizedAnswers": [
+      "panama"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient city was buried by the eruption of Mount Vesuvius?",
+    "answers": [
+      "Pompeii"
+    ],
+    "normalizedAnswers": [
+      "pompeii"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The French Revolution is most closely associated with which country?",
+    "answers": [
+      "France"
+    ],
+    "normalizedAnswers": [
+      "france"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Nile?",
+    "answers": [
+      "Cairo"
+    ],
+    "normalizedAnswers": [
+      "cairo"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Portugal?",
+    "answers": [
+      "Lisbon"
+    ],
+    "normalizedAnswers": [
+      "lisbon"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What do we call the space rock seen streaking through the sky?",
+    "answers": [
+      "meteor"
+    ],
+    "normalizedAnswers": [
+      "meteor"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Al?",
+    "answers": [
+      "Aluminum"
+    ],
+    "normalizedAnswers": [
+      "aluminum",
+      "aluminium"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which is the largest living bird?",
+    "answers": [
+      "ostrich"
+    ],
+    "normalizedAnswers": [
+      "ostrich"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Angkor Wat?",
+    "answers": [
+      "Cambodia"
+    ],
+    "normalizedAnswers": [
+      "cambodia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Indus River flows through which country?",
+    "answers": [
+      "Pakistan"
+    ],
+    "normalizedAnswers": [
+      "pakistan"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a main division of a book?",
+    "answers": [
+      "chapter"
+    ],
+    "normalizedAnswers": [
+      "chapter"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Thailand?",
+    "answers": [
+      "Bangkok"
+    ],
+    "normalizedAnswers": [
+      "bangkok"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Dhaka is the capital of which country?",
+    "answers": [
+      "Bangladesh"
+    ],
+    "normalizedAnswers": [
+      "bangladesh"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What main ingredient is commonly used to make cheese?",
+    "answers": [
+      "milk"
+    ],
+    "normalizedAnswers": [
+      "milk"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Bahamas in?",
+    "answers": [
+      "North America"
+    ],
+    "normalizedAnswers": [
+      "north america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol H?",
+    "answers": [
+      "Hydrogen"
+    ],
+    "normalizedAnswers": [
+      "hydrogen"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who painted The Starry Night?",
+    "answers": [
+      "Vincent van Gogh"
+    ],
+    "normalizedAnswers": [
+      "vincent van gogh",
+      "van gogh"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Matterhorn located?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Hobbit was written by which author?",
+    "answers": [
+      "J.R.R. Tolkien"
+    ],
+    "normalizedAnswers": [
+      "jr r tolkien",
+      "jrr tolkien"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Norway?",
+    "answers": [
+      "Oslo"
+    ],
+    "normalizedAnswers": [
+      "oslo"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Ethiopia?",
+    "answers": [
+      "Addis Ababa"
+    ],
+    "normalizedAnswers": [
+      "addis ababa"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: staple grain in much of Asia?",
+    "answers": [
+      "rice"
+    ],
+    "normalizedAnswers": [
+      "rice"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in South Africa and is known as the Table Mountain?",
+    "answers": [
+      "Table Mountain"
+    ],
+    "normalizedAnswers": [
+      "table mountain"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Moby-Dick?",
+    "answers": [
+      "Herman Melville"
+    ],
+    "normalizedAnswers": [
+      "herman melville"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is described as: ten-event competition?",
+    "answers": [
+      "decathlon"
+    ],
+    "normalizedAnswers": [
+      "decathlon"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Gobi Desert?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe weight?",
+    "answers": [
+      "scale"
+    ],
+    "normalizedAnswers": [
+      "scale"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which layer of Earth is liquid: crust, mantle, or outer core?",
+    "answers": [
+      "outer core"
+    ],
+    "normalizedAnswers": [
+      "outer core"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Greece in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which century did the Renaissance begin?",
+    "answers": [
+      "14th"
+    ],
+    "normalizedAnswers": [
+      "14th",
+      "14"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Lead?",
+    "answers": [
+      "Pb"
+    ],
+    "normalizedAnswers": [
+      "pb"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Afghanistan?",
+    "answers": [
+      "Kabul"
+    ],
+    "normalizedAnswers": [
+      "kabul"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What currency is used in India?",
+    "answers": [
+      "rupee"
+    ],
+    "normalizedAnswers": [
+      "rupee"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is South Africa in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "moussaka is most closely associated with which country or region?",
+    "answers": [
+      "Greece"
+    ],
+    "normalizedAnswers": [
+      "greece"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist developed the theory of relativity?",
+    "answers": [
+      "Albert Einstein"
+    ],
+    "normalizedAnswers": [
+      "albert einstein"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which music or performance genre matches this clue: electric guitar?",
+    "answers": [
+      "rock music"
+    ],
+    "normalizedAnswers": [
+      "rock music"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who is commonly credited with inventing or developing the radio?",
+    "answers": [
+      "Guglielmo Marconi"
+    ],
+    "normalizedAnswers": [
+      "guglielmo marconi"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe very small objects?",
+    "answers": [
+      "microscope"
+    ],
+    "normalizedAnswers": [
+      "microscope"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Statue of Liberty?",
+    "answers": [
+      "United States"
+    ],
+    "normalizedAnswers": [
+      "united states"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Costa Rica?",
+    "answers": [
+      "San Jose"
+    ],
+    "normalizedAnswers": [
+      "san jose"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which board game features kings, queens, bishops, and knights?",
+    "answers": [
+      "chess"
+    ],
+    "normalizedAnswers": [
+      "chess"
+    ],
+    "points": 15,
+    "category": "Games",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Copenhagen is the capital of which country?",
+    "answers": [
+      "Denmark"
+    ],
+    "normalizedAnswers": [
+      "denmark"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is the closest to the Sun?",
+    "answers": [
+      "Mercury"
+    ],
+    "normalizedAnswers": [
+      "mercury"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the name of the largest island in the Caribbean?",
+    "answers": [
+      "Cuba"
+    ],
+    "normalizedAnswers": [
+      "cuba"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which scientist formulated the three laws of motion?",
+    "answers": [
+      "Isaac Newton"
+    ],
+    "normalizedAnswers": [
+      "isaac newton"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you taste?",
+    "answers": [
+      "tongue"
+    ],
+    "normalizedAnswers": [
+      "tongue"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who was the first President of the United States?",
+    "answers": [
+      "George Washington"
+    ],
+    "normalizedAnswers": [
+      "george washington"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is the known as the Red Planet?",
+    "answers": [
+      "Mars"
+    ],
+    "normalizedAnswers": [
+      "mars"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Russia?",
+    "answers": [
+      "Moscow"
+    ],
+    "normalizedAnswers": [
+      "moscow"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Stockholm is the capital of which country?",
+    "answers": [
+      "Sweden"
+    ],
+    "normalizedAnswers": [
+      "sweden"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Mongolia?",
+    "answers": [
+      "Ulaanbaatar"
+    ],
+    "normalizedAnswers": [
+      "ulaanbaatar"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which music or performance genre matches this clue: orchestra and symphony?",
+    "answers": [
+      "classical music"
+    ],
+    "normalizedAnswers": [
+      "classical music"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Bangkok is the capital of which country?",
+    "answers": [
+      "Thailand"
+    ],
+    "normalizedAnswers": [
+      "thailand"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The US Constitution is most closely linked with which place or civilization?",
+    "answers": [
+      "United States"
+    ],
+    "normalizedAnswers": [
+      "united states"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "stroopwafel is most closely associated with which country or region?",
+    "answers": [
+      "Netherlands"
+    ],
+    "normalizedAnswers": [
+      "netherlands"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animal from Africa has a very long neck?",
+    "answers": [
+      "giraffe"
+    ],
+    "normalizedAnswers": [
+      "giraffe"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which country has Budapest as its capital?",
+    "answers": [
+      "Hungary"
+    ],
+    "normalizedAnswers": [
+      "hungary"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Dominican Republic?",
+    "answers": [
+      "Santo Domingo"
+    ],
+    "normalizedAnswers": [
+      "santo domingo"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Naypyidaw is the capital of which country?",
+    "answers": [
+      "Myanmar"
+    ],
+    "normalizedAnswers": [
+      "myanmar"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which famous bell tower is in Pisa?",
+    "answers": [
+      "Leaning Tower of Pisa"
+    ],
+    "normalizedAnswers": [
+      "leaning tower of pisa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Genghis Khan was associated with which nationality or empire?",
+    "answers": [
+      "Mongol"
+    ],
+    "normalizedAnswers": [
+      "mongol"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Patagonian Desert?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Thames River flows through which country?",
+    "answers": [
+      "United Kingdom"
+    ],
+    "normalizedAnswers": [
+      "united kingdom"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "answers": [
+      "Ottawa"
+    ],
+    "normalizedAnswers": [
+      "ottawa"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Domesday Book is most closely linked with which place or civilization?",
+    "answers": [
+      "England"
+    ],
+    "normalizedAnswers": [
+      "england"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which gas makes up most of Earth's atmosphere?",
+    "answers": [
+      "nitrogen"
+    ],
+    "normalizedAnswers": [
+      "nitrogen"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Algeria in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The Russian Revolution is most closely associated with which country?",
+    "answers": [
+      "Russia"
+    ],
+    "normalizedAnswers": [
+      "russia"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a book that lists words and meanings?",
+    "answers": [
+      "dictionary"
+    ],
+    "normalizedAnswers": [
+      "dictionary"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Winston Churchill was associated with which nationality or empire?",
+    "answers": [
+      "British"
+    ],
+    "normalizedAnswers": [
+      "british"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "gulab jamun is most closely associated with which country or region?",
+    "answers": [
+      "India"
+    ],
+    "normalizedAnswers": [
+      "india"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Gulliver's Travels?",
+    "answers": [
+      "Jonathan Swift"
+    ],
+    "normalizedAnswers": [
+      "jonathan swift"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: enchanted castle?",
+    "answers": [
+      "Beauty and the Beast"
+    ],
+    "normalizedAnswers": [
+      "beauty and the beast"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Kabul is the capital of which country?",
+    "answers": [
+      "Afghanistan"
+    ],
+    "normalizedAnswers": [
+      "afghanistan"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you back of the eye?",
+    "answers": [
+      "retina"
+    ],
+    "normalizedAnswers": [
+      "retina"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Nitrogen?",
+    "answers": [
+      "N"
+    ],
+    "normalizedAnswers": [
+      "n"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which philosopher taught Alexander the Great?",
+    "answers": [
+      "Aristotle"
+    ],
+    "normalizedAnswers": [
+      "aristotle"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Hydrogen?",
+    "answers": [
+      "H"
+    ],
+    "normalizedAnswers": [
+      "h"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote The Old Man and the Sea?",
+    "answers": [
+      "Ernest Hemingway"
+    ],
+    "normalizedAnswers": [
+      "ernest hemingway"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: bear who loves honey?",
+    "answers": [
+      "Winnie-the-Pooh"
+    ],
+    "normalizedAnswers": [
+      "winnie-the-pooh"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the SI unit of electric current?",
+    "answers": [
+      "ampere"
+    ],
+    "normalizedAnswers": [
+      "ampere",
+      "amp"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Colosseum?",
+    "answers": [
+      "Rome"
+    ],
+    "normalizedAnswers": [
+      "rome"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Uruguay?",
+    "answers": [
+      "Montevideo"
+    ],
+    "normalizedAnswers": [
+      "montevideo"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which music or performance genre matches this clue: classical dance?",
+    "answers": [
+      "ballet"
+    ],
+    "normalizedAnswers": [
+      "ballet"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which game uses the terms check, checkmate, and stalemate?",
+    "answers": [
+      "chess"
+    ],
+    "normalizedAnswers": [
+      "chess"
+    ],
+    "points": 20,
+    "category": "Games",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: boy named Mowgli?",
+    "answers": [
+      "The Jungle Book"
+    ],
+    "normalizedAnswers": [
+      "the jungle book"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What main ingredient is commonly used to make butter?",
+    "answers": [
+      "milk"
+    ],
+    "normalizedAnswers": [
+      "milk"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  }
+]

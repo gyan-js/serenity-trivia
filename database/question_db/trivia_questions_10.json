@@ -1,0 +1,1175 @@
+[
+  {
+    "question": "Islamabad is the capital of which country?",
+    "answers": [
+      "Pakistan"
+    ],
+    "normalizedAnswers": [
+      "pakistan"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "In which century did the American Civil War begin?",
+    "answers": [
+      "19th"
+    ],
+    "normalizedAnswers": [
+      "19th",
+      "19"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the value of pi rounded to two decimal places?",
+    "answers": [
+      "3.14"
+    ],
+    "normalizedAnswers": [
+      "314"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Danube River?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Abuja is the capital of which country?",
+    "answers": [
+      "Nigeria"
+    ],
+    "normalizedAnswers": [
+      "nigeria"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a woodwind often heard in jazz?",
+    "answers": [
+      "saxophone"
+    ],
+    "normalizedAnswers": [
+      "saxophone"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Ten Commandments is most closely linked with which place or civilization?",
+    "answers": [
+      "Mount Sinai"
+    ],
+    "normalizedAnswers": [
+      "mount sinai"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Madrid is the capital of which country?",
+    "answers": [
+      "Spain"
+    ],
+    "normalizedAnswers": [
+      "spain"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Slovenia?",
+    "answers": [
+      "Ljubljana"
+    ],
+    "normalizedAnswers": [
+      "ljubljana"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Yangtze River?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Japan and is known as the Mount Fuji?",
+    "answers": [
+      "Mount Fuji"
+    ],
+    "normalizedAnswers": [
+      "mount fuji"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is water commonly called or known as?",
+    "answers": [
+      "H2O"
+    ],
+    "normalizedAnswers": [
+      "h2o"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Bogota is the capital of which country?",
+    "answers": [
+      "Colombia"
+    ],
+    "normalizedAnswers": [
+      "colombia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Riyadh is the capital of which country?",
+    "answers": [
+      "Saudi Arabia"
+    ],
+    "normalizedAnswers": [
+      "saudi arabia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Pyramids of Giza?",
+    "answers": [
+      "Egypt"
+    ],
+    "normalizedAnswers": [
+      "egypt"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a piece of writing often arranged in lines?",
+    "answers": [
+      "poem"
+    ],
+    "normalizedAnswers": [
+      "poem"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which city is the capital of Canada?",
+    "answers": [
+      "Ottawa"
+    ],
+    "normalizedAnswers": [
+      "ottawa"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: flower known for following the Sun?",
+    "answers": [
+      "sunflower"
+    ],
+    "normalizedAnswers": [
+      "sunflower"
+    ],
+    "points": 10,
+    "category": "Nature",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote The Iliad?",
+    "answers": [
+      "Homer"
+    ],
+    "normalizedAnswers": [
+      "homer"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Table Mountain?",
+    "answers": [
+      "South Africa"
+    ],
+    "normalizedAnswers": [
+      "south africa"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who was the explorer who reached the Americas in 1492?",
+    "answers": [
+      "Christopher Columbus"
+    ],
+    "normalizedAnswers": [
+      "christopher columbus"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is plants commonly called or known as?",
+    "answers": [
+      "photosynthesis"
+    ],
+    "normalizedAnswers": [
+      "photosynthesis"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a word that often describes a verb?",
+    "answers": [
+      "adverb"
+    ],
+    "normalizedAnswers": [
+      "adverb"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Norway in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which city hosted the ancient Olympic Games?",
+    "answers": [
+      "Olympia"
+    ],
+    "normalizedAnswers": [
+      "olympia"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the Roman numeral for 50?",
+    "answers": [
+      "L"
+    ],
+    "normalizedAnswers": [
+      "l"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Galileo Galilei was associated with which nationality or empire?",
+    "answers": [
+      "Italian"
+    ],
+    "normalizedAnswers": [
+      "italian"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "pho is most closely associated with which country or region?",
+    "answers": [
+      "Vietnam"
+    ],
+    "normalizedAnswers": [
+      "vietnam"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Hanoi is the capital of which country?",
+    "answers": [
+      "Vietnam"
+    ],
+    "normalizedAnswers": [
+      "vietnam"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Ukraine?",
+    "answers": [
+      "Kyiv"
+    ],
+    "normalizedAnswers": [
+      "kyiv"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: journey into the Land of the Dead?",
+    "answers": [
+      "Coco"
+    ],
+    "normalizedAnswers": [
+      "coco"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote The Little Prince?",
+    "answers": [
+      "Antoine de Saint-Exupery"
+    ],
+    "normalizedAnswers": [
+      "antoine de saint exupery"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What plant, tree, fruit, or grain matches this clue: fast-growing grass?",
+    "answers": [
+      "bamboo"
+    ],
+    "normalizedAnswers": [
+      "bamboo"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Cleopatra was associated with which nationality or empire?",
+    "answers": [
+      "Egyptian"
+    ],
+    "normalizedAnswers": [
+      "egyptian"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Mississippi River?",
+    "answers": [
+      "North America"
+    ],
+    "normalizedAnswers": [
+      "north america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient wonder stood in the harbor of Rhodes?",
+    "answers": [
+      "Colossus of Rhodes"
+    ],
+    "normalizedAnswers": [
+      "colossus of rhodes"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Arabian Desert?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Kilimanjaro located?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Greek queen of the gods?",
+    "answers": [
+      "Hera"
+    ],
+    "normalizedAnswers": [
+      "hera"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you digest food?",
+    "answers": [
+      "stomach"
+    ],
+    "normalizedAnswers": [
+      "stomach"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Iceland?",
+    "answers": [
+      "Reykjavik"
+    ],
+    "normalizedAnswers": [
+      "reykjavik"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "How many sides does a pentagon have?",
+    "answers": [
+      "5"
+    ],
+    "normalizedAnswers": [
+      "5"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who painted The Last Supper?",
+    "answers": [
+      "Leonardo da Vinci"
+    ],
+    "normalizedAnswers": [
+      "leonardo da vinci",
+      "da vinci"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the name of the largest island of Japan?",
+    "answers": [
+      "Honshu"
+    ],
+    "normalizedAnswers": [
+      "honshu"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical formula for table salt?",
+    "answers": [
+      "NaCl"
+    ],
+    "normalizedAnswers": [
+      "nacl"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Ecuador?",
+    "answers": [
+      "Quito"
+    ],
+    "normalizedAnswers": [
+      "quito"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Venezuela?",
+    "answers": [
+      "Caracas"
+    ],
+    "normalizedAnswers": [
+      "caracas"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe earthquakes?",
+    "answers": [
+      "seismograph"
+    ],
+    "normalizedAnswers": [
+      "seismograph"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Emperor Ashoka was associated with which nationality or empire?",
+    "answers": [
+      "Indian"
+    ],
+    "normalizedAnswers": [
+      "indian"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who painted Girl with a Pearl Earring?",
+    "answers": [
+      "Johannes Vermeer"
+    ],
+    "normalizedAnswers": [
+      "johannes vermeer"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The Opium Wars is most closely associated with which country?",
+    "answers": [
+      "China"
+    ],
+    "normalizedAnswers": [
+      "china"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a small string instrument played with a bow?",
+    "answers": [
+      "violin"
+    ],
+    "normalizedAnswers": [
+      "violin"
+    ],
+    "points": 10,
+    "category": "Music",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "poutine is most closely associated with which country or region?",
+    "answers": [
+      "Canada"
+    ],
+    "normalizedAnswers": [
+      "canada"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Sun Yat-sen was associated with which nationality or empire?",
+    "answers": [
+      "Chinese"
+    ],
+    "normalizedAnswers": [
+      "chinese"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the study of matter and energy commonly called or known as?",
+    "answers": [
+      "physics"
+    ],
+    "normalizedAnswers": [
+      "physics"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Zagreb is the capital of which country?",
+    "answers": [
+      "Croatia"
+    ],
+    "normalizedAnswers": [
+      "croatia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Sn?",
+    "answers": [
+      "Tin"
+    ],
+    "normalizedAnswers": [
+      "tin"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which animated movie fits this clue: magical family in Colombia?",
+    "answers": [
+      "Encanto"
+    ],
+    "normalizedAnswers": [
+      "encanto"
+    ],
+    "points": 15,
+    "category": "Entertainment",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the three-headed dog guarding the underworld?",
+    "answers": [
+      "Cerberus"
+    ],
+    "normalizedAnswers": [
+      "cerberus"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who is commonly credited with inventing or developing the telephone?",
+    "answers": [
+      "Alexander Graham Bell"
+    ],
+    "normalizedAnswers": [
+      "alexander graham bell"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which strait separates Asia from North America?",
+    "answers": [
+      "Bering Strait"
+    ],
+    "normalizedAnswers": [
+      "bering strait"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What food is described as a ring-shaped fried sweet?",
+    "answers": [
+      "donut"
+    ],
+    "normalizedAnswers": [
+      "donut"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Serbia?",
+    "answers": [
+      "Belgrade"
+    ],
+    "normalizedAnswers": [
+      "belgrade"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: Greek hero who traveled home after Troy?",
+    "answers": [
+      "Odysseus"
+    ],
+    "normalizedAnswers": [
+      "odysseus"
+    ],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of United States?",
+    "answers": [
+      "Washington, D.C."
+    ],
+    "normalizedAnswers": [
+      "washington dc",
+      "washington dc"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you pump blood?",
+    "answers": [
+      "heart"
+    ],
+    "normalizedAnswers": [
+      "heart"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: detective?",
+    "answers": [
+      "Sherlock Holmes"
+    ],
+    "normalizedAnswers": [
+      "sherlock holmes"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Burj Khalifa?",
+    "answers": [
+      "Dubai"
+    ],
+    "normalizedAnswers": [
+      "dubai"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe time?",
+    "answers": [
+      "hourglass"
+    ],
+    "normalizedAnswers": [
+      "hourglass"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: strong hero?",
+    "answers": [
+      "Hercules"
+    ],
+    "normalizedAnswers": [
+      "hercules"
+    ],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: glass slipper?",
+    "answers": [
+      "Cinderella"
+    ],
+    "normalizedAnswers": [
+      "cinderella"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Panama?",
+    "answers": [
+      "Panama City"
+    ],
+    "normalizedAnswers": [
+      "panama city"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Austria in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Montevideo is the capital of which country?",
+    "answers": [
+      "Uruguay"
+    ],
+    "normalizedAnswers": [
+      "uruguay"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "San Jose is the capital of which country?",
+    "answers": [
+      "Costa Rica"
+    ],
+    "normalizedAnswers": [
+      "costa rica"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the smallest even prime number?",
+    "answers": [
+      "2"
+    ],
+    "normalizedAnswers": [
+      "2"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is a scientist who studies rocks commonly called or known as?",
+    "answers": [
+      "geologist"
+    ],
+    "normalizedAnswers": [
+      "geologist"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Helium?",
+    "answers": [
+      "He"
+    ],
+    "normalizedAnswers": [
+      "he"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Moscow is the capital of which country?",
+    "answers": [
+      "Russia"
+    ],
+    "normalizedAnswers": [
+      "russia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the mythical bird reborn from ashes?",
+    "answers": [
+      "Phoenix"
+    ],
+    "normalizedAnswers": [
+      "phoenix"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a woodwind instrument you blow across?",
+    "answers": [
+      "flute"
+    ],
+    "normalizedAnswers": [
+      "flute"
+    ],
+    "points": 10,
+    "category": "Music",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Tigris River?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of France?",
+    "answers": [
+      "Paris"
+    ],
+    "normalizedAnswers": [
+      "paris"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is Mount Denali located?",
+    "answers": [
+      "North America"
+    ],
+    "normalizedAnswers": [
+      "north america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a letter like A, E, I, O, or U?",
+    "answers": [
+      "vowel"
+    ],
+    "normalizedAnswers": [
+      "vowel"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Jamaica?",
+    "answers": [
+      "Kingston"
+    ],
+    "normalizedAnswers": [
+      "kingston"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in United Kingdom and is known as the Stonehenge?",
+    "answers": [
+      "Stonehenge"
+    ],
+    "normalizedAnswers": [
+      "stonehenge"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Brandenburg Gate?",
+    "answers": [
+      "Germany"
+    ],
+    "normalizedAnswers": [
+      "germany"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Kazakhstan in?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "In which country would you find the Machu Picchu?",
+    "answers": [
+      "Peru"
+    ],
+    "normalizedAnswers": [
+      "peru"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  }
+]

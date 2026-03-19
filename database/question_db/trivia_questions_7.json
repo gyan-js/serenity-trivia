@@ -1,0 +1,1178 @@
+[
+  {
+    "question": "Which planet is the known planet with life?",
+    "answers": [
+      "Earth"
+    ],
+    "normalizedAnswers": [
+      "earth"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Tigris River flows through which country?",
+    "answers": [
+      "Iraq"
+    ],
+    "normalizedAnswers": [
+      "iraq"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Kingston is the capital of which country?",
+    "answers": [
+      "Jamaica"
+    ],
+    "normalizedAnswers": [
+      "jamaica"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "croissant is most closely associated with which country or region?",
+    "answers": [
+      "France"
+    ],
+    "normalizedAnswers": [
+      "france"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Bill of Rights is most closely linked with which place or civilization?",
+    "answers": [
+      "United States"
+    ],
+    "normalizedAnswers": [
+      "united states"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is India in?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "ceviche is most closely associated with which country or region?",
+    "answers": [
+      "Peru"
+    ],
+    "normalizedAnswers": [
+      "peru"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What main ingredient is commonly used to make chocolate?",
+    "answers": [
+      "cocoa"
+    ],
+    "normalizedAnswers": [
+      "cocoa"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you help you breathe?",
+    "answers": [
+      "lungs"
+    ],
+    "normalizedAnswers": [
+      "lungs"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Taj Mahal?",
+    "answers": [
+      "Agra"
+    ],
+    "normalizedAnswers": [
+      "agra"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Nile River?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Mississippi River flows through which country?",
+    "answers": [
+      "United States"
+    ],
+    "normalizedAnswers": [
+      "united states"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Kazakhstan?",
+    "answers": [
+      "Astana"
+    ],
+    "normalizedAnswers": [
+      "astana"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Greek messenger god?",
+    "answers": [
+      "Hermes"
+    ],
+    "normalizedAnswers": [
+      "hermes"
+    ],
+    "points": 20,
+    "category": "Mythology",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Laos?",
+    "answers": [
+      "Vientiane"
+    ],
+    "normalizedAnswers": [
+      "vientiane"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Reykjavik is the capital of which country?",
+    "answers": [
+      "Iceland"
+    ],
+    "normalizedAnswers": [
+      "iceland"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Frankenstein was written by which author?",
+    "answers": [
+      "Mary Shelley"
+    ],
+    "normalizedAnswers": [
+      "mary shelley"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Renaissance is most closely associated with which country?",
+    "answers": [
+      "Italy"
+    ],
+    "normalizedAnswers": [
+      "italy"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Ganges?",
+    "answers": [
+      "Varanasi"
+    ],
+    "normalizedAnswers": [
+      "varanasi"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which organ or body part helps you control the body?",
+    "answers": [
+      "brain"
+    ],
+    "normalizedAnswers": [
+      "brain"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What currency is used in the United Kingdom?",
+    "answers": [
+      "pound sterling"
+    ],
+    "normalizedAnswers": [
+      "pound sterling",
+      "pound",
+      "british pound"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Tokyo is the capital of which country?",
+    "answers": [
+      "Japan"
+    ],
+    "normalizedAnswers": [
+      "japan"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What do we call the icy object that develops a tail near the Sun?",
+    "answers": [
+      "comet"
+    ],
+    "normalizedAnswers": [
+      "comet"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Calcium?",
+    "answers": [
+      "Ca"
+    ],
+    "normalizedAnswers": [
+      "ca"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe distant objects in space?",
+    "answers": [
+      "telescope"
+    ],
+    "normalizedAnswers": [
+      "telescope"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "tacos is most closely associated with which country or region?",
+    "answers": [
+      "Mexico"
+    ],
+    "normalizedAnswers": [
+      "mexico"
+    ],
+    "points": 10,
+    "category": "Food",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with many temples?",
+    "answers": [
+      "Kyoto"
+    ],
+    "normalizedAnswers": [
+      "kyoto"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Germany in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Amsterdam is the capital of which country?",
+    "answers": [
+      "Netherlands"
+    ],
+    "normalizedAnswers": [
+      "netherlands"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Who is commonly credited with inventing or developing the steam engine?",
+    "answers": [
+      "James Watt"
+    ],
+    "normalizedAnswers": [
+      "james watt"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "In which century did the discovery of the Americas by Columbus begin?",
+    "answers": [
+      "15th"
+    ],
+    "normalizedAnswers": [
+      "15th",
+      "15"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol K?",
+    "answers": [
+      "Potassium"
+    ],
+    "normalizedAnswers": [
+      "potassium"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Cambodia and is known as the Angkor Wat?",
+    "answers": [
+      "Angkor Wat"
+    ],
+    "normalizedAnswers": [
+      "angkor wat"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Nepal?",
+    "answers": [
+      "Kathmandu"
+    ],
+    "normalizedAnswers": [
+      "kathmandu"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Venezuela in?",
+    "answers": [
+      "South America"
+    ],
+    "normalizedAnswers": [
+      "south america"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Spain in?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Philippines?",
+    "answers": [
+      "Manila"
+    ],
+    "normalizedAnswers": [
+      "manila"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the name of the largest island in the world?",
+    "answers": [
+      "Greenland"
+    ],
+    "normalizedAnswers": [
+      "greenland"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Kenya in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with bicycles and canals?",
+    "answers": [
+      "Amsterdam"
+    ],
+    "normalizedAnswers": [
+      "amsterdam"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which ancient civilization is best known for the aqueducts?",
+    "answers": [
+      "Romans"
+    ],
+    "normalizedAnswers": [
+      "romans"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is described as a large string instrument with a frame?",
+    "answers": [
+      "harp"
+    ],
+    "normalizedAnswers": [
+      "harp"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote War and Peace?",
+    "answers": [
+      "Leo Tolstoy"
+    ],
+    "normalizedAnswers": [
+      "leo tolstoy"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What food is described as a round Indian sweet?",
+    "answers": [
+      "laddu"
+    ],
+    "normalizedAnswers": [
+      "laddu"
+    ],
+    "points": 15,
+    "category": "Food",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What element has the chemical symbol Ne?",
+    "answers": [
+      "Neon"
+    ],
+    "normalizedAnswers": [
+      "neon"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Finland?",
+    "answers": [
+      "Helsinki"
+    ],
+    "normalizedAnswers": [
+      "helsinki"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Pink City?",
+    "answers": [
+      "Jaipur"
+    ],
+    "normalizedAnswers": [
+      "jaipur"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who is commonly credited with inventing or developing the periodic table?",
+    "answers": [
+      "Dmitri Mendeleev"
+    ],
+    "normalizedAnswers": [
+      "dmitri mendeleev"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who was the queen of ancient Egypt linked with Julius Caesar?",
+    "answers": [
+      "Cleopatra"
+    ],
+    "normalizedAnswers": [
+      "cleopatra"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Tehran is the capital of which country?",
+    "answers": [
+      "Iran"
+    ],
+    "normalizedAnswers": [
+      "iran"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Tunisia in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is described as: 42.195 kilometers?",
+    "answers": [
+      "marathon"
+    ],
+    "normalizedAnswers": [
+      "42.195 kilometers",
+      "42195 kilometers",
+      "42.195 km",
+      "42.195"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "How many days are there in a leap year?",
+    "answers": [
+      "366"
+    ],
+    "normalizedAnswers": [
+      "366"
+    ],
+    "points": 15,
+    "category": "Math",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "answers": [
+      "newton"
+    ],
+    "normalizedAnswers": [
+      "newton"
+    ],
+    "points": 20,
+    "category": "Science",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Sweden?",
+    "answers": [
+      "Stockholm"
+    ],
+    "normalizedAnswers": [
+      "stockholm"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Bucharest is the capital of which country?",
+    "answers": [
+      "Romania"
+    ],
+    "normalizedAnswers": [
+      "romania"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Little Prince was written by which author?",
+    "answers": [
+      "Antoine de Saint-Exupery"
+    ],
+    "normalizedAnswers": [
+      "antoine de saint exupery"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is known as the 'Pearl of the Danube'?",
+    "answers": [
+      "Budapest"
+    ],
+    "normalizedAnswers": [
+      "budapest"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "The American Revolution is most closely associated with which country?",
+    "answers": [
+      "United States"
+    ],
+    "normalizedAnswers": [
+      "united states"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Pride and Prejudice?",
+    "answers": [
+      "Jane Austen"
+    ],
+    "normalizedAnswers": [
+      "jane austen"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Queen Victoria was associated with which nationality or empire?",
+    "answers": [
+      "British"
+    ],
+    "normalizedAnswers": [
+      "british"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which planet is the famous for its rings?",
+    "answers": [
+      "Saturn"
+    ],
+    "normalizedAnswers": [
+      "saturn"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which fictional character is best known for this clue: magic lamp?",
+    "answers": [
+      "Aladdin"
+    ],
+    "normalizedAnswers": [
+      "aladdin"
+    ],
+    "points": 10,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "The Partition of India is most closely associated with which country?",
+    "answers": [
+      "India"
+    ],
+    "normalizedAnswers": [
+      "india"
+    ],
+    "points": 15,
+    "category": "History",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who or what in mythology is known as the Norse god of thunder?",
+    "answers": [
+      "Thor"
+    ],
+    "normalizedAnswers": [
+      "thor"
+    ],
+    "points": 15,
+    "category": "Mythology",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who painted American Gothic?",
+    "answers": [
+      "Grant Wood"
+    ],
+    "normalizedAnswers": [
+      "grant wood"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "What is a scientist who studies stars and planets commonly called or known as?",
+    "answers": [
+      "astronomer"
+    ],
+    "normalizedAnswers": [
+      "astronomer"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is 7 times 8?",
+    "answers": [
+      "56"
+    ],
+    "normalizedAnswers": [
+      "56"
+    ],
+    "points": 10,
+    "category": "Math",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Kuala Lumpur is the capital of which country?",
+    "answers": [
+      "Malaysia"
+    ],
+    "normalizedAnswers": [
+      "malaysia"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "On which continent is the Rhine River?",
+    "answers": [
+      "Europe"
+    ],
+    "normalizedAnswers": [
+      "europe"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What instrument is commonly used to measure or observe air pressure?",
+    "answers": [
+      "barometer"
+    ],
+    "normalizedAnswers": [
+      "barometer"
+    ],
+    "points": 15,
+    "category": "Science",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Who wrote Don Quixote?",
+    "answers": [
+      "Miguel de Cervantes"
+    ],
+    "normalizedAnswers": [
+      "miguel de cervantes"
+    ],
+    "points": 15,
+    "category": "Literature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which sea creature has three hearts?",
+    "answers": [
+      "octopus"
+    ],
+    "normalizedAnswers": [
+      "octopus"
+    ],
+    "points": 15,
+    "category": "Nature",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which famous landmark is located in Spain and is known as the Sagrada Familia?",
+    "answers": [
+      "Sagrada Familia"
+    ],
+    "normalizedAnswers": [
+      "sagrada familia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which city is especially associated with Eiffel Tower?",
+    "answers": [
+      "Paris"
+    ],
+    "normalizedAnswers": [
+      "paris"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Which city is known as the 'Eternal City'?",
+    "answers": [
+      "Rome"
+    ],
+    "normalizedAnswers": [
+      "rome"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Vietnam in?",
+    "answers": [
+      "Asia"
+    ],
+    "normalizedAnswers": [
+      "asia"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Who painted The Scream?",
+    "answers": [
+      "Edvard Munch"
+    ],
+    "normalizedAnswers": [
+      "edvard munch"
+    ],
+    "points": 20,
+    "category": "Art",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which sport is closely associated with the term or object 'net'?",
+    "answers": [
+      "volleyball"
+    ],
+    "normalizedAnswers": [
+      "volleyball"
+    ],
+    "points": 15,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "Ottawa is the capital of which country?",
+    "answers": [
+      "Canada"
+    ],
+    "normalizedAnswers": [
+      "canada"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What do we call a letter that is not a vowel?",
+    "answers": [
+      "consonant"
+    ],
+    "normalizedAnswers": [
+      "consonant"
+    ],
+    "points": 10,
+    "category": "Language",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Kathmandu is the capital of which country?",
+    "answers": [
+      "Nepal"
+    ],
+    "normalizedAnswers": [
+      "nepal"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "The Edict of Milan is most closely linked with which place or civilization?",
+    "answers": [
+      "Roman Empire"
+    ],
+    "normalizedAnswers": [
+      "roman empire"
+    ],
+    "points": 20,
+    "category": "History",
+    "difficulty": "Hard",
+    "isActive": true
+  },
+  {
+    "question": "Which music or performance genre matches this clue: Spain?",
+    "answers": [
+      "flamenco"
+    ],
+    "normalizedAnswers": [
+      "flamenco"
+    ],
+    "points": 15,
+    "category": "Music",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the chemical symbol for Copper?",
+    "answers": [
+      "Cu"
+    ],
+    "normalizedAnswers": [
+      "cu"
+    ],
+    "points": 10,
+    "category": "Science",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Chile?",
+    "answers": [
+      "Santiago"
+    ],
+    "normalizedAnswers": [
+      "santiago"
+    ],
+    "points": 10,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which ocean is the largest ocean on Earth?",
+    "answers": [
+      "Pacific"
+    ],
+    "normalizedAnswers": [
+      "pacific"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is described as: race in which teammates take turns?",
+    "answers": [
+      "relay"
+    ],
+    "normalizedAnswers": [
+      "relay"
+    ],
+    "points": 10,
+    "category": "Sports",
+    "difficulty": "Medium",
+    "isActive": true
+  },
+  {
+    "question": "What is the capital of Algeria?",
+    "answers": [
+      "Algiers"
+    ],
+    "normalizedAnswers": [
+      "algiers"
+    ],
+    "points": 15,
+    "category": "Geography",
+    "difficulty": "Easy",
+    "isActive": true
+  },
+  {
+    "question": "Which continent is Morocco in?",
+    "answers": [
+      "Africa"
+    ],
+    "normalizedAnswers": [
+      "africa"
+    ],
+    "points": 20,
+    "category": "Geography",
+    "difficulty": "Hard",
+    "isActive": true
+  }
+]
